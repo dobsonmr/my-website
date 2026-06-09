@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 433 500" width="433" height="500">
+  <title>biparty hex sticker</title>
+  <desc>R package hex sticker for biparty — Congressional Bipartisanship Scores. Parchment background with blue and red bar mark and serif wordmark.</desc>
+
+  <defs>
+    <clipPath id="hexclip">
+      <polygon points="216.5,4 429,124.5 429,375.5 216.5,496 4,375.5 4,124.5"/>
+    </clipPath>
+  </defs>
+
+  <!-- filled hex -->
+  <polygon points="216.5,4 429,124.5 429,375.5 216.5,496 4,375.5 4,124.5"
+           fill="#f5f3ee"/>
+
+  <!-- logo mark and text, clipped to hex -->
+  <g clip-path="url(#hexclip)">
+
+    <!-- blue bars -->
+    <rect x="124" y="158" width="44" height="138" rx="6" fill="#185FA5"/>
+    <rect x="176" y="196" width="44" height="100" rx="6" fill="#185FA5" opacity="0.38"/>
+
+    <!-- red bars -->
+    <rect x="236" y="158" width="44" height="138" rx="6" fill="#A32D2D"/>
+    <rect x="288" y="196" width="44" height="100" rx="6" fill="#A32D2D" opacity="0.38"/>
+
+    <!-- wordmark -->
+    <text x="216.5" y="358"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="72"
+          font-weight="400"
+          fill="#1a1a18"
+          text-anchor="middle"
+          letter-spacing="-1">biparty</text>
+
+    <!-- subtitle -->
+    <text x="216.5" y="396"
+          font-family="'DM Sans', 'Helvetica Neue', Arial, sans-serif"
+          font-size="19"
+          font-weight="400"
+          fill="#5a5a54"
+          text-anchor="middle"
+          letter-spacing="1.2">congressional bipartisanship scores</text>
+
+  </g>
+
+  <!-- border on top -->
+  <polygon points="216.5,4 429,124.5 429,375.5 216.5,496 4,375.5 4,124.5"
+           fill="none" stroke="#1a1a18" stroke-width="8"/>
+
+</svg>
