@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
   <meta name="description" content="Mackenzie R. Dobson — Assistant Professor of Political Science at the University of Tennessee, Knoxville." />
   <title>Mackenzie R. Dobson</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +17,7 @@
       --lgray:#9A9A9A;--lgray-bg:#F7F7F7;
     }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-    html{font-size:17px;scroll-behavior:smooth;}
+    html{font-size:19px;scroll-behavior:smooth;}
     body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;}
     a{color:var(--orange);text-decoration:none;}
     a:hover{text-decoration:underline;}
@@ -67,9 +67,14 @@
     .pub-tag.abstract-btn:hover,.pub-tag.abstract-btn.open{background:var(--ink);color:#fff;border-color:var(--ink);}
     .pub-tag.link{background:#fff;color:var(--slate);border-color:var(--rule);}
     .pub-tag.link:hover{background:var(--surface);text-decoration:none;}
-    .pub-tag.award{background:var(--orange-bg);color:#7a3a00;border-color:transparent;}
-    .pub-tag.cel{background:var(--orange-bg);color:#7a3a00;border-color:transparent;}
+    .pub-tag.award{background:var(--orange-bg);color:var(--orange);border-color:transparent;display:block;width:fit-content;}
+    .pub-tag.cel{background:var(--orange-bg);color:var(--orange);border-color:transparent;display:block;width:fit-content;}
     .pub-tag.status-note{background:var(--surface);color:var(--muted);border-color:transparent;font-style:italic;}
+    .pub-tags{display:flex;gap:5px;flex-wrap:wrap;align-items:flex-start;flex-direction:row;}
+    .pub-tags-main{display:flex;gap:5px;flex-wrap:wrap;align-items:center;margin-bottom:5px;}
+    .pub-tags-awards{display:flex;flex-direction:column;gap:4px;}
+    .project-links a{color:var(--ink);}
+    .project-links a:hover{color:var(--ink);}
     .abstract-box{display:none;padding:12px 14px;background:#f7f7f5;border-left:2px solid var(--orange);border-radius:0 6px 6px 0;font-size:13px;line-height:1.8;color:var(--slate);margin-top:10px;}
     .abstract-box.open{display:block;}
 
@@ -103,7 +108,7 @@
       .nav-name{font-size:16px;}
       .nav-links{gap:1rem;}
       .nav-links a{font-size:10px;letter-spacing:0.05em;}
-      .nav-links .nav-data-label::before{content:"data";}
+      .nav-links .nav-data-label::before{content:"data & software";}
       .nav-links .nav-data-label{font-size:0;letter-spacing:0;}
       .nav-links .nav-data-label::before{font-size:10px;letter-spacing:0.05em;}
       .container{padding:0 1rem;}
@@ -136,7 +141,7 @@
   <ul class="nav-links">
     <li><a href="#about">about</a></li>
     <li><a href="#research">research</a></li>
-    <li><a href="#data" class="nav-data-label">data &amp; projects</a></li>
+    <li><a href="#data" class="nav-data-label">Data, Software, &amp; Public Projects</a></li>
     <li><a href="#cv">cv</a></li>
   </ul>
 </nav>
@@ -181,11 +186,13 @@
         <p class="pub-title">Selective Reciprocity in Bipartisan Collaboration: How Majority Security Shapes Legislative Success</p>
         <p class="pub-venue">State Politics &amp; Policy Quarterly, 2026</p>
         <p class="pub-authors"><strong>Mackenzie R. Dobson</strong></p>
-        <div class="pub-tags">
+        <div class="pub-tags-main">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
           <a class="pub-tag link" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F4E55ADC5CF8CB3ABB5121D3808A1B86/S1532440026100218a.pdf/selective-reciprocity-in-bipartisan-collaboration-how-majority-security-shapes-legislative-success.pdf" target="_blank">pdf</a>
           <a class="pub-tag link" href="https://www.cambridge.org/core/journals/state-politics-and-policy-quarterly/article/selective-reciprocity-in-bipartisan-collaboration-how-majority-security-shapes-legislative-success/F4E55ADC5CF8CB3ABB5121D3808A1B86" target="_blank">html</a>
           <a class="pub-tag link" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/W7OXER" target="_blank">dataverse</a>
+        </div>
+        <div class="pub-tags-awards">
           <span class="pub-tag award">Best Paper on State Politics, 2025</span>
           <span class="pub-tag award">Best Poster, State Politics and Policy Conference, 2024</span>
         </div>
@@ -196,7 +203,7 @@
         <p class="pub-title">The Consequences of Elite Action Against Elections</p>
         <p class="pub-venue">British Journal of Political Science, 2025</p>
         <p class="pub-authors">Rachel Porter, Jeffrey J. Harden, Emily Anderson, Géssica de Frietas, <strong>Mackenzie R. Dobson</strong>, Abigail Hemmen, and Emma Schroeder</p>
-        <div class="pub-tags">
+        <div class="pub-tags-main">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
           <a class="pub-tag link" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/1E549A13F7FBD704E4A96CE509351DB7/S0007123425100926a.pdf/the-consequences-of-elite-action-against-elections.pdf" target="_blank">pdf</a>
           <a class="pub-tag link" href="https://www.cambridge.org/core/journals/british-journal-of-political-science/article/consequences-of-elite-action-against-elections/1E549A13F7FBD704E4A96CE509351DB7" target="_blank">html</a>
@@ -209,7 +216,7 @@
         <p class="pub-title">Electing Amateur Politicians Reduces Cross-Party Collaboration</p>
         <p class="pub-venue">Proceedings of the National Academy of Sciences, 2025</p>
         <p class="pub-authors">Rachel Porter, Jeffrey J. Harden, and <strong>Mackenzie R. Dobson</strong></p>
-        <div class="pub-tags">
+        <div class="pub-tags-main">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
           <a class="pub-tag link" href="https://www.pnas.org/doi/epdf/10.1073/pnas.2519787122" target="_blank">pdf</a>
           <a class="pub-tag link" href="https://www.pnas.org/doi/10.1073/pnas.2519787122" target="_blank">html</a>
@@ -222,11 +229,13 @@
         <p class="pub-title">I'm Coming Out! How Voter Discrimination Produces Effective LGBTQ Lawmakers</p>
         <p class="pub-venue">PS: Political Science &amp; Politics, 2025</p>
         <p class="pub-authors">Jacob M. Lollis and <strong>Mackenzie R. Dobson</strong></p>
-        <div class="pub-tags">
+        <div class="pub-tags-main">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
           <a class="pub-tag link" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/99F9DDDB008114F6D77FB27534575BF3/S1049096525000101a.pdf/im-coming-out-how-voter-discrimination-produces-effective-lgbtq-lawmakers.pdf" target="_blank">pdf</a>
           <a class="pub-tag link" href="https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/im-coming-out-how-voter-discrimination-produces-effective-lgbtq-lawmakers/99F9DDDB008114F6D77FB27534575BF3" target="_blank">html</a>
           <a class="pub-tag link" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T5V3CH" target="_blank">dataverse</a>
+        </div>
+        <div class="pub-tags-awards">
           <span class="pub-tag cel">CEL Working Paper Series</span>
         </div>
         <div class="abstract-box">Are LGBTQ legislators effective lawmakers? We build on theories that link voter discrimination to legislative effectiveness by arguing that voters' biases against LGBTQ candidates narrow the candidate pool, leading to the election of only the most experienced and qualified LGBTQ candidates. As a result of this electoral selection effect, we expect that LGBTQ legislators will be more effective lawmakers than their non-LGBTQ counterparts. To test this, we combine data on state legislators' LGBTQ identification with their State Legislative Effectiveness Scores (SLES). Our findings reveal that LGBTQ legislators are meaningfully more effective than non-LGBTQ legislators.</div>
@@ -240,7 +249,7 @@
       <div class="pub-item">
         <p class="pub-title">Legislative Professionalism and Perceptions of White-Collar Government</p>
         <p class="pub-authors"><strong>Mackenzie R. Dobson</strong>, Jacob M. Lollis, Jeffrey J. Harden, and Justin H. Kirkland</p>
-        <div class="pub-tags">
+        <div class="pub-tags-main">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
           <a class="pub-tag link" href="https://www.dropbox.com/scl/fi/zbu5jsed8gkv6j3sigukw/Legislative-Professionalism-and-White-Collar-Govt.pdf?rlkey=bklwlnvsmbyfv032liac104be&st=5pgu1hys&dl=0" target="_blank">pdf</a>
           <span class="pub-tag status-note">conditionally accepted, Journal of Political Institutions and Political Economy</span>
@@ -251,7 +260,7 @@
       <div class="pub-item">
         <p class="pub-title">Congressional Attention to Abortion After <em>Dobbs</em>: How Representational and Electoral Incentives Selectively Shape Issue Attention</p>
         <p class="pub-authors">Jacob M. Lollis and <strong>Mackenzie R. Dobson</strong></p>
-        <div class="pub-tags">
+        <div class="pub-tags-main">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
           <a class="pub-tag link" href="https://www.dropbox.com/scl/fi/vyycbvmqblplqxdludkve/Congressional-Attention-After-Dobbs.pdf?rlkey=hvih3thltjpwoo5wakq6aqb6a&st=me8sifuf&dl=0" target="_blank">pdf</a>
         </div>
@@ -261,9 +270,11 @@
       <div class="pub-item">
         <p class="pub-title">Bipartisan Campaigners Become Effective Lawmakers</p>
         <p class="pub-authors"><strong>Mackenzie R. Dobson</strong>, Craig Volden, and Alan E. Wiseman</p>
-        <div class="pub-tags">
+        <div class="pub-tags-main">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
           <a class="pub-tag link" href="https://www.dropbox.com/scl/fi/srck10tdkfq3ive8x0lvs/Bipartisan-Campaigners-Become-Effective-Lawmakers.pdf?rlkey=5252yk3dnlnezh9kkt7pt457o&st=a9ejy8kr&dl=0" target="_blank">pdf</a>
+        </div>
+        <div class="pub-tags-awards">
           <span class="pub-tag cel">CEL Working Paper Series</span>
         </div>
         <div class="abstract-box">Strong evidence exists that effective lawmakers in one legislative term are very likely to be effective lawmakers in subsequent terms. But can voters glean insights into the likely lawmaking effectiveness of candidates even before they hold office? We examine the initial campaigns of more than 800 congressional Representatives and find that candidates who exhibited bipartisan traits during those campaigns became more effective lawmakers than those not identified as bipartisan.</div>
@@ -277,7 +288,7 @@
       <div class="pub-item">
         <p class="pub-title">Bipartisanship Scores by Member and Issue Area in the U.S. Congress, 1983–2024</p>
         <p class="pub-authors"><strong>Mackenzie R. Dobson</strong> and Jacob M. Lollis</p>
-        <div class="pub-tags">
+        <div class="pub-tags-main">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
           <a class="pub-tag link" href="https://www.dropbox.com/scl/fi/lro80gvjymnxtgceypzvh/Bipartisanship-Measures.pdf?rlkey=v4j8n6m2tdhbj31ot0lhg9lcc&st=gcm5whmg&dl=0" target="_blank">pdf</a>
         </div>
@@ -287,7 +298,7 @@
       <div class="pub-item">
         <p class="pub-title">Policy Agendas and Effective Lawmaking in the American States</p>
         <p class="pub-authors">Andrew Ballard, <strong>Mackenzie R. Dobson</strong>, Martín Gandur, Craig Volden, and Alan E. Wiseman</p>
-        <div class="pub-tags">
+        <div class="pub-tags-main">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
         </div>
         <div class="abstract-box">The politics of public policymaking varies not only across institutions and over time but also across different issue areas. We leverage transformer-based text classification to accurately assign more than 1.6 million state bills to 18 different policy areas. We then introduce Issue-Specific State Legislative Effectiveness Scores (ISLES), enabling systematic, cross-state comparisons of lawmaking effectiveness by members of state legislatures at the issue level for 2009–2018, across 48 states.</div>
@@ -296,8 +307,10 @@
       <div class="pub-item">
         <p class="pub-title">Building Effective Coalitions in the American States</p>
         <p class="pub-authors"><strong>Mackenzie R. Dobson</strong></p>
-        <div class="pub-tags">
+        <div class="pub-tags-main">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
+        </div>
+        <div class="pub-tags-awards">
           <span class="pub-tag cel">CEL Working Paper Series</span>
         </div>
         <div class="abstract-box">Bipartisan collaboration is widely considered a reliable route to legislative success, largely based on evidence from the contemporary U.S. Congress. Yet most state legislatures are governed by majority parties that occupy a significant share of chamber seats, permitting them to advance legislation without minority-party support. I argue that bipartisan collaboration enhances effectiveness only when cross-party support is necessary to assemble a winning coalition. Using State Legislative Effectiveness Scores and original measures of coalition-building, I show that bipartisanship enhances effectiveness in competitive chambers but not under secure majorities.</div>
@@ -306,7 +319,7 @@
       <div class="pub-item">
         <p class="pub-title">Does Training Legislators Improve Policymaking?</p>
         <p class="pub-authors"><strong>Mackenzie R. Dobson</strong>, Emma Schroeder, Daniel M. Butler, James M. Curry, Thad Kousser, and Jeffrey J. Harden</p>
-        <div class="pub-tags">
+        <div class="pub-tags-main">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
         </div>
         <div class="abstract-box">We examine the efficacy of a more direct intervention on policymaking skill: legislator training. We theorize that educating politicians enhances lawmaking success via learning and network-based pathways. We test our expectations with two complementary research designs from American state legislatures. Our results indicate precisely-estimated negligible effects; returns to training do not appear in several measures of legislative success. We conclude that structural constraints overshadow individual talent in policymaking.</div>
@@ -327,7 +340,7 @@
 
   <!-- DATA & PUBLIC PROJECTS -->
   <section class="section" id="data">
-    <p class="section-label">data, software &amp; public projects</p>
+    <p class="section-label">Data, Software, &amp; Public Projects</p>
     <p class="data-intro">I develop original datasets, open-source software, and interactive public tools for broad reuse by scholars, journalists, legislators, and the public. Replication materials for published papers are linked with each paper above.</p>
 
     <div class="project-card">
