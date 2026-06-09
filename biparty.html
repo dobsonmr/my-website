@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="biparty — Congressional Bipartisanship Scores explorer. Interactive data from Dobson & Lollis (2026)." />
+  <title>biparty · Congressional Bipartisanship Scores</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <style>
+    :root {
+      --ink:#1a1a18;--slate:#5a5a54;--muted:#9a9a92;--rule:#e8e8e2;
+      --bg:#fafaf7;--surface:#f2f2ed;
+      --orange:#FF8200;--orange-bg:#FFF3E6;
+      --blue:#185FA5;--red:#A32D2D;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{font-size:16px;scroll-behavior:smooth;}
+    body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;}
+    a{color:var(--orange);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    nav{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px solid var(--rule);display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:52px;}
+    .nav-left{display:flex;align-items:center;gap:12px;}
+    .nav-back{font-size:12px;color:var(--slate);text-decoration:none;letter-spacing:0.04em;}
+    .nav-back:hover{color:var(--ink);text-decoration:none;}
+    .nav-divider{width:1px;height:16px;background:var(--rule);}
+    .nav-title{font-family:'EB Garamond',serif;font-size:18px;font-weight:400;color:var(--ink);}
+    .nav-badge{font-size:10px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;background:var(--orange-bg);color:var(--orange);padding:2px 8px;border-radius:20px;}
+    .container{max-width:920px;margin:0 auto;padding:0 2rem;}
+    .page-header{padding:2.5rem 0 2rem;border-bottom:1px solid var(--rule);display:flex;align-items:flex-start;gap:1.5rem;}
+    .page-header-hex{flex-shrink:0;}
+    .page-title{font-family:'EB Garamond',serif;font-size:32px;font-weight:400;letter-spacing:-0.01em;margin-bottom:4px;}
+    .page-subtitle{font-size:13px;color:var(--slate);line-height:1.7;max-width:540px;}
+    .page-subtitle a{color:var(--orange);}
+    .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--rule);border-radius:8px;overflow:hidden;margin:1.5rem 0;}
+    .stat-cell{padding:10px 14px;border-right:1px solid var(--rule);background:var(--surface);}
+    .stat-cell:last-child{border-right:none;}
+    .stat-val{font-size:15px;font-weight:500;color:var(--ink);font-family:'EB Garamond',serif;}
+    .stat-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em;margin-top:1px;}
+    .panel{padding:2rem 0;border-top:1px solid var(--rule);}
+    .panel-label{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.25rem;}
+    .controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.25rem;align-items:center;}
+    .seg{display:flex;background:var(--surface);border-radius:6px;border:1px solid var(--rule);overflow:hidden;}
+    .seg button{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:400;letter-spacing:0.05em;padding:5px 13px;border:none;background:none;color:var(--slate);cursor:pointer;transition:background 0.1s,color 0.1s;}
+    .seg button.active{background:var(--ink);color:#fff;}
+    select{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--slate);background:var(--bg);border:1px solid var(--rule);border-radius:6px;padding:5px 10px;cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%239a9a92'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center;padding-right:24px;}
+    .chart-wrap{position:relative;width:100%;height:280px;}
+    .legend-row{display:flex;gap:1.25rem;flex-wrap:wrap;margin-bottom:1rem;}
+    .legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);}
+    .legend-swatch{width:20px;height:3px;border-radius:2px;flex-shrink:0;}
+    .legend-swatch.dashed{background:none;border-top:2px dashed;}
+    .search-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1rem;align-items:center;}
+    input[type=text]{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--ink);background:var(--bg);border:1px solid var(--rule);border-radius:6px;padding:6px 11px;outline:none;transition:border-color 0.15s;}
+    input[type=text]:focus{border-color:var(--orange);}
+    input[type=text]::placeholder{color:var(--muted);}
+    table{width:100%;border-collapse:collapse;font-size:12px;}
+    thead th{font-size:10px;font-weight:500;letter-spacing:0.07em;text-transform:uppercase;color:var(--muted);text-align:left;padding:6px 10px;border-bottom:1px solid var(--rule);cursor:pointer;user-select:none;white-space:nowrap;}
+    thead th:hover{color:var(--ink);}
+    thead th.sort-asc::after{content:' ↑';}
+    thead th.sort-desc::after{content:' ↓';}
+    tbody td{padding:7px 10px;border-bottom:1px solid var(--rule);color:var(--slate);vertical-align:middle;}
+    tbody td:first-child{color:var(--ink);font-weight:400;}
+    tbody tr:last-child td{border-bottom:none;}
+    tbody tr:hover td{background:var(--surface);}
+    .pill{display:inline-block;font-size:10px;font-weight:500;padding:1px 7px;border-radius:20px;}
+    .pill-D{background:#deeaf5;color:#0c447c;}
+    .pill-R{background:#f7dede;color:#791f1f;}
+    .bar-wrap{height:6px;background:var(--surface);border-radius:3px;overflow:hidden;width:80px;display:inline-block;vertical-align:middle;}
+    .bar-fill{height:100%;border-radius:3px;}
+    .tbl-footer{font-size:11px;color:var(--muted);margin-top:8px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;}
+    .page-btns{display:flex;gap:4px;}
+    .page-btn{font-family:'DM Sans',sans-serif;font-size:11px;padding:3px 9px;border:1px solid var(--rule);border-radius:5px;background:var(--bg);color:var(--slate);cursor:pointer;}
+    .page-btn:hover{background:var(--surface);}
+    .page-btn.active{background:var(--ink);color:#fff;border-color:var(--ink);}
+    .install-block{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:1.25rem 1.5rem;margin-bottom:1rem;}
+    .install-label{font-size:11px;color:var(--muted);margin-bottom:6px;letter-spacing:0.04em;}
+    .code-row{display:flex;align-items:center;gap:10px;}
+    code{font-family:'DM Mono','Courier New',monospace;font-size:12.5px;color:var(--ink);flex:1;}
+    .copy-btn{font-size:11px;color:var(--slate);background:none;border:1px solid var(--rule);border-radius:5px;padding:3px 9px;cursor:pointer;white-space:nowrap;flex-shrink:0;}
+    .copy-btn:hover{background:var(--bg);}
+    .cite-block{background:var(--surface);border-left:3px solid var(--rule);border-radius:0 6px 6px 0;padding:0.875rem 1.25rem;font-size:12.5px;color:var(--slate);line-height:1.75;}
+    .loading{padding:3rem 0;text-align:center;font-size:13px;color:var(--muted);}
+    footer{padding:2rem 0;border-top:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;}
+    .footer-text{font-size:11px;color:var(--muted);}
+    .profile-header{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:1.25rem;flex-wrap:wrap;}
+    .profile-name{font-family:'EB Garamond',serif;font-size:22px;font-weight:400;color:var(--ink);margin-bottom:2px;}
+    .profile-meta{font-size:12px;color:var(--muted);}
+    .profile-close{font-size:12px;color:var(--slate);background:none;border:1px solid var(--rule);border-radius:5px;padding:4px 10px;cursor:pointer;flex-shrink:0;}
+    .profile-close:hover{background:var(--surface);}
+    .profile-stats{display:flex;gap:1.5rem;margin-bottom:1.25rem;flex-wrap:wrap;}
+    .profile-stat{text-align:center;}
+    .profile-stat-val{font-family:'EB Garamond',serif;font-size:22px;font-weight:400;color:var(--ink);}
+    .profile-stat-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;}
+    .profile-charts{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;}
+    .profile-chart-wrap{position:relative;height:180px;}
+    .profile-chart-label{font-size:11px;color:var(--muted);margin-bottom:4px;letter-spacing:0.04em;text-transform:uppercase;}
+    tbody tr.clickable{cursor:pointer;}
+    tbody tr.clickable:hover td{background:var(--orange-bg);}
+    tbody tr.selected td{background:var(--orange-bg);}
+    @media(max-width:640px){.profile-charts{grid-template-columns:1fr;}}
+      .container{padding:0 1rem;}
+      nav{padding:0 1rem;}
+      .stats-row{grid-template-columns:repeat(2,1fr);}
+      .stat-cell:nth-child(2){border-right:none;}
+      .stat-cell:nth-child(3){border-top:1px solid var(--rule);}
+      .stat-cell:nth-child(4){border-top:1px solid var(--rule);border-right:none;}
+      .page-header{flex-direction:column;gap:1rem;}
+      .bar-wrap{width:50px;}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-left">
+    <a class="nav-back" href="index.html">← mackenzierdobson.com</a>
+    <div class="nav-divider"></div>
+    <span class="nav-title">biparty</span>
+    <span class="nav-badge">v0.1.0</span>
+  </div>
+  <a class="nav-back" href="https://github.com/portman-center/biparty" target="_blank" style="font-size:11px;">GitHub ↗</a>
+</nav>
+
+<div class="container">
+
+  <div class="page-header">
+    <div class="page-header-hex">
+      <img src="biparty-hex.svg" alt="biparty" width="90" height="104" />
+    </div>
+    <div>
+      <h1 class="page-title">Congressional Bipartisanship Scores</h1>
+      <p class="page-subtitle">Member-level attract and offer scores for every U.S. House and Senate member, 98th–118th Congresses (1983–2024). Two complementary measures — <em>attract</em> (out-party cosponsor draw) and <em>offer</em> (cross-party support given) — computed overall and within 34 CRS policy areas. Introduced in <a href="https://www.dropbox.com/scl/fi/lro80gvjymnxtgceypzvh/Bipartisanship-Measures.pdf?rlkey=v4j8n6m2tdhbj31ot0lhg9lcc&st=gcm5whmg&dl=0" target="_blank">Dobson &amp; Lollis (2026)</a>.</p>
+      <div class="stats-row">
+        <div class="stat-cell"><div class="stat-val" id="s-members">—</div><div class="stat-lbl">Unique legislators</div></div>
+        <div class="stat-cell"><div class="stat-val">11,549</div><div class="stat-lbl">Member-term obs.</div></div>
+        <div class="stat-cell"><div class="stat-val">34</div><div class="stat-lbl">CRS policy areas</div></div>
+        <div class="stat-cell"><div class="stat-val">98th–118th</div><div class="stat-lbl">Congresses</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TREND CHART -->
+  <div class="panel">
+    <p class="panel-label">Bipartisanship over time</p>
+    <div class="controls">
+      <div class="seg" id="seg-score">
+        <button class="active" onclick="setScore('attract')">Attract</button>
+        <button onclick="setScore('offer')">Offer</button>
+      </div>
+      <div class="seg" id="seg-chamber">
+        <button class="active" onclick="setChamber('both')">Both chambers</button>
+        <button onclick="setChamber('HOUSE')">House</button>
+        <button onclick="setChamber('SENATE')">Senate</button>
+      </div>
+    </div>
+    <div class="legend-row" id="chart-legend"></div>
+    <div class="chart-wrap">
+      <canvas id="trendChart" role="img" aria-label="Line chart of bipartisanship scores by party and chamber, 98th through 118th Congress"></canvas>
+    </div>
+    <p style="font-size:11px;color:var(--muted);margin-top:8px;">Mean precision-weighted scores per Congress × chamber × party. Source: <code style="font-size:11px;">aggregate.cbs</code>.</p>
+  </div>
+
+  <!-- MEMBER BROWSER -->
+  <div class="panel">
+    <p class="panel-label">Browse members</p>
+    <div class="search-row">
+      <input type="text" id="search" placeholder="Search name or state…" style="flex:1;min-width:160px;" oninput="renderTable()" />
+      <select id="f-chamber" onchange="renderTable()">
+        <option value="">Both chambers</option>
+        <option value="HOUSE">House</option>
+        <option value="SENATE">Senate</option>
+      </select>
+      <select id="f-party" onchange="renderTable()">
+        <option value="">All parties</option>
+        <option value="D">Democrat</option>
+        <option value="R">Republican</option>
+      </select>
+      <select id="f-congress" onchange="renderTable()">
+        <option value="">All congresses</option>
+      </select>
+      <select id="f-state" onchange="renderTable()">
+        <option value="">All states</option>
+      </select>
+      <div class="seg">
+        <button id="tscore-attract" class="active" onclick="setTblScore('attract')">Attract</button>
+        <button id="tscore-offer" onclick="setTblScore('offer')">Offer</button>
+      </div>
+    </div>
+    <div id="tbl-loading" class="loading">Loading data…</div>
+    <div id="tbl-wrap" style="display:none;overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th onclick="sortBy('name')">Member</th>
+            <th onclick="sortBy('party')">Party</th>
+            <th onclick="sortBy('chamber')">Chamber</th>
+            <th onclick="sortBy('state')">State</th>
+            <th onclick="sortBy('congress')">Congress</th>
+            <th onclick="sortBy('score')" id="score-col-head">Attract score</th>
+            <th onclick="sortBy('total_n_bills_sponsored')">Bills sponsored</th>
+          </tr>
+        </thead>
+        <tbody id="tbl-body"></tbody>
+      </table>
+    </div>
+    <div class="tbl-footer" id="tbl-footer" style="display:none;">
+      <span id="tbl-count"></span>
+      <div class="page-btns" id="page-btns"></div>
+    </div>
+  </div>
+
+  <!-- MEMBER PROFILE -->
+  <div class="panel" id="profile-panel" style="display:none;">
+    <p class="panel-label">Member profile</p>
+    <div id="profile-inner"></div>
+  </div>
+
+  <!-- INSTALL & CITE -->
+  <div class="panel">
+    <p class="panel-label">Install &amp; use</p>
+    <div class="install-block">
+      <div class="install-label">Install from GitHub</div>
+      <div class="code-row">
+        <code>remotes::install_github("congressional-bipartisanship-scores/biparty")</code>
+        <button class="copy-btn" onclick="cp('remotes::install_github(\"congressional-bipartisanship-scores/biparty\")',this)">Copy</button>
+      </div>
+    </div>
+    <div class="install-block">
+      <div class="install-label">Rank the most bipartisan senators in the 117th Congress</div>
+      <div class="code-row">
+        <code>library(biparty)&#10;rank_members(117, "senate", score_type = "attract", n = 10)</code>
+        <button class="copy-btn" onclick="cp('library(biparty)\nrank_members(117, \"senate\", score_type = \"attract\", n = 10)',this)">Copy</button>
+      </div>
+    </div>
+    <div class="install-block">
+      <div class="install-label">Plot a member's full career profile</div>
+      <div class="code-row">
+        <code>plot_member_profile("G000386", congress = 117, chamber = "senate")</code>
+        <button class="copy-btn" onclick="cp('plot_member_profile(\"G000386\", congress = 117, chamber = \"senate\")',this)">Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <p class="panel-label">Citation</p>
+    <div class="cite-block">
+      Dobson, M.R. and Lollis, J.M. (2026). Bipartisanship scores by member and issue area in the U.S. Congress, 1983–2024. Working paper.<br>
+      <span style="display:block;margin-top:6px;">Dobson, M.R. and Lollis, J.M. (2026). <em>biparty: Congressional Bipartisanship Scores by Member and Issue Area</em>. R package version 0.1.0. https://github.com/portman-center/biparty</span>
+    </div>
+  </div>
+
+  <footer>
+    <span class="footer-text">© 2026 Mackenzie R. Dobson &amp; Jacob M. Lollis · University of Tennessee, Knoxville &amp; University of Cincinnati</span>
+    <a class="footer-text" href="index.html">← back to mackenzierdobson.com</a>
+  </footer>
+
+</div>
+
+<script>
+let AGG = [], TREND = [];
+let scoreType = 'attract';
+let tblScore = 'attract';
+let chamberFilter = 'both';
+let sortCol = 'score';
+let sortDir = 'desc';
+let page = 1;
+const PER_PAGE = 25;
+let chartInst = null;
+
+// Colours: blue=Democrats, red=Republicans; solid=Senate, dashed=House
+const COL = {
+  'HOUSE-D':  { stroke: '#185FA5', dash: [5,4] },
+  'HOUSE-R':  { stroke: '#A32D2D', dash: [5,4] },
+  'SENATE-D': { stroke: '#185FA5', dash: [] },
+  'SENATE-R': { stroke: '#A32D2D', dash: [] },
+};
+
+Promise.all([
+  fetch('trend.json').then(r => r.json()),
+  fetch('aggregate.json').then(r => r.json()),
+]).then(([trend, agg]) => {
+  TREND = trend;
+  AGG = agg;
+
+  // Unique member count
+  const uniq = new Set(AGG.map(d => d.bioguide_id)).size;
+  document.getElementById('s-members').textContent = uniq.toLocaleString();
+
+  // Populate congress + state dropdowns
+  const congresses = [...new Set(AGG.map(d => d.congress))].sort((a,b) => b-a);
+  const sel = document.getElementById('f-congress');
+  congresses.forEach(c => {
+    const o = document.createElement('option');
+    o.value = c; o.textContent = c + 'th Congress';
+    sel.appendChild(o);
+  });
+  const states = [...new Set(AGG.map(d => d.state).filter(Boolean))].sort();
+  const ssel = document.getElementById('f-state');
+  states.forEach(s => {
+    const o = document.createElement('option');
+    o.value = s; o.textContent = s;
+    ssel.appendChild(o);
+  });
+
+  buildChart();
+  document.getElementById('tbl-loading').style.display = 'none';
+  document.getElementById('tbl-wrap').style.display = '';
+  document.getElementById('tbl-footer').style.display = 'flex';
+  renderTable();
+});
+
+function setScore(s) {
+  scoreType = s;
+  document.querySelectorAll('#seg-score button').forEach((b,i) => {
+    b.classList.toggle('active', (i===0 && s==='attract') || (i===1 && s==='offer'));
+  });
+  buildChart();
+}
+
+function setChamber(c) {
+  chamberFilter = c;
+  document.querySelectorAll('#seg-chamber button').forEach((b,i) => {
+    b.classList.toggle('active', (i===0 && c==='both') || (i===1 && c==='HOUSE') || (i===2 && c==='SENATE'));
+  });
+  buildChart();
+}
+
+function setTblScore(s) {
+  tblScore = s;
+  document.getElementById('tscore-attract').classList.toggle('active', s==='attract');
+  document.getElementById('tscore-offer').classList.toggle('active', s==='offer');
+  document.getElementById('score-col-head').textContent = s === 'attract' ? 'Attract score' : 'Offer score';
+  sortCol = 'score';
+  sortDir = 'desc';
+  page = 1;
+  renderTable();
+}
+
+function buildChart() {
+  const keys = Object.keys(COL).filter(k => {
+    if (chamberFilter === 'both') return true;
+    return k.startsWith(chamberFilter);
+  });
+
+  const congresses = [...new Set(TREND.map(d => d.congress))].sort((a,b)=>a-b);
+
+  const datasets = keys.map(k => {
+    const [chamber, party] = k.split('-');
+    const col = COL[k];
+    const vals = congresses.map(c => {
+      const row = TREND.find(d => d.congress===c && d.chamber===chamber && d.party===party);
+      return row ? row[scoreType] : null;
+    });
+    return {
+      label: (chamber==='HOUSE'?'House':'Senate') + ' — ' + (party==='D'?'Democrats':'Republicans'),
+      data: vals,
+      borderColor: col.stroke,
+      borderDash: col.dash,
+      backgroundColor: 'transparent',
+      pointRadius: 3,
+      pointBackgroundColor: col.stroke,
+      tension: 0.3,
+      borderWidth: 2,
+      spanGaps: true,
+    };
+  });
+
+  // Legend
+  const leg = document.getElementById('chart-legend');
+  leg.innerHTML = datasets.map((ds, i) => {
+    const key = keys[i];
+    const col = COL[key];
+    const isDash = col.dash.length > 0;
+    return `<div class="legend-item">
+      <div class="legend-swatch${isDash?' dashed':''}" style="${isDash?'border-top-color:'+col.stroke+';border-top-style:dashed;':'background:'+col.stroke}"></div>
+      <span>${ds.label}</span>
+    </div>`;
+  }).join('');
+
+  const ctx = document.getElementById('trendChart').getContext('2d');
+  if (chartInst) chartInst.destroy();
+  chartInst = new Chart(ctx, {
+    type: 'line',
+    data: { labels: congresses, datasets },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: c => c.dataset.label + ': ' + c.parsed.y.toFixed(3) } }
+      },
+      scales: {
+        x: { grid: { color: 'rgba(0,0,0,0.05)' }, ticks: { font: { size: 10, family: 'DM Sans' }, color: '#9a9a92', autoSkip: true, maxTicksLimit: 12 } },
+        y: { min: 0.05, max: 0.6, grid: { color: 'rgba(0,0,0,0.05)' }, ticks: { font: { size: 10, family: 'DM Sans' }, color: '#9a9a92', callback: v => v.toFixed(2) } }
+      }
+    }
+  });
+}
+
+function filteredRows() {
+  const q = document.getElementById('search').value.toLowerCase().trim();
+  const ch = document.getElementById('f-chamber').value;
+  const pa = document.getElementById('f-party').value;
+  const co = document.getElementById('f-congress').value;
+  const st = document.getElementById('f-state').value;
+
+  return AGG.filter(d =>
+    (!q || d.name.toLowerCase().includes(q) || (d.state||'').toLowerCase().includes(q)) &&
+    (!ch || d.chamber === ch) &&
+    (!pa || d.party === pa) &&
+    (!co || d.congress === +co) &&
+    (!st || d.state === st)
+  ).map(d => ({
+    ...d,
+    score: tblScore === 'attract' ? d.attract_aggregate_weighted : d.offer_aggregate_weighted
+  }));
+}
+
+function sortBy(col) {
+  if (sortCol === col) { sortDir = sortDir === 'asc' ? 'desc' : 'asc'; }
+  else { sortCol = col; sortDir = col === 'name' || col === 'state' || col === 'chamber' || col === 'party' ? 'asc' : 'desc'; }
+  page = 1;
+  renderTable();
+}
+
+function renderTable() {
+  page = isNaN(page) ? 1 : page;
+  let rows = filteredRows();
+
+  // Sort
+  rows.sort((a,b) => {
+    let av = a[sortCol], bv = b[sortCol];
+    if (av == null) av = sortDir==='asc' ? Infinity : -Infinity;
+    if (bv == null) bv = sortDir==='asc' ? Infinity : -Infinity;
+    if (typeof av === 'string') return sortDir==='asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+    return sortDir==='asc' ? av-bv : bv-av;
+  });
+
+  // Update sort indicators
+  document.querySelectorAll('thead th').forEach(th => {
+    th.classList.remove('sort-asc','sort-desc');
+    const col = th.getAttribute('onclick')?.match(/sortBy\('(.+?)'\)/)?.[1];
+    if (col === sortCol) th.classList.add(sortDir==='asc'?'sort-asc':'sort-desc');
+  });
+
+  const total = rows.length;
+  const totalPages = Math.max(1, Math.ceil(total / PER_PAGE));
+  if (page > totalPages) page = totalPages;
+  const slice = rows.slice((page-1)*PER_PAGE, page*PER_PAGE);
+
+  const body = document.getElementById('tbl-body');
+  body.innerHTML = slice.map(d => {
+    const score = d.score;
+    const pct = score != null ? Math.round(score * 100) : null;
+    const barColor = d.party === 'D' ? '#185FA5' : '#A32D2D';
+    const bar = pct != null
+      ? `<div class="bar-wrap"><div class="bar-fill" style="width:${pct}%;background:${barColor}"></div></div> <span style="font-size:11px;color:var(--muted);margin-left:4px;">${pct}%</span>`
+      : '<span style="color:var(--muted)">—</span>';
+    const isSelected = selectedBioguide === d.bioguide_id && selectedChamber === d.chamber;
+    return `<tr class="clickable${isSelected?' selected':''}" onclick='showProfile(${JSON.stringify({name:d.name,party:d.party,chamber:d.chamber,state:d.state,congress:d.congress,bioguide_id:d.bioguide_id,total_n_bills_sponsored:d.total_n_bills_sponsored})})'>
+      <td>${d.name}</td>
+      <td><span class="pill pill-${d.party}">${d.party}</span></td>
+      <td style="font-size:11px;">${d.chamber==='HOUSE'?'House':'Senate'}</td>
+      <td>${d.state||'—'}</td>
+      <td style="font-size:11px;">${d.congress}th</td>
+      <td>${bar}</td>
+      <td style="font-size:11px;">${d.total_n_bills_sponsored??'—'}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('tbl-count').textContent =
+    total.toLocaleString() + ' member-term' + (total!==1?'s':'') + ' · showing ' + ((page-1)*PER_PAGE+1) + '–' + Math.min(page*PER_PAGE,total);
+
+  // Pagination
+  const pb = document.getElementById('page-btns');
+  pb.innerHTML = '';
+  const makeBtn = (label, p, active) => {
+    const b = document.createElement('button');
+    b.className = 'page-btn' + (active?' active':'');
+    b.textContent = label;
+    b.onclick = () => { page = p; renderTable(); };
+    pb.appendChild(b);
+  };
+  if (page > 1) makeBtn('←', page-1, false);
+  const start = Math.max(1, page-2), end = Math.min(totalPages, page+2);
+  for (let i=start; i<=end; i++) makeBtn(i, i, i===page);
+  if (page < totalPages) makeBtn('→', page+1, false);
+}
+
+let profileChartA = null, profileChartO = null;
+let selectedBioguide = null, selectedChamber = null;
+
+function showProfile(d) {
+  selectedBioguide = d.bioguide_id;
+  selectedChamber = d.chamber;
+
+  // All terms for this member
+  const terms = AGG
+    .filter(r => r.bioguide_id === d.bioguide_id && r.chamber === d.chamber)
+    .sort((a,b) => a.congress - b.congress);
+
+  const congresses = terms.map(t => t.congress + 'th');
+  const attracts   = terms.map(t => t.attract_aggregate_weighted ?? null);
+  const offers     = terms.map(t => t.offer_aggregate_weighted ?? null);
+
+  const avgAttract = (attracts.filter(v=>v!=null).reduce((a,b)=>a+b,0)/attracts.filter(v=>v!=null).length);
+  const avgOffer   = (offers.filter(v=>v!=null).reduce((a,b)=>a+b,0)/offers.filter(v=>v!=null).length);
+  const barColor   = d.party === 'D' ? '#185FA5' : '#A32D2D';
+
+  document.getElementById('profile-inner').innerHTML = `
+    <div class="profile-header">
+      <div>
+        <div class="profile-name">${d.name}</div>
+        <div class="profile-meta">
+          <span class="pill pill-${d.party}">${d.party}</span>
+          &nbsp;${d.chamber === 'HOUSE' ? 'House' : 'Senate'} · ${d.state}
+          &nbsp;· ${terms.length} term${terms.length!==1?'s':''}
+        </div>
+      </div>
+      <button class="profile-close" onclick="closeProfile()">Close ×</button>
+    </div>
+    <div class="profile-stats">
+      <div class="profile-stat">
+        <div class="profile-stat-val">${(avgAttract*100).toFixed(1)}%</div>
+        <div class="profile-stat-lbl">Career avg attract</div>
+      </div>
+      <div class="profile-stat">
+        <div class="profile-stat-val">${(avgOffer*100).toFixed(1)}%</div>
+        <div class="profile-stat-lbl">Career avg offer</div>
+      </div>
+      <div class="profile-stat">
+        <div class="profile-stat-val">${terms.reduce((s,t)=>s+(t.total_n_bills_sponsored||0),0).toLocaleString()}</div>
+        <div class="profile-stat-lbl">Total bills sponsored</div>
+      </div>
+    </div>
+    <div class="profile-charts">
+      <div>
+        <div class="profile-chart-label">Attract score by congress</div>
+        <div class="profile-chart-wrap"><canvas id="pc-attract" role="img" aria-label="Attract scores by congress for ${d.name}"></canvas></div>
+      </div>
+      <div>
+        <div class="profile-chart-label">Offer score by congress</div>
+        <div class="profile-chart-wrap"><canvas id="pc-offer" role="img" aria-label="Offer scores by congress for ${d.name}"></canvas></div>
+      </div>
+    </div>
+    <p style="font-size:11px;color:var(--muted);margin-top:10px;">Precision-weighted scores. Bioguide ID: <code style="font-size:11px;">${d.bioguide_id}</code>. Use <code style="font-size:11px;">plot_member_profile("${d.bioguide_id}", congress=${d.congress}, chamber="${d.chamber.toLowerCase()}")</code> in R for the full profile card.</p>
+  `;
+
+  const panel = document.getElementById('profile-panel');
+  panel.style.display = '';
+  panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  const chartOpts = (label) => ({
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => label + ': ' + (c.parsed.y*100).toFixed(1) + '%' } } },
+    scales: {
+      x: { grid: { display: false }, ticks: { font: { size: 9, family: 'DM Sans' }, color: '#9a9a92' } },
+      y: { min: 0, max: 0.7, grid: { color: 'rgba(0,0,0,0.05)' }, ticks: { font: { size: 9, family: 'DM Sans' }, color: '#9a9a92', callback: v => (v*100).toFixed(0)+'%' } }
+    }
+  });
+
+  const makeDataset = (vals) => [{
+    data: vals, backgroundColor: barColor + '99', borderColor: barColor,
+    borderWidth: 1.5, borderRadius: 3,
+  }];
+
+  if (profileChartA) profileChartA.destroy();
+  if (profileChartO) profileChartO.destroy();
+  profileChartA = new Chart(document.getElementById('pc-attract').getContext('2d'), { type:'bar', data:{ labels:congresses, datasets:makeDataset(attracts) }, options:chartOpts('Attract') });
+  profileChartO = new Chart(document.getElementById('pc-offer').getContext('2d'),   { type:'bar', data:{ labels:congresses, datasets:makeDataset(offers)   }, options:chartOpts('Offer') });
+
+  renderTable();
+}
+
+function closeProfile() {
+  selectedBioguide = null;
+  selectedChamber = null;
+  document.getElementById('profile-panel').style.display = 'none';
+  if (profileChartA) { profileChartA.destroy(); profileChartA = null; }
+  if (profileChartO) { profileChartO.destroy(); profileChartO = null; }
+  renderTable();
+}
+
+function cp(text, btn) {
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy', 1500);
+  });
+}
+</script>
+</body>
+</html>
