@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="biparty — Congressional Bipartisanship Scores explorer. Interactive data from Dobson & Lollis (2026)." />
+  <meta name="description" content="biparty — Congressional Bipartisanship Scores. Interactive data explorer, member profiles, and open-source R package from Dobson & Lollis (2026)." />
   <title>biparty · Congressional Bipartisanship Scores</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -215,7 +215,7 @@
 </div>
 
 <script>
-let TREND = [], AGG = [], ISSUE = {};
+let TREND = [], AGG = [], ISSUE = {}, ISSUE_LABELS = {};
 let scoreType = 'attract', chamberFilter = 'both';
 let chartInst = null, issueChartInst = null;
 let acResults = [], acFocused = -1;
@@ -231,10 +231,12 @@ Promise.all([
   fetch('trend.json').then(r => r.json()),
   fetch('aggregate.json').then(r => r.json()),
   fetch('issue_area.json').then(r => r.json()),
-]).then(([trend, agg, issue]) => {
+  fetch('issues.json').then(r => r.json()),
+]).then(([trend, agg, issue, issueList]) => {
   TREND = trend;
   AGG = agg;
   ISSUE = issue;
+  ISSUE_LABELS = Object.fromEntries(issueList.map(r => [r.topic_short, r.topic_label]));
   buildChart();
 });
 
@@ -334,28 +336,42 @@ function selectMember(i) {
   renderProfile(row.bioguide_id, row);
 }
 
-function renderProfile(bid, row) {
+function renderProfile(bid, row, selectedCongress) {
   const issueData = ISSUE[bid];
   const aggTerms = AGG.filter(r=>r.bioguide_id===bid).sort((a,b)=>a.congress-b.congress);
+  const firstCong = aggTerms[0]?.congress, lastCong = aggTerms[aggTerms.length-1]?.congress;
+  const congress = selectedCongress || lastCong;
+  const termRow = aggTerms.find(t=>t.congress===congress) || aggTerms[aggTerms.length-1];
   const attracts = aggTerms.map(t=>t.attract_aggregate_weighted).filter(v=>v!=null);
   const offers   = aggTerms.map(t=>t.offer_aggregate_weighted).filter(v=>v!=null);
   const avgA = attracts.length ? attracts.reduce((a,b)=>a+b,0)/attracts.length : null;
   const avgO = offers.length   ? offers.reduce((a,b)=>a+b,0)/offers.length     : null;
-  const firstCong = aggTerms[0]?.congress, lastCong = aggTerms[aggTerms.length-1]?.congress;
   const barColor = row.party==='D' ? '#185FA5' : '#A32D2D';
   const photoUrl = `https://bioguide.congress.gov/bioguide/photo/${bid[0]}/${bid}.jpg`;
+  const chamber = termRow?.chamber || row.chamber;
 
-  // Build issue chart data — filter to issues with at least one score, sort by attract desc
-  const issueEntries = issueData ? Object.entries(issueData.issues)
-    .filter(([,v]) => v.attract!=null || v.offer!=null)
+  // Get issue scores for the selected congress
+  const termIssues = issueData ? (issueData.find ? issueData : null) : null;
+  // issueData is array of [congress, chamberCode, issues]
+  const issueTerms = Array.isArray(issueData) ? issueData : [];
+  const issueTerm = issueTerms.find(t=>t[0]===congress) || issueTerms[issueTerms.length-1];
+  const issueScores = issueTerm ? issueTerm[2] : {};
+
+  const issueEntries = Object.entries(issueScores)
     .filter(([s]) => s !== 'na')
-    .sort((a,b) => ((b[1].attract??0)+(b[1].offer??0)) - ((a[1].attract??0)+(a[1].offer??0)))
-    : [];
+    .map(([s,v]) => ({ short:s, label: ISSUE_LABELS[s]||s, attract: v.a??null, offer: v.o??null }))
+    .filter(e => e.attract!=null || e.offer!=null)
+    .sort((a,b) => ((b.attract??0)+(b.offer??0)) - ((a.attract??0)+(a.offer??0)));
 
-  const issueLabels  = issueEntries.map(([,v]) => v.label);
-  const issueAttract = issueEntries.map(([,v]) => v.attract ?? 0);
-  const issueOffer   = issueEntries.map(([,v]) => v.offer   ?? 0);
+  const issueLabels  = issueEntries.map(e=>e.label);
+  const issueAttract = issueEntries.map(e=>e.attract??0);
+  const issueOffer   = issueEntries.map(e=>e.offer??0);
   const chartHeight  = Math.max(300, issueLabels.length * 22 + 80);
+
+  // Congress selector options
+  const congOpts = aggTerms.map(t =>
+    `<option value="${t.congress}" ${t.congress===congress?'selected':''}>${t.congress}th Congress</option>`
+  ).join('');
 
   document.getElementById('profile-area').innerHTML = `
     <div class="profile-card">
@@ -367,7 +383,7 @@ function renderProfile(bid, row) {
             <div class="profile-name">${row.name}</div>
             <div class="profile-meta">
               <span class="pill pill-${row.party}">${row.party}</span>
-              ${row.chamber==='HOUSE'?'House':'Senate'} · ${row.state}
+              ${chamber==='HOUSE'?'House':'Senate'} · ${row.state}
               · ${firstCong}th–${lastCong}th Congress
             </div>
           </div>
@@ -386,16 +402,22 @@ function renderProfile(bid, row) {
             <div class="career-lbl">Terms served</div>
           </div>
         </div>
-        ${issueEntries.length ? `
-        <div class="issue-section-label">Bipartisanship by CRS policy area — career averages</div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <div class="issue-section-label" style="margin:0;">Bipartisanship by CRS policy area</div>
+          <select style="font-family:'DM Sans',sans-serif;font-size:12px;color:var(--slate);background:var(--bg);border:1px solid var(--rule);border-radius:6px;padding:4px 24px 4px 10px;cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url('data:image/svg+xml,%3Csvg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'10\\' height=\\'6\\'%3E%3Cpath d=\\'M0 0l5 6 5-6z\\' fill=\\'%239a9a92\\'/%3E%3C/svg%3E');background-repeat:no-repeat;background-position:right 8px center;"
+            onchange="renderProfile('${bid}', ${JSON.stringify(row).replace(/"/g,'&quot;')}, +this.value)">
+            ${congOpts}
+          </select>
+        </div>
         <div class="issue-legend">
           <div class="issue-legend-item"><div class="issue-swatch" style="background:${barColor}"></div>Attract</div>
           <div class="issue-legend-item"><div class="issue-swatch" style="background:${barColor}55"></div>Offer</div>
         </div>
+        ${issueEntries.length ? `
         <div class="issue-chart-wrap" style="height:${chartHeight}px;position:relative;">
-          <canvas id="issue-chart" role="img" aria-label="Bipartisanship scores by policy area for ${row.name}"></canvas>
-        </div>` : '<p style="font-size:13px;color:var(--muted)">No issue-area data available for this member.</p>'}
-        <div class="profile-r-hint">plot_member_profile("${bid}", congress = ${lastCong}, chamber = "${row.chamber.toLowerCase()}")</div>
+          <canvas id="issue-chart" role="img" aria-label="Bipartisanship scores by policy area for ${row.name}, ${congress}th Congress"></canvas>
+        </div>` : '<p style="font-size:13px;color:var(--muted);margin-top:8px;">No issue-area data available for this congress.</p>'}
+        <div class="profile-r-hint">plot_member_profile("${bid}", congress = ${congress}, chamber = "${chamber.toLowerCase()}")</div>
       </div>
     </div>`;
 
