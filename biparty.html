@@ -48,8 +48,6 @@
     .legend-row{display:flex;gap:1.25rem;flex-wrap:wrap;margin-bottom:1rem;}
     .legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);}
     .legend-swatch{width:20px;height:3px;border-radius:2px;flex-shrink:0;}
-
-    /* member search */
     .search-wrap{position:relative;max-width:480px;}
     .search-wrap input{width:100%;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--ink);background:var(--bg);border:1px solid var(--rule);border-radius:8px;padding:10px 14px;outline:none;transition:border-color 0.15s;}
     .search-wrap input:focus{border-color:var(--orange);}
@@ -62,8 +60,6 @@
     .ac-pill{font-size:10px;font-weight:500;padding:1px 6px;border-radius:99px;}
     .ac-pill-D{background:#deeaf5;color:#0c447c;}
     .ac-pill-R{background:#f7dede;color:#791f1f;}
-
-    /* profile card */
     .profile-card{border:1px solid var(--rule);border-radius:8px;overflow:hidden;margin-top:1.5rem;}
     .profile-card-body{padding:1.5rem;}
     .profile-top{display:flex;align-items:flex-start;gap:16px;margin-bottom:1.25rem;}
@@ -85,8 +81,6 @@
     .issue-swatch{width:10px;height:10px;border-radius:2px;flex-shrink:0;}
     .issue-chart-wrap{position:relative;width:100%;}
     .profile-r-hint{font-size:11px;color:var(--muted);font-family:'DM Mono','Courier New',monospace;margin-top:12px;padding-top:12px;border-top:1px solid var(--rule);}
-
-    /* install */
     .install-block{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:1.25rem 1.5rem;margin-bottom:1rem;}
     .install-label{font-size:11px;color:var(--muted);margin-bottom:6px;letter-spacing:0.04em;}
     .code-row{display:flex;align-items:center;gap:10px;}
@@ -96,19 +90,7 @@
     .cite-block{background:var(--surface);border-left:3px solid var(--rule);border-radius:0 6px 6px 0;padding:0.875rem 1.25rem;font-size:12.5px;color:var(--slate);line-height:1.75;}
     footer{padding:2rem 0;border-top:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;}
     .footer-text{font-size:11px;color:var(--muted);}
-    .fn-group{margin-bottom:2rem;}
-    .fn-group-title{font-family:'EB Garamond',serif;font-size:18px;font-weight:400;color:var(--ink);margin-bottom:1rem;padding-bottom:6px;border-bottom:1px solid var(--rule);}
-    .fn-block{margin-bottom:1.5rem;}
-    .fn-sig{font-family:'DM Mono','Courier New',monospace;font-size:13px;font-weight:500;color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:8px 12px;margin-bottom:8px;}
-    .fn-desc{font-size:13px;color:var(--slate);line-height:1.75;margin-bottom:10px;}
-    .fn-example{margin-bottom:6px;}
-    .fn-example-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
-    .fn-code{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;font-family:'DM Mono','Courier New',monospace;font-size:12px;color:var(--ink);white-space:pre;overflow-x:auto;display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
-    .fn-code code{flex:1;white-space:pre;}
-    .fn-output{background:#f7f7f5;border:1px solid var(--rule);border-top:none;border-radius:0 0 6px 6px;padding:8px 12px;font-family:'DM Mono','Courier New',monospace;font-size:11px;color:var(--muted);white-space:pre;overflow-x:auto;line-height:1.5;}
-    .ref-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1.5rem;}
-    .ref-nav a{font-size:11px;color:var(--orange);text-decoration:none;background:var(--orange-bg);padding:3px 10px;border-radius:20px;}
-    .ref-nav a:hover{text-decoration:underline;}
+    @media(max-width:640px){
       .container{padding:0 1rem;}
       nav{padding:0 1rem;}
       .stats-row{grid-template-columns:repeat(2,1fr);}
@@ -131,8 +113,10 @@
     <span class="nav-title">biparty</span>
     <span class="nav-badge">v0.1.0</span>
   </div>
-  <a class="nav-back" href="https://github.com/congressional-bipartisanship-scores/biparty" target="_blank" style="font-size:11px;">GitHub ↗</a>
-  <a class="nav-back" href="#reference" style="font-size:11px;">R docs</a>
+  <div style="display:flex;gap:1.25rem;align-items:center;">
+    <a class="nav-back" href="https://github.com/congressional-bipartisanship-scores/biparty" target="_blank" style="font-size:11px;">GitHub ↗</a>
+    <a class="nav-back" href="https://congressional-bipartisanship-scores.github.io" target="_blank" style="font-size:11px;">R docs ↗</a>
+  </div>
 </nav>
 
 <div class="container">
@@ -153,7 +137,6 @@
     </div>
   </div>
 
-  <!-- TREND CHART -->
   <div class="panel">
     <p class="panel-label">Bipartisanship over time</p>
     <div class="controls">
@@ -174,7 +157,6 @@
     <p style="font-size:11px;color:var(--muted);margin-top:8px;">Mean precision-weighted scores per Congress × chamber × party. Source: <code style="font-size:11px;">aggregate.cbs</code>.</p>
   </div>
 
-  <!-- MEMBER PROFILE SEARCH -->
   <div class="panel">
     <p class="panel-label">Member profile</p>
     <p style="font-size:13px;color:var(--slate);margin-bottom:1.25rem;">Search any member of Congress to see their full bipartisanship profile across all terms and issue areas.</p>
@@ -186,278 +168,6 @@
     <div id="profile-area"></div>
   </div>
 
-  <!-- FUNCTION REFERENCE -->
-  <div class="panel" id="reference">
-    <p class="panel-label">Function reference</p>
-    <p style="font-size:13px;color:var(--slate);margin-bottom:1.25rem;">Complete reference for all <code style="font-size:12px;">biparty</code> functions with real examples. All examples use real data from the package.</p>
-    <div class="ref-nav">
-      <a href="#ref-member">Member lookup</a>
-      <a href="#ref-ranking">Ranking</a>
-      <a href="#ref-state">State delegation</a>
-      <a href="#ref-issue">Issue areas</a>
-      <a href="#ref-congress">Congress summaries</a>
-      <a href="#ref-viz">Visualization</a>
-    </div>
-
-    <!-- MEMBER LOOKUP -->
-    <div class="fn-group" id="ref-member">
-      <div class="fn-group-title">Member lookup</div>
-
-      <div class="fn-block">
-        <div class="fn-sig">get_member_scores(member, congress = NULL, chamber = NULL, include_issues = FALSE)</div>
-        <div class="fn-desc">Retrieve a member's scores across all Congresses they served. Accepts a Bioguide ID or a name substring. Optionally attach issue-area scores with <code style="font-size:12px;">include_issues = TRUE</code>.</div>
-        <div class="fn-example">
-          <div class="fn-example-label">By Bioguide ID — Lisa Murkowski</div>
-          <div class="fn-code"><code>get_member_scores("M001153")</code><button class="copy-btn" onclick="cp('get_member_scores(\"M001153\")',this)">Copy</button></div>
-          <div class="fn-output">## # A tibble: 11 × 18
-##    congress chamber bioguide_id name           party attract_aggregate_weighted
-##       &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;       &lt;chr&gt;          &lt;chr&gt;                      &lt;dbl&gt;
-##  1      108 SENATE  M001153     LISA MURKOWSKI R                          0.327
-##  2      109 SENATE  M001153     LISA MURKOWSKI R                          0.412
-##  3      110 SENATE  M001153     LISA MURKOWSKI R                          0.268
-##  4      111 SENATE  M001153     LISA MURKOWSKI R                          0.770
-##  5      112 SENATE  M001153     LISA MURKOWSKI R                          0.747
-##  …</div>
-        </div>
-        <div class="fn-example">
-          <div class="fn-example-label">By name substring, recent Congresses</div>
-          <div class="fn-code"><code>get_member_scores("murkowski", congress = 115:118)</code><button class="copy-btn" onclick="cp('get_member_scores(\"murkowski\", congress = 115:118)',this)">Copy</button></div>
-        </div>
-        <div class="fn-example">
-          <div class="fn-example-label">With issue-area scores attached</div>
-          <div class="fn-code"><code>get_member_scores("M001153", congress = 117, chamber = "senate", include_issues = TRUE)</code><button class="copy-btn" onclick="cp('get_member_scores(\"M001153\", congress = 117, chamber = \"senate\", include_issues = TRUE)',this)">Copy</button></div>
-        </div>
-      </div>
-
-      <div class="fn-block">
-        <div class="fn-sig">get_member_trend(member, chamber = NULL, score_type = "both")</div>
-        <div class="fn-desc">Return a member's scores as a tidy time series across all Congresses served. Use <code style="font-size:12px;">score_type = "attract"</code>, <code style="font-size:12px;">"offer"</code>, or <code style="font-size:12px;">"both"</code>.</div>
-        <div class="fn-example">
-          <div class="fn-example-label">Amy Klobuchar — full career attract trend</div>
-          <div class="fn-code"><code>get_member_trend("K000367", score_type = "attract")</code><button class="copy-btn" onclick="cp('get_member_trend(\"K000367\", score_type = \"attract\")',this)">Copy</button></div>
-          <div class="fn-output">## # A tibble: 9 × 6
-##   congress chamber bioguide_id name          party attract_aggregate_weighted
-##      &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;       &lt;chr&gt;         &lt;chr&gt;                      &lt;dbl&gt;
-## 1      110 SENATE  K000367     AMY KLOBUCHAR D                          0.496
-## 2      111 SENATE  K000367     AMY KLOBUCHAR D                          0.450
-## 3      112 SENATE  K000367     AMY KLOBUCHAR D                          0.486
-## …</div>
-        </div>
-      </div>
-
-      <div class="fn-block">
-        <div class="fn-sig">compare_members(members, congress = NULL, chamber = NULL, score_type = "both")</div>
-        <div class="fn-desc">Side-by-side scores for two or more members. Pass a character vector of Bioguide IDs.</div>
-        <div class="fn-example">
-          <div class="fn-example-label">Murkowski vs Klobuchar, 115th–117th Congress</div>
-          <div class="fn-code"><code>compare_members(c("M001153", "K000367"), congress = 115:117)</code><button class="copy-btn" onclick="cp('compare_members(c(\"M001153\", \"K000367\"), congress = 115:117)',this)">Copy</button></div>
-          <div class="fn-output">## # A tibble: 6 × 7
-##   congress chamber bioguide_id name           party attract_aggregate_weighted
-##      &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;       &lt;chr&gt;          &lt;chr&gt;                      &lt;dbl&gt;
-## 1      115 SENATE  K000367     AMY KLOBUCHAR  D                          0.532
-## 2      115 SENATE  M001153     LISA MURKOWSKI R                          0.279
-## 3      116 SENATE  K000367     AMY KLOBUCHAR  D                          0.500
-## …</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- RANKING -->
-    <div class="fn-group" id="ref-ranking">
-      <div class="fn-group-title">Ranking</div>
-
-      <div class="fn-block">
-        <div class="fn-sig">rank_members(congress, chamber, score_type = "attract", party = NULL, issue = NULL, n = 10, descending = TRUE)</div>
-        <div class="fn-desc">Leaderboard sorted by attract or offer score for a given Congress and chamber. Optionally restrict to one party or rank by an issue-area score. Set <code style="font-size:12px;">n = Inf</code> for the full ranking.</div>
-        <div class="fn-example">
-          <div class="fn-example-label">Top 10 senators by attract score — 117th Congress</div>
-          <div class="fn-code"><code>rank_members(117, "senate", score_type = "attract", n = 10)</code><button class="copy-btn" onclick="cp('rank_members(117, \"senate\", score_type = \"attract\", n = 10)',this)">Copy</button></div>
-          <div class="fn-output">## # A tibble: 10 × 5
-##     rank name          party bioguide_id attract_aggregate_weighted
-##    &lt;int&gt; &lt;chr&gt;         &lt;chr&gt; &lt;chr&gt;                            &lt;dbl&gt;
-##  1     1 MAGGIE HASSAN D     H001076                          0.808
-##  2     2 GARY PETERS   D     P000595                          0.806
-##  3     3 ROB PORTMAN   R     P000449                          0.779
-##  4     4 JACKLYN ROSEN D     R000608                          0.776
-##  5     5 SUSAN COLLINS R     C001035                          0.758
-##  …</div>
-        </div>
-        <div class="fn-example">
-          <div class="fn-example-label">Top 5 Republican senators by attract score</div>
-          <div class="fn-code"><code>rank_members(117, "senate", score_type = "attract", party = "R", n = 5)</code><button class="copy-btn" onclick="cp('rank_members(117, \"senate\", score_type = \"attract\", party = \"R\", n = 5)',this)">Copy</button></div>
-        </div>
-        <div class="fn-example">
-          <div class="fn-example-label">Top 10 senators by health attract score</div>
-          <div class="fn-code"><code>rank_members(117, "senate", score_type = "attract", issue = "health", n = 10)</code><button class="copy-btn" onclick="cp('rank_members(117, \"senate\", score_type = \"attract\", issue = \"health\", n = 10)',this)">Copy</button></div>
-        </div>
-      </div>
-
-      <div class="fn-block">
-        <div class="fn-sig">rank_members_by_issue(issue, congress, chamber, score_type = "attract", party = NULL, n = 10)</div>
-        <div class="fn-desc">Focused variant of <code style="font-size:12px;">rank_members()</code> with the issue area as the primary argument.</div>
-        <div class="fn-example">
-          <div class="fn-example-label">Top 10 senators by taxation attract — 117th Congress</div>
-          <div class="fn-code"><code>rank_members_by_issue("tax", 117, "senate", score_type = "attract")</code><button class="copy-btn" onclick="cp('rank_members_by_issue(\"tax\", 117, \"senate\", score_type = \"attract\")',this)">Copy</button></div>
-          <div class="fn-output">## # A tibble: 10 × 5
-##     rank name           party bioguide_id attract_tax_weighted
-##    &lt;int&gt; &lt;chr&gt;          &lt;chr&gt; &lt;chr&gt;                      &lt;dbl&gt;
-##  1     1 ROB PORTMAN    R     P000449                    0.766
-##  2     2 TODD YOUNG     R     Y000064                    0.766
-##  3     3 RICHARD BURR   R     B001135                    0.753
-##  …</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- STATE DELEGATION -->
-    <div class="fn-group" id="ref-state">
-      <div class="fn-group-title">State delegation</div>
-
-      <div class="fn-block">
-        <div class="fn-sig">get_state_delegation(state, congress, chamber = NULL, party = NULL, aggregate = FALSE)</div>
-        <div class="fn-desc">Scores for all members of a state's congressional delegation. Pass <code style="font-size:12px;">aggregate = TRUE</code> to collapse to mean scores for the delegation.</div>
-        <div class="fn-example">
-          <div class="fn-example-label">Full Texas delegation — 117th Congress</div>
-          <div class="fn-code"><code>get_state_delegation("TX", congress = 117)</code><button class="copy-btn" onclick="cp('get_state_delegation(\"TX\", congress = 117)',this)">Copy</button></div>
-        </div>
-        <div class="fn-example">
-          <div class="fn-example-label">Senate only</div>
-          <div class="fn-code"><code>get_state_delegation("TX", congress = 117, chamber = "senate")</code><button class="copy-btn" onclick="cp('get_state_delegation(\"TX\", congress = 117, chamber = \"senate\")',this)">Copy</button></div>
-          <div class="fn-output">## # A tibble: 2 × 18
-##   congress chamber bioguide_id name        party attract_aggregate_weighted
-##      &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;       &lt;chr&gt;       &lt;chr&gt;                      &lt;dbl&gt;
-## 1      117 SENATE  C001056     JOHN CORNYN R                          0.726
-## 2      117 SENATE  C001098     TED CRUZ    R                          0.115</div>
-        </div>
-        <div class="fn-example">
-          <div class="fn-example-label">Summarize to delegation mean scores</div>
-          <div class="fn-code"><code>get_state_delegation("TX", congress = 117, aggregate = TRUE)</code><button class="copy-btn" onclick="cp('get_state_delegation(\"TX\", congress = 117, aggregate = TRUE)',this)">Copy</button></div>
-          <div class="fn-output">## # A tibble: 1 × 5
-##   state n_members n_observations mean_attract mean_offer
-##   &lt;chr&gt;     &lt;int&gt;          &lt;int&gt;        &lt;dbl&gt;      &lt;dbl&gt;
-## 1 TX           40             40        0.317      0.142</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ISSUE AREAS -->
-    <div class="fn-group" id="ref-issue">
-      <div class="fn-group-title">Issue areas</div>
-
-      <div class="fn-block">
-        <div class="fn-sig">list_issues()</div>
-        <div class="fn-desc">Enumerate all 34 available CRS policy area labels with their short codes. Use the <code style="font-size:12px;">topic_short</code> value (e.g. <code style="font-size:12px;">"health"</code>, <code style="font-size:12px;">"defense"</code>, <code style="font-size:12px;">"tax"</code>) in other functions.</div>
-        <div class="fn-example">
-          <div class="fn-code"><code>list_issues()</code><button class="copy-btn" onclick="cp('list_issues()',this)">Copy</button></div>
-          <div class="fn-output">## # A tibble: 35 × 4
-##    policy_area_number policy_area                        topic_short topic_label
-##  1                  1 families                           fam         Families
-##  2                  2 education                          edu         Education
-##  3                  3 commerce                           comm        Commerce
-##  4                  4 labor and employment               labor       Labor and Employment
-##  5                  5 government operations and politics gov         Government Operations and Politics
-##  …</div>
-        </div>
-      </div>
-
-      <div class="fn-block">
-        <div class="fn-sig">get_issue_scores(issue, congress, chamber = NULL, party = NULL)</div>
-        <div class="fn-desc">All members' attract and offer scores for a single CRS policy area in a given Congress. Accepts short codes or full CRS names.</div>
-        <div class="fn-example">
-          <div class="fn-example-label">Health scores — 117th Congress</div>
-          <div class="fn-code"><code>get_issue_scores("health", congress = 117)</code><button class="copy-btn" onclick="cp('get_issue_scores(\"health\", congress = 117)',this)">Copy</button></div>
-        </div>
-        <div class="fn-example">
-          <div class="fn-example-label">Taxation, Senate Democrats only</div>
-          <div class="fn-code"><code>get_issue_scores("Taxation", congress = 117, chamber = "senate", party = "D")</code><button class="copy-btn" onclick="cp('get_issue_scores(\"Taxation\", congress = 117, chamber = \"senate\", party = \"D\")',this)">Copy</button></div>
-        </div>
-      </div>
-
-      <div class="fn-block">
-        <div class="fn-sig">get_issue_trend(issue, chamber = NULL, by_party = FALSE)</div>
-        <div class="fn-desc">Mean attract and offer scores for a single policy area across all 21 Congresses. Set <code style="font-size:12px;">by_party = TRUE</code> to break out Democrat and Republican means separately.</div>
-        <div class="fn-example">
-          <div class="fn-example-label">Immigration bipartisanship over time — Senate, by party</div>
-          <div class="fn-code"><code>get_issue_trend("immig", chamber = "senate", by_party = TRUE)</code><button class="copy-btn" onclick="cp('get_issue_trend(\"immig\", chamber = \"senate\", by_party = TRUE)',this)">Copy</button></div>
-          <div class="fn-output">## # A tibble: 42 × 7
-##    congress chamber party issue mean_attract mean_offer n_members
-##       &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;        &lt;dbl&gt;      &lt;dbl&gt;     &lt;int&gt;
-## 1       98 SENATE  D     immig        0.208      0.199         9
-## 2       98 SENATE  R     immig        0.200      0.203         6
-## 3       99 SENATE  D     immig        0.507      0.422        13
-## …</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CONGRESS SUMMARIES -->
-    <div class="fn-group" id="ref-congress">
-      <div class="fn-group-title">Congress summaries</div>
-
-      <div class="fn-block">
-        <div class="fn-sig">get_congress_summary(chamber, congress = NULL, by_party = FALSE, issue = NULL)</div>
-        <div class="fn-desc">Congress × chamber aggregate mean attract and offer scores. Optionally break out by party or restrict to a single issue area.</div>
-        <div class="fn-example">
-          <div class="fn-example-label">Senate means — 115th through 118th Congresses</div>
-          <div class="fn-code"><code>get_congress_summary(chamber = "senate", congress = 115:118)</code><button class="copy-btn" onclick="cp('get_congress_summary(chamber = \"senate\", congress = 115:118)',this)">Copy</button></div>
-          <div class="fn-output">## # A tibble: 4 × 5
-##   congress chamber mean_attract mean_offer n_members
-##      &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt;      &lt;dbl&gt;     &lt;int&gt;
-## 1      115 SENATE         0.444      0.270       105
-## 2      116 SENATE         0.440      0.256       102
-## 3      117 SENATE         0.406      0.233       100
-## 4      118 SENATE         0.430      0.240       103</div>
-        </div>
-        <div class="fn-example">
-          <div class="fn-example-label">Split by party</div>
-          <div class="fn-code"><code>get_congress_summary(chamber = "senate", congress = 115:118, by_party = TRUE)</code><button class="copy-btn" onclick="cp('get_congress_summary(chamber = \"senate\", congress = 115:118, by_party = TRUE)',this)">Copy</button></div>
-        </div>
-        <div class="fn-example">
-          <div class="fn-example-label">Health scores by party</div>
-          <div class="fn-code"><code>get_congress_summary(chamber = "senate", congress = 115:118, by_party = TRUE, issue = "health")</code><button class="copy-btn" onclick="cp('get_congress_summary(chamber = \"senate\", congress = 115:118, by_party = TRUE, issue = \"health\")',this)">Copy</button></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- VISUALIZATION -->
-    <div class="fn-group" id="ref-viz">
-      <div class="fn-group-title">Visualization</div>
-
-      <div class="fn-block">
-        <div class="fn-sig">plot_bipartisanship(congress, chambers = c("house", "senate"), highlight = NULL)</div>
-        <div class="fn-desc">Violin plot of issue-area score distributions by party and chamber. Optionally highlight a specific member by Bioguide ID.</div>
-        <div class="fn-example">
-          <div class="fn-example-label">117th Congress, Senate, with member highlight</div>
-          <div class="fn-code"><code>plot_bipartisanship(117, chambers = "senate", highlight = "P000449")</code><button class="copy-btn" onclick="cp('plot_bipartisanship(117, chambers = \"senate\", highlight = \"P000449\")',this)">Copy</button></div>
-        </div>
-      </div>
-
-      <div class="fn-block">
-        <div class="fn-sig">plot_trend(members, type = "member", chamber = NULL, score_type = "attract")</div>
-        <div class="fn-desc">Time-series line chart of bipartisanship scores across Congresses. Use <code style="font-size:12px;">type = "member"</code> to trace individual careers or <code style="font-size:12px;">type = "party"</code> for party-average trends.</div>
-        <div class="fn-example">
-          <div class="fn-example-label">Individual careers — Portman and Klobuchar</div>
-          <div class="fn-code"><code>plot_trend(c("P000449", "K000367"), score_type = "attract")</code><button class="copy-btn" onclick="cp('plot_trend(c(\"P000449\", \"K000367\"), score_type = \"attract\")',this)">Copy</button></div>
-        </div>
-        <div class="fn-example">
-          <div class="fn-example-label">Party-average attract trend — Senate</div>
-          <div class="fn-code"><code>plot_trend(c("D", "R"), type = "party", chamber = "senate", score_type = "attract")</code><button class="copy-btn" onclick="cp('plot_trend(c(\"D\", \"R\"), type = \"party\", chamber = \"senate\", score_type = \"attract\")',this)">Copy</button></div>
-        </div>
-      </div>
-
-      <div class="fn-block">
-        <div class="fn-sig">plot_member_profile(member, congress, chamber)</div>
-        <div class="fn-desc">Full profile card for a single member in a single Congress: photo, career summary statistics, and a bar chart of attract and offer scores across all 34 CRS policy areas. Requires the <code style="font-size:12px;">magick</code> and <code style="font-size:12px;">patchwork</code> packages.</div>
-        <div class="fn-example">
-          <div class="fn-example-label">Rob Portman — 117th Congress</div>
-          <div class="fn-code"><code>plot_member_profile("P000449", congress = 117, chamber = "senate")</code><button class="copy-btn" onclick="cp('plot_member_profile(\"P000449\", congress = 117, chamber = \"senate\")',this)">Copy</button></div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- INSTALL & CITE -->
   <div class="panel">
     <p class="panel-label">Install &amp; use</p>
     <div class="install-block">
@@ -517,7 +227,6 @@ Promise.all([
   buildChart();
 });
 
-/* ── TREND CHART ── */
 function setScore(s) {
   scoreType = s;
   document.querySelectorAll('#seg-score button').forEach((b,i) => b.classList.toggle('active', i===(s==='attract'?0:1)));
@@ -541,15 +250,11 @@ function buildChart() {
       pointRadius:3, pointBackgroundColor:col.stroke, tension:0.3, borderWidth:2, spanGaps:true,
     };
   });
-
   const leg = document.getElementById('chart-legend');
   leg.innerHTML = keys.map((k,i) => {
     const col = COL[k]; const isDash = col.dash.length>0;
-    return `<div class="legend-item">
-      <div class="legend-swatch" style="${isDash?'background:none;border-top:2px dashed '+col.stroke+';':'background:'+col.stroke}"></div>
-      <span>${datasets[i].label}</span></div>`;
+    return `<div class="legend-item"><div class="legend-swatch" style="${isDash?'background:none;border-top:2px dashed '+col.stroke+';':'background:'+col.stroke}"></div><span>${datasets[i].label}</span></div>`;
   }).join('');
-
   const ctx = document.getElementById('trendChart').getContext('2d');
   if (chartInst) chartInst.destroy();
   chartInst = new Chart(ctx, {
@@ -565,14 +270,11 @@ function buildChart() {
   });
 }
 
-/* ── MEMBER SEARCH ── */
 function onSearchInput() {
   const q = document.getElementById('member-search').value.toLowerCase().trim();
   const ac = document.getElementById('autocomplete');
   acFocused = -1;
   if (q.length < 2) { ac.classList.remove('open'); ac.innerHTML=''; return; }
-
-  // Dedupe by bioguide_id, pick most recent term
   const seen = new Map();
   for (const row of AGG) {
     if (!row.name.toLowerCase().includes(q)) continue;
@@ -580,7 +282,6 @@ function onSearchInput() {
     if (!existing || row.congress > existing.congress) seen.set(row.bioguide_id, row);
   }
   acResults = [...seen.values()].sort((a,b)=>a.name.localeCompare(b.name)).slice(0,8);
-
   if (!acResults.length) { ac.classList.remove('open'); return; }
   ac.innerHTML = acResults.map((r,i) =>
     `<div class="ac-item" onmousedown="selectMember(${i})" id="ac-${i}">
@@ -626,26 +327,18 @@ function renderProfile(bid, row, selectedCongress) {
   const barColor = row.party==='D' ? '#185FA5' : '#A32D2D';
   const photoUrl = `https://bioguide.congress.gov/bioguide/photo/${bid[0]}/${bid}.jpg`;
   const chamber = termRow?.chamber || row.chamber;
-
-  // Get issue scores for the selected congress
-  const termIssues = issueData ? (issueData.find ? issueData : null) : null;
-  // issueData is array of [congress, chamberCode, issues]
   const issueTerms = Array.isArray(issueData) ? issueData : [];
   const issueTerm = issueTerms.find(t=>t[0]===congress) || issueTerms[issueTerms.length-1];
   const issueScores = issueTerm ? issueTerm[2] : {};
-
   const issueEntries = Object.entries(issueScores)
     .filter(([s]) => s !== 'na')
     .map(([s,v]) => ({ short:s, label: ISSUE_LABELS[s]||s, attract: v.a??null, offer: v.o??null }))
     .filter(e => e.attract!=null || e.offer!=null)
     .sort((a,b) => ((b.attract??0)+(b.offer??0)) - ((a.attract??0)+(a.offer??0)));
-
   const issueLabels  = issueEntries.map(e=>e.label);
   const issueAttract = issueEntries.map(e=>e.attract??0);
   const issueOffer   = issueEntries.map(e=>e.offer??0);
   const chartHeight  = Math.max(300, issueLabels.length * 22 + 80);
-
-  // Congress selector options
   const congOpts = aggTerms.map(t =>
     `<option value="${t.congress}" ${t.congress===congress?'selected':''}>${t.congress}th Congress</option>`
   ).join('');
@@ -666,18 +359,9 @@ function renderProfile(bid, row, selectedCongress) {
           </div>
         </div>
         <div class="profile-career">
-          <div class="career-cell">
-            <div class="career-val">${avgA!=null?(avgA*100).toFixed(1)+'%':'—'}</div>
-            <div class="career-lbl">Career avg attract</div>
-          </div>
-          <div class="career-cell">
-            <div class="career-val">${avgO!=null?(avgO*100).toFixed(1)+'%':'—'}</div>
-            <div class="career-lbl">Career avg offer</div>
-          </div>
-          <div class="career-cell">
-            <div class="career-val">${aggTerms.length}</div>
-            <div class="career-lbl">Terms served</div>
-          </div>
+          <div class="career-cell"><div class="career-val">${avgA!=null?(avgA*100).toFixed(1)+'%':'—'}</div><div class="career-lbl">Career avg attract</div></div>
+          <div class="career-cell"><div class="career-val">${avgO!=null?(avgO*100).toFixed(1)+'%':'—'}</div><div class="career-lbl">Career avg offer</div></div>
+          <div class="career-cell"><div class="career-val">${aggTerms.length}</div><div class="career-lbl">Terms served</div></div>
         </div>
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
           <div class="issue-section-label" style="margin:0;">Bipartisanship by CRS policy area</div>
@@ -710,8 +394,7 @@ function renderProfile(bid, row, selectedCongress) {
         ]
       },
       options: {
-        indexAxis: 'y',
-        responsive: true, maintainAspectRatio: false,
+        indexAxis: 'y', responsive: true, maintainAspectRatio: false,
         plugins: { legend:{display:false}, tooltip:{callbacks:{label:c=>c.dataset.label+': '+(c.parsed.x*100).toFixed(1)+'%'}} },
         scales: {
           x: { min:0, max:1, grid:{color:'rgba(0,0,0,0.05)'}, ticks:{font:{size:10,family:'DM Sans'},color:'#9a9a92',callback:v=>(v*100).toFixed(0)+'%'} },
@@ -720,11 +403,9 @@ function renderProfile(bid, row, selectedCongress) {
       }
     });
   }
-
   document.getElementById('profile-area').scrollIntoView({behavior:'smooth', block:'nearest'});
 }
 
-/* ── UTILITIES ── */
 function cp(text, btn) {
   navigator.clipboard.writeText(text).then(() => {
     btn.textContent = 'Copied!';

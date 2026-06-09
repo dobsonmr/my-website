@@ -17,97 +17,110 @@
       --lgray:#9A9A9A;--lgray-bg:#F7F7F7;
     }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-    html{font-size:16px;scroll-behavior:smooth;}
-    body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;}
+    html{font-size:17px;scroll-behavior:smooth;}
+    body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;}
     a{color:var(--orange);text-decoration:none;}
     a:hover{text-decoration:underline;}
+
+    /* ── NAV ── */
     nav{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px solid var(--rule);display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:52px;}
-    .nav-name{font-family:'EB Garamond',serif;font-size:18px;font-weight:400;color:var(--ink);letter-spacing:0.01em;}
-    .nav-links{display:flex;gap:2rem;list-style:none;}
-    .nav-links a{font-size:12px;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:var(--slate);text-decoration:none;padding-bottom:2px;border-bottom:1px solid transparent;transition:color 0.15s,border-color 0.15s;}
+    .nav-name{font-family:'EB Garamond',serif;font-size:19px;font-weight:400;color:var(--ink);letter-spacing:0.01em;white-space:nowrap;}
+    .nav-links{display:flex;gap:1.75rem;list-style:none;}
+    .nav-links a{font-size:11px;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:var(--slate);text-decoration:none;padding-bottom:2px;border-bottom:1px solid transparent;transition:color 0.15s,border-color 0.15s;white-space:nowrap;}
     .nav-links a:hover,.nav-links a.active{color:var(--ink);border-bottom-color:var(--orange);}
-    .container{max-width:860px;margin:0 auto;padding:0 2rem;}
-    .hero{display:grid;grid-template-columns:1fr 200px;gap:3.5rem;padding:4rem 0 3rem;align-items:start;}
-    h1{font-family:'EB Garamond',serif;font-size:36px;font-weight:400;letter-spacing:-0.01em;line-height:1.15;color:var(--ink);margin-bottom:0.35rem;}
+
+    /* ── LAYOUT ── */
+    .container{max-width:880px;margin:0 auto;padding:0 2rem;}
+    .hero{display:grid;grid-template-columns:1fr 210px;gap:3.5rem;padding:4rem 0 3rem;align-items:start;}
+    h1{font-family:'EB Garamond',serif;font-size:38px;font-weight:400;letter-spacing:-0.01em;line-height:1.15;color:var(--ink);margin-bottom:0.35rem;}
     .hero-subtitle{font-size:12px;font-weight:400;letter-spacing:0.07em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem;}
-    .bio{font-size:14px;line-height:1.85;color:var(--slate);max-width:520px;}
+    .bio{font-size:15px;line-height:1.85;color:var(--slate);max-width:520px;}
     .bio a{color:var(--orange);}
     .bio p+p{margin-top:0.85rem;}
     .social-row{display:flex;gap:7px;margin-top:1.5rem;flex-wrap:wrap;}
-    .social-btn{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:400;letter-spacing:0.04em;color:var(--slate);border:1px solid var(--rule);border-radius:6px;padding:5px 11px;text-decoration:none;transition:background 0.12s,color 0.12s,border-color 0.12s;}
+    .social-btn{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:400;letter-spacing:0.04em;color:var(--slate);border:1px solid var(--rule);border-radius:6px;padding:5px 12px;text-decoration:none;transition:background 0.12s,color 0.12s,border-color 0.12s;}
     .social-btn:hover{background:var(--orange-bg);color:var(--orange);border-color:var(--orange);text-decoration:none;}
     .social-btn svg{width:13px;height:13px;fill:currentColor;flex-shrink:0;}
     .photo-col{display:flex;flex-direction:column;gap:1rem;padding-top:0.5rem;}
-    .photo-frame{width:180px;height:216px;background:var(--surface);border-radius:8px;border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;overflow:hidden;}
+    .photo-frame{width:190px;height:228px;background:var(--surface);border-radius:8px;border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;overflow:hidden;}
     .photo-frame img{width:100%;height:100%;object-fit:cover;}
-    .affil-list{width:180px;}
-    .affil-item{display:flex;align-items:flex-start;gap:7px;font-size:11px;color:var(--slate);line-height:1.45;padding:5px 0;border-bottom:1px solid var(--rule);}
+    .affil-list{width:190px;}
+    .affil-item{display:flex;align-items:flex-start;gap:7px;font-size:12px;color:var(--slate);line-height:1.45;padding:5px 0;border-bottom:1px solid var(--rule);}
     .affil-item:last-child{border-bottom:none;}
-    .affil-dot{width:4px;height:4px;border-radius:50%;background:var(--orange);margin-top:5px;flex-shrink:0;}
-    .section{padding:2.25rem 0;border-top:1px solid var(--rule);}
-    .section-label{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem;}
-    .legend{display:flex;gap:1.25rem;margin-bottom:1.5rem;flex-wrap:wrap;}
-    .legend-item{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--muted);}
-    .legend-bar{width:16px;height:3px;border-radius:2px;flex-shrink:0;}
-    .legend-bar.published{background:var(--orange);}
-    .legend-bar.review{background:var(--smokey);}
-    .legend-bar.working{background:var(--lgray);}
-    .pub-item{display:grid;grid-template-columns:3px 1fr;gap:0 1.1rem;padding:1.1rem 0;border-bottom:1px solid var(--rule);align-items:stretch;}
+    .affil-dot{width:4px;height:4px;border-radius:50%;background:var(--orange);margin-top:6px;flex-shrink:0;}
+    .section{padding:2.5rem 0;border-top:1px solid var(--rule);}
+    .section-label{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.75rem;}
+
+    /* ── RESEARCH ── */
+    .pub-group{margin-bottom:2.25rem;}
+    .pub-group:last-child{margin-bottom:0;}
+    .pub-group-head{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;padding-bottom:6px;border-bottom:1px solid var(--rule);}
+    .pub-item{padding:1rem 0;border-bottom:1px solid var(--rule);}
     .pub-item:last-child{border-bottom:none;}
-    .pub-bar{width:3px;border-radius:2px;min-height:100%;}
-    .pub-bar.published{background:var(--orange);}
-    .pub-bar.review{background:var(--smokey);}
-    .pub-bar.working{background:var(--lgray);}
-    .pub-title{font-family:'EB Garamond',serif;font-size:16px;font-weight:400;color:var(--ink);line-height:1.4;margin-bottom:3px;}
-    .pub-venue{font-size:12px;color:var(--orange);font-style:italic;margin-bottom:2px;}
-    .pub-authors{font-size:11.5px;color:var(--muted);margin-bottom:8px;line-height:1.4;}
-    .pub-tags{display:flex;gap:5px;flex-wrap:wrap;}
-    .pub-tag{font-size:10px;padding:2px 8px;border-radius:20px;background:var(--surface);color:var(--slate);border:1px solid var(--rule);letter-spacing:0.03em;text-decoration:none;display:inline-block;cursor:default;}
-    .pub-tag.abstract-btn{cursor:pointer;border:1px solid #ccc;transition:background 0.12s,color 0.12s;user-select:none;}
+    .pub-title{font-family:'EB Garamond',serif;font-size:17px;font-weight:400;color:var(--ink);line-height:1.4;margin-bottom:4px;}
+    .pub-venue{font-size:12px;color:var(--orange);font-style:italic;margin-bottom:3px;}
+    .pub-authors{font-size:12px;color:var(--muted);margin-bottom:9px;line-height:1.5;}
+    .pub-authors strong{color:var(--slate);font-weight:500;}
+    .pub-tags{display:flex;gap:5px;flex-wrap:wrap;align-items:center;}
+    .pub-tag{font-size:10px;padding:2px 9px;border-radius:20px;background:var(--surface);color:var(--slate);border:1px solid var(--rule);letter-spacing:0.03em;text-decoration:none;display:inline-block;cursor:default;}
+    .pub-tag.abstract-btn{cursor:pointer;transition:background 0.12s,color 0.12s;user-select:none;}
     .pub-tag.abstract-btn:hover,.pub-tag.abstract-btn.open{background:var(--ink);color:#fff;border-color:var(--ink);}
-    .pub-tag.pdf,.pub-tag.html-tag,.pub-tag.data{background:var(--orange-bg);color:var(--orange);border-color:transparent;}
-    .pub-tag.review-tag{background:var(--smokey-bg);color:var(--smokey);border-color:transparent;}
-    .pub-tag.working-tag{background:var(--lgray-bg);color:var(--lgray);border-color:transparent;}
-    .pub-tag.award{background:#fff8e1;color:#7a5c00;border-color:transparent;}
-    .pub-tag.cel{background:#eef6ff;color:#2a5298;border-color:transparent;}
-    .abstract-box{display:none;padding:12px 14px;background:#f7f7f5;border-left:2px solid var(--orange);border-radius:0 6px 6px 0;font-size:13px;line-height:1.75;color:var(--slate);}
-    .abstract-box.open{display:block;margin-top:10px;}
-    .data-intro{font-size:14px;line-height:1.85;color:var(--slate);max-width:580px;margin-bottom:2rem;}
+    .pub-tag.link{background:#fff;color:var(--slate);border-color:var(--rule);}
+    .pub-tag.link:hover{background:var(--surface);text-decoration:none;}
+    .pub-tag.award{background:var(--orange-bg);color:#7a3a00;border-color:transparent;}
+    .pub-tag.cel{background:var(--orange-bg);color:#7a3a00;border-color:transparent;}
+    .pub-tag.status-note{background:var(--surface);color:var(--muted);border-color:transparent;font-style:italic;}
+    .abstract-box{display:none;padding:12px 14px;background:#f7f7f5;border-left:2px solid var(--orange);border-radius:0 6px 6px 0;font-size:13px;line-height:1.8;color:var(--slate);margin-top:10px;}
+    .abstract-box.open{display:block;}
+
+    /* ── DATA & PROJECTS ── */
+    .data-intro{font-size:15px;line-height:1.85;color:var(--slate);max-width:580px;margin-bottom:2rem;}
     .project-card{border:1px solid var(--rule);border-radius:8px;overflow:hidden;margin-bottom:1.25rem;}
     .project-card-body{padding:1.375rem 1.5rem;}
     .project-top{display:flex;align-items:flex-start;gap:16px;margin-bottom:1rem;}
     .project-logo{flex-shrink:0;}
-    .project-name{font-family:'EB Garamond',serif;font-size:20px;font-weight:400;color:var(--ink);line-height:1.2;margin-bottom:3px;}
-    .project-byline{font-size:11px;color:var(--muted);letter-spacing:0.03em;line-height:1.5;}
-    .explore-btn{margin-left:auto;display:inline-flex;align-items:center;gap:5px;flex-shrink:0;font-size:11px;font-weight:500;letter-spacing:0.05em;background:var(--ink);color:#fff;border:none;border-radius:6px;padding:6px 14px;text-decoration:none;transition:background 0.12s;cursor:pointer;white-space:nowrap;}
+    .project-name{font-family:'EB Garamond',serif;font-size:21px;font-weight:400;color:var(--ink);line-height:1.2;margin-bottom:3px;}
+    .project-byline{font-size:12px;color:var(--muted);letter-spacing:0.03em;line-height:1.5;}
+    .explore-btn{margin-left:auto;display:inline-flex;align-items:center;gap:5px;flex-shrink:0;font-size:12px;font-weight:500;letter-spacing:0.05em;background:var(--ink);color:#fff;border:none;border-radius:6px;padding:6px 14px;text-decoration:none;transition:background 0.12s;cursor:pointer;white-space:nowrap;}
     .explore-btn:hover{background:#333;text-decoration:none;color:#fff;}
-    .project-desc{font-size:13.5px;line-height:1.8;color:var(--slate);margin-bottom:1.1rem;}
+    .project-desc{font-size:14px;line-height:1.8;color:var(--slate);margin-bottom:1.1rem;}
     .project-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--rule);border-radius:6px;overflow:hidden;margin-bottom:1.1rem;}
     .stat-cell{padding:10px 12px;border-right:1px solid var(--rule);background:var(--surface);}
     .stat-cell:last-child{border-right:none;}
     .stat-val{font-size:14px;font-weight:500;color:var(--ink);line-height:1.2;font-family:'EB Garamond',serif;}
     .stat-lbl{font-size:10px;color:var(--muted);margin-top:2px;letter-spacing:0.03em;text-transform:uppercase;}
-    .project-links{display:flex;gap:1.1rem;flex-wrap:wrap;align-items:center;font-size:12px;}
+    .project-links{display:flex;gap:1.1rem;flex-wrap:wrap;align-items:center;font-size:13px;}
     .project-links a{color:var(--orange);}
     .future-note{font-size:12px;color:var(--muted);margin-top:0.25rem;letter-spacing:0.02em;}
+
     footer{padding:2rem 0;border-top:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;}
-    .footer-text{font-size:11px;color:var(--muted);}
+    .footer-text{font-size:12px;color:var(--muted);}
+
+    /* ── MOBILE ── */
     @media(max-width:680px){
+      html{font-size:16px;}
+      nav{padding:0 1rem;height:48px;}
+      .nav-name{font-size:16px;}
+      .nav-links{gap:1rem;}
+      .nav-links a{font-size:10px;letter-spacing:0.05em;}
+      .nav-links .nav-data-label::before{content:"data";}
+      .nav-links .nav-data-label{font-size:0;letter-spacing:0;}
+      .nav-links .nav-data-label::before{font-size:10px;letter-spacing:0.05em;}
+      .container{padding:0 1rem;}
       .hero{grid-template-columns:1fr;gap:2rem;padding:2.5rem 0 2rem;}
       .photo-col{flex-direction:row;align-items:flex-start;flex-wrap:wrap;}
-      .photo-frame{width:120px;height:144px;}
+      .photo-frame{width:130px;height:156px;}
       .affil-list{width:auto;flex:1;min-width:160px;}
-      h1{font-size:28px;}
-      nav{padding:0 1rem;}
-      .container{padding:0 1rem;}
+      h1{font-size:30px;}
+      .project-top{flex-wrap:wrap;}
+      .explore-btn{margin-left:0;margin-top:4px;}
       .project-stats{grid-template-columns:repeat(2,1fr);}
       .stat-cell:nth-child(2){border-right:none;}
       .stat-cell:nth-child(3){border-top:1px solid var(--rule);}
       .stat-cell:nth-child(4){border-top:1px solid var(--rule);border-right:none;}
-      .project-top{flex-wrap:wrap;}
-      .explore-btn{margin-left:0;}
     }
   </style>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SB0N49LMH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -123,7 +136,7 @@
   <ul class="nav-links">
     <li><a href="#about">about</a></li>
     <li><a href="#research">research</a></li>
-    <li><a href="#data">data, software &amp; public projects</a></li>
+    <li><a href="#data" class="nav-data-label">data &amp; projects</a></li>
     <li><a href="#cv">cv</a></li>
   </ul>
 </nav>
@@ -159,200 +172,160 @@
 
   <section class="section" id="research">
     <p class="section-label">research</p>
-    <div class="legend">
-      <div class="legend-item"><div class="legend-bar published"></div> published</div>
-      <div class="legend-item"><div class="legend-bar review"></div> under review</div>
-      <div class="legend-item"><div class="legend-bar working"></div> working paper</div>
-    </div>
 
-    <div class="pub-item">
-      <div class="pub-bar published"></div>
-      <div>
+    <!-- PUBLISHED -->
+    <div class="pub-group">
+      <div class="pub-group-head">Published</div>
+
+      <div class="pub-item">
         <p class="pub-title">Selective Reciprocity in Bipartisan Collaboration: How Majority Security Shapes Legislative Success</p>
         <p class="pub-venue">State Politics &amp; Policy Quarterly, 2026</p>
-        <p class="pub-authors">Mackenzie R. Dobson</p>
+        <p class="pub-authors"><strong>Mackenzie R. Dobson</strong></p>
         <div class="pub-tags">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
-          <a class="pub-tag pdf" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F4E55ADC5CF8CB3ABB5121D3808A1B86/S1532440026100218a.pdf/selective-reciprocity-in-bipartisan-collaboration-how-majority-security-shapes-legislative-success.pdf" target="_blank">pdf</a>
-          <a class="pub-tag html-tag" href="https://www.cambridge.org/core/journals/state-politics-and-policy-quarterly/article/selective-reciprocity-in-bipartisan-collaboration-how-majority-security-shapes-legislative-success/F4E55ADC5CF8CB3ABB5121D3808A1B86" target="_blank">html</a>
-          <a class="pub-tag data" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/W7OXER" target="_blank">dataverse</a>
-          <span class="pub-tag award">🏆 Best Paper on State Politics, 2025</span>
-          <span class="pub-tag award">🏆 Best Poster Presentation at State Politics and Policy Conference, 2024</span>
+          <a class="pub-tag link" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F4E55ADC5CF8CB3ABB5121D3808A1B86/S1532440026100218a.pdf/selective-reciprocity-in-bipartisan-collaboration-how-majority-security-shapes-legislative-success.pdf" target="_blank">pdf</a>
+          <a class="pub-tag link" href="https://www.cambridge.org/core/journals/state-politics-and-policy-quarterly/article/selective-reciprocity-in-bipartisan-collaboration-how-majority-security-shapes-legislative-success/F4E55ADC5CF8CB3ABB5121D3808A1B86" target="_blank">html</a>
+          <a class="pub-tag link" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/W7OXER" target="_blank">dataverse</a>
+          <span class="pub-tag award">Best Paper on State Politics, 2025</span>
+          <span class="pub-tag award">Best Poster, State Politics and Policy Conference, 2024</span>
         </div>
-        <div class="abstract-box">How does majority party security shape reciprocal bipartisan collaboration and influence legislative success? US state legislatures vary widely in the stability of majority control, offering a valuable opportunity to examine how party security conditions the incentives for cross-party collaboration. Insecure majorities may foster reciprocity as both a behavioral norm and a strategic path to legislative advancement, while long-term one-party control can diminish the returns to bipartisan engagement. I develop a theory of selective reciprocity, arguing that majority security fundamentally restructures how legislators engage in and benefit from bipartisan collaboration. Drawing on data from 401,720 bills introduced across 43 state legislatures between 2009 and 2018, I construct novel measures of bipartisan collaboration to evaluate reciprocity. I find that minority party legislators build reputational capital by consistently cosponsoring majority party bills – but their efforts yield few legislative gains in secure majority chambers. Instead, majority legislators selectively reciprocate only on minority party initiatives unlikely to pass, preserving the appearance of cooperation while protecting their policy agenda. By contrast, in insecure chambers, bipartisan cooperation is more likely to produce substantive outcomes. Reciprocity endures but is constrained – selective in form, asymmetric in effect, and structured by the institutional advantages of majority control. These findings raise broader concerns about the marginalization of minority party legislators and the limits of representation under conditions of majority security.</div>
+        <div class="abstract-box">How does majority party security shape reciprocal bipartisan collaboration and influence legislative success? US state legislatures vary widely in the stability of majority control, offering a valuable opportunity to examine how party security conditions the incentives for cross-party collaboration. Insecure majorities may foster reciprocity as both a behavioral norm and a strategic path to legislative advancement, while long-term one-party control can diminish the returns to bipartisan engagement. I develop a theory of selective reciprocity, arguing that majority security fundamentally restructures how legislators engage in and benefit from bipartisan collaboration. Drawing on data from 401,720 bills introduced across 43 state legislatures between 2009 and 2018, I construct novel measures of bipartisan collaboration to evaluate reciprocity. I find that minority party legislators build reputational capital by consistently cosponsoring majority party bills – but their efforts yield few legislative gains in secure majority chambers. Instead, majority legislators selectively reciprocate only on minority party initiatives unlikely to pass, preserving the appearance of cooperation while protecting their policy agenda. By contrast, in insecure chambers, bipartisan cooperation is more likely to produce substantive outcomes. Reciprocity endures but is constrained – selective in form, asymmetric in effect, and structured by the institutional advantages of majority control.</div>
       </div>
-    </div>
 
-    <div class="pub-item">
-      <div class="pub-bar published"></div>
-      <div>
+      <div class="pub-item">
         <p class="pub-title">The Consequences of Elite Action Against Elections</p>
         <p class="pub-venue">British Journal of Political Science, 2025</p>
-        <p class="pub-authors">Rachel Porter, Jeffrey J. Harden, Emily Anderson, Géssica de Frietas, Mackenzie R. Dobson, Abigail Hemmen, and Emma Schroeder</p>
+        <p class="pub-authors">Rachel Porter, Jeffrey J. Harden, Emily Anderson, Géssica de Frietas, <strong>Mackenzie R. Dobson</strong>, Abigail Hemmen, and Emma Schroeder</p>
         <div class="pub-tags">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
-          <a class="pub-tag pdf" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/1E549A13F7FBD704E4A96CE509351DB7/S0007123425100926a.pdf/the-consequences-of-elite-action-against-elections.pdf" target="_blank">pdf</a>
-          <a class="pub-tag html-tag" href="https://www.cambridge.org/core/journals/british-journal-of-political-science/article/consequences-of-elite-action-against-elections/1E549A13F7FBD704E4A96CE509351DB7" target="_blank">html</a>
-          <a class="pub-tag data" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PVUCFJ" target="_blank">dataverse</a>
+          <a class="pub-tag link" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/1E549A13F7FBD704E4A96CE509351DB7/S0007123425100926a.pdf/the-consequences-of-elite-action-against-elections.pdf" target="_blank">pdf</a>
+          <a class="pub-tag link" href="https://www.cambridge.org/core/journals/british-journal-of-political-science/article/consequences-of-elite-action-against-elections/1E549A13F7FBD704E4A96CE509351DB7" target="_blank">html</a>
+          <a class="pub-tag link" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PVUCFJ" target="_blank">dataverse</a>
         </div>
-        <div class="abstract-box">Do elites who engage in undemocratic practices face democratic accountability? We investigate whether American state legislators who publicly acted against the 2020 presidential election outcome sustained meaningful sanctions in response. We theorize that accountability for undemocratic activities is selective—conspicuous, highly visible efforts to undermine democratic institutions face the strongest ramifications from voters, politicians, and parties. In contrast, other, less prominent actions elicit weaker responses. Our empirical analyses employ novel data on state legislators' anti-election actions and a weighting method for covariate balance to estimate the magnitude of accountability for undemocratic behavior. The results evidence heterogeneity, with the strongest consequences targeting legislators who appeared at the U.S. Capitol on January 6th, 2021, and weaker penalties for legislators who engaged in other antagonism toward democracy. We conclude that focusing sanctions on conspicuous acts against democratic institutions could leave less apparent—but still detrimental—efforts to undermine elections unchecked, ultimately weakening democratic health.</div>
+        <div class="abstract-box">Do elites who engage in undemocratic practices face democratic accountability? We investigate whether American state legislators who publicly acted against the 2020 presidential election outcome sustained meaningful sanctions in response. We theorize that accountability for undemocratic activities is selective—conspicuous, highly visible efforts to undermine democratic institutions face the strongest ramifications from voters, politicians, and parties. In contrast, other, less prominent actions elicit weaker responses. Our empirical analyses employ novel data on state legislators' anti-election actions and a weighting method for covariate balance to estimate the magnitude of accountability for undemocratic behavior. The results evidence heterogeneity, with the strongest consequences targeting legislators who appeared at the U.S. Capitol on January 6th, 2021, and weaker penalties for legislators who engaged in other antagonism toward democracy.</div>
       </div>
-    </div>
 
-    <div class="pub-item">
-      <div class="pub-bar published"></div>
-      <div>
+      <div class="pub-item">
         <p class="pub-title">Electing Amateur Politicians Reduces Cross-Party Collaboration</p>
         <p class="pub-venue">Proceedings of the National Academy of Sciences, 2025</p>
-        <p class="pub-authors">Rachel Porter, Jeffrey J. Harden, and Mackenzie R. Dobson</p>
+        <p class="pub-authors">Rachel Porter, Jeffrey J. Harden, and <strong>Mackenzie R. Dobson</strong></p>
         <div class="pub-tags">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
-          <a class="pub-tag pdf" href="https://www.pnas.org/doi/epdf/10.1073/pnas.2519787122" target="_blank">pdf</a>
-          <a class="pub-tag html-tag" href="https://www.pnas.org/doi/10.1073/pnas.2519787122" target="_blank">html</a>
-          <a class="pub-tag data" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/G3BMBR" target="_blank">dataverse</a>
+          <a class="pub-tag link" href="https://www.pnas.org/doi/epdf/10.1073/pnas.2519787122" target="_blank">pdf</a>
+          <a class="pub-tag link" href="https://www.pnas.org/doi/10.1073/pnas.2519787122" target="_blank">html</a>
+          <a class="pub-tag link" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/G3BMBR" target="_blank">dataverse</a>
         </div>
-        <div class="abstract-box">Public trust in democratic institutions is essential for effective governance, yet global confidence in them has fallen to unprecedented lows. In response, electorates in major democracies are increasingly turning away from career politicians and toward "amateurs"—politicians without prior elective office-holding experience—hoping that these outsiders can disrupt partisan gridlock and elite entrenchment. Using the United States Congress as a critical case, we evaluate this expectation by linking over four decades of election data with 2.2 million records of bill sponsorship and cosponsorship. Contrary to conventional wisdom, we find that electing political amateurs to public office significantly intensifies partisan divisions rather than alleviates them. Compared to retaining incumbents and/or sending experienced freshmen to Congress, electing amateurs yields representatives who attract fewer opposing-party collaborators to their own bills and offer less support to the other party's legislation. This pattern is concerning because cross-party coalitions remain critical for functional governance in the U.S. and beyond, even amidst party polarization. We therefore caution against the premise that political outsiders can readily fix political dysfunction.</div>
+        <div class="abstract-box">Public trust in democratic institutions is essential for effective governance, yet global confidence in them has fallen to unprecedented lows. In response, electorates in major democracies are increasingly turning away from career politicians and toward "amateurs"—politicians without prior elective office-holding experience—hoping that these outsiders can disrupt partisan gridlock and elite entrenchment. Using the United States Congress as a critical case, we evaluate this expectation by linking over four decades of election data with 2.2 million records of bill sponsorship and cosponsorship. Contrary to conventional wisdom, we find that electing political amateurs to public office significantly intensifies partisan divisions rather than alleviates them.</div>
       </div>
-    </div>
 
-    <div class="pub-item">
-      <div class="pub-bar published"></div>
-      <div>
+      <div class="pub-item">
         <p class="pub-title">I'm Coming Out! How Voter Discrimination Produces Effective LGBTQ Lawmakers</p>
         <p class="pub-venue">PS: Political Science &amp; Politics, 2025</p>
-        <p class="pub-authors">Jacob M. Lollis and Mackenzie R. Dobson</p>
+        <p class="pub-authors">Jacob M. Lollis and <strong>Mackenzie R. Dobson</strong></p>
         <div class="pub-tags">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
-          <a class="pub-tag pdf" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/99F9DDDB008114F6D77FB27534575BF3/S1049096525000101a.pdf/im-coming-out-how-voter-discrimination-produces-effective-lgbtq-lawmakers.pdf" target="_blank">pdf</a>
-          <a class="pub-tag html-tag" href="https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/im-coming-out-how-voter-discrimination-produces-effective-lgbtq-lawmakers/99F9DDDB008114F6D77FB27534575BF3" target="_blank">html</a>
-          <a class="pub-tag data" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T5V3CH" target="_blank">dataverse</a>
-          <span class="pub-tag cel">🏛 Featured in CEL Working Paper Series</span>
+          <a class="pub-tag link" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/99F9DDDB008114F6D77FB27534575BF3/S1049096525000101a.pdf/im-coming-out-how-voter-discrimination-produces-effective-lgbtq-lawmakers.pdf" target="_blank">pdf</a>
+          <a class="pub-tag link" href="https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/im-coming-out-how-voter-discrimination-produces-effective-lgbtq-lawmakers/99F9DDDB008114F6D77FB27534575BF3" target="_blank">html</a>
+          <a class="pub-tag link" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T5V3CH" target="_blank">dataverse</a>
+          <span class="pub-tag cel">CEL Working Paper Series</span>
         </div>
-        <div class="abstract-box">Are LGBTQ legislators effective lawmakers? We build on theories that link voter discrimination to legislative effectiveness by arguing that voters' biases against LGBTQ candidates narrow the candidate pool, leading to the election of only the most experienced and qualified LGBTQ candidates. As a result of this electoral selection effect, we expect that LGBTQ legislators will be more effective lawmakers than their non-LGBTQ counterparts. To test this, we combine data on state legislators' LGBTQ identification with their State Legislative Effectiveness Scores (SLES). Our findings reveal that LGBTQ legislators are meaningfully more effective than non-LGBTQ legislators. To link our findings to voter discrimination, we leverage over-time variation in discrimination toward LGBTQ individuals. Across four tests, we consistently find that LGBTQ lawmakers elected in high-discrimination environments are more effective than those elected from less discriminatory environments.</div>
+        <div class="abstract-box">Are LGBTQ legislators effective lawmakers? We build on theories that link voter discrimination to legislative effectiveness by arguing that voters' biases against LGBTQ candidates narrow the candidate pool, leading to the election of only the most experienced and qualified LGBTQ candidates. As a result of this electoral selection effect, we expect that LGBTQ legislators will be more effective lawmakers than their non-LGBTQ counterparts. To test this, we combine data on state legislators' LGBTQ identification with their State Legislative Effectiveness Scores (SLES). Our findings reveal that LGBTQ legislators are meaningfully more effective than non-LGBTQ legislators.</div>
       </div>
     </div>
 
-    <div class="pub-item">
-      <div class="pub-bar review"></div>
-      <div>
+    <!-- UNDER REVIEW -->
+    <div class="pub-group">
+      <div class="pub-group-head">Under review</div>
+
+      <div class="pub-item">
         <p class="pub-title">Legislative Professionalism and Perceptions of White-Collar Government</p>
-        <p class="pub-authors">Mackenzie R. Dobson, Jacob M. Lollis, Jeffrey J. Harden, and Justin H. Kirkland</p>
+        <p class="pub-authors"><strong>Mackenzie R. Dobson</strong>, Jacob M. Lollis, Jeffrey J. Harden, and Justin H. Kirkland</p>
         <div class="pub-tags">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
-          <a class="pub-tag pdf" href="https://www.dropbox.com/scl/fi/zbu5jsed8gkv6j3sigukw/Legislative-Professionalism-and-White-Collar-Govt.pdf?rlkey=bklwlnvsmbyfv032liac104be&st=5pgu1hys&dl=0" target="_blank">pdf</a>
-          <span class="pub-tag review-tag">conditionally accepted at the Journal of Political Institutions and Political Economy</span>
+          <a class="pub-tag link" href="https://www.dropbox.com/scl/fi/zbu5jsed8gkv6j3sigukw/Legislative-Professionalism-and-White-Collar-Govt.pdf?rlkey=bklwlnvsmbyfv032liac104be&st=5pgu1hys&dl=0" target="_blank">pdf</a>
+          <span class="pub-tag status-note">conditionally accepted, Journal of Political Institutions and Political Economy</span>
         </div>
-        <div class="abstract-box">The professionalization of American state legislatures is among the most consequential modern institutional reforms in legislative politics. Yet a core tension persists: citizens disapprove of professionalized legislatures even though these chambers possess capacity-enhancing resources—such as staff support, higher salaries, and longer sessions—that may improve representation and policymaking. We offer one explanation for this disapproval: citizens perceive professional legislatures as dominated by legislators from white-collar backgrounds. Consequently, we argue that opposition to professionalism stems, in part, from a belief that white-collar legislators may not represent society's interests broadly. Evidence from a preregistered conjoint experiment and observational analyses using the Cooperative Election Study (CES) supports this claim. Respondents associate professionalism with a legislature primarily composed of white-collar lawmakers, whom they do not believe govern to benefit the general public. These findings suggest that opposition to legislative professionalism likely reflects a rejection of white-collar government rather than repudiation of the institutional gains from professionalization.</div>
+        <div class="abstract-box">The professionalization of American state legislatures is among the most consequential modern institutional reforms in legislative politics. Yet a core tension persists: citizens disapprove of professionalized legislatures even though these chambers possess capacity-enhancing resources—such as staff support, higher salaries, and longer sessions—that may improve representation and policymaking. We offer one explanation for this disapproval: citizens perceive professional legislatures as dominated by legislators from white-collar backgrounds. Consequently, we argue that opposition to professionalism stems, in part, from a belief that white-collar legislators may not represent society's interests broadly.</div>
       </div>
-    </div>
 
-    <div class="pub-item">
-      <div class="pub-bar review"></div>
-      <div>
+      <div class="pub-item">
         <p class="pub-title">Congressional Attention to Abortion After <em>Dobbs</em>: How Representational and Electoral Incentives Selectively Shape Issue Attention</p>
-        <p class="pub-authors">Jacob M. Lollis and Mackenzie R. Dobson</p>
+        <p class="pub-authors">Jacob M. Lollis and <strong>Mackenzie R. Dobson</strong></p>
         <div class="pub-tags">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
-          <a class="pub-tag pdf" href="https://www.dropbox.com/scl/fi/vyycbvmqblplqxdludkve/Congressional-Attention-After-Dobbs.pdf?rlkey=hvih3thltjpwoo5wakq6aqb6a&st=me8sifuf&dl=0" target="_blank">pdf</a>
-          <span class="pub-tag review-tag">under review</span>
+          <a class="pub-tag link" href="https://www.dropbox.com/scl/fi/vyycbvmqblplqxdludkve/Congressional-Attention-After-Dobbs.pdf?rlkey=hvih3thltjpwoo5wakq6aqb6a&st=me8sifuf&dl=0" target="_blank">pdf</a>
         </div>
-        <div class="abstract-box">Landmark Supreme Court rulings can reshape policy, rights, and public opinion, but their effects on congressional issue attention remain less clear. We argue that such rulings do not uniformly reshape congressional attention; instead, they do so selectively, depending on how legislators' representational and electoral incentives align. We test this argument in the case of Dobbs v. Jackson Women's Health Organization (2022). We argue that, after Dobbs, abortion attention increased only when gender-linked representational considerations and party-based electoral incentives converged. These incentives aligned for female Democrats, but female Republicans faced electoral risks in foregrounding abortion, while male legislators faced weaker gender-linked representational incentives. Using nearly 1.6M statements from U.S. House committee hearings, we leverage the leak of the draft opinion in a difference-in-differences design that estimates differential changes in abortion attention across party and gender. Pre-treatment trends show no systematic differences. After the leak, female Democrats increased abortion-related references relative to female Republicans, with no change among male legislators.</div>
+        <div class="abstract-box">Landmark Supreme Court rulings can reshape policy, rights, and public opinion, but their effects on congressional issue attention remain less clear. We argue that such rulings do not uniformly reshape congressional attention; instead, they do so selectively, depending on how legislators' representational and electoral incentives align. We test this argument in the case of Dobbs v. Jackson Women's Health Organization (2022). Using nearly 1.6M statements from U.S. House committee hearings, we leverage the leak of the draft opinion in a difference-in-differences design that estimates differential changes in abortion attention across party and gender.</div>
       </div>
-    </div>
 
-    <div class="pub-item">
-      <div class="pub-bar review"></div>
-      <div>
+      <div class="pub-item">
         <p class="pub-title">Bipartisan Campaigners Become Effective Lawmakers</p>
-        <p class="pub-authors">Mackenzie R. Dobson, Craig Volden, and Alan E. Wiseman</p>
+        <p class="pub-authors"><strong>Mackenzie R. Dobson</strong>, Craig Volden, and Alan E. Wiseman</p>
         <div class="pub-tags">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
-          <a class="pub-tag pdf" href="https://www.dropbox.com/scl/fi/srck10tdkfq3ive8x0lvs/Bipartisan-Campaigners-Become-Effective-Lawmakers.pdf?rlkey=5252yk3dnlnezh9kkt7pt457o&st=a9ejy8kr&dl=0" target="_blank">pdf</a>
-          <span class="pub-tag review-tag">under review</span>
-          <span class="pub-tag cel">🏛 Featured in CEL Working Paper Series</span>
+          <a class="pub-tag link" href="https://www.dropbox.com/scl/fi/srck10tdkfq3ive8x0lvs/Bipartisan-Campaigners-Become-Effective-Lawmakers.pdf?rlkey=5252yk3dnlnezh9kkt7pt457o&st=a9ejy8kr&dl=0" target="_blank">pdf</a>
+          <span class="pub-tag cel">CEL Working Paper Series</span>
         </div>
-        <div class="abstract-box">Strong evidence exists that effective lawmakers in one legislative term are very likely to be effective lawmakers in subsequent terms. But can voters glean insights into the likely lawmaking effectiveness of candidate even before they hold office? Might campaigns reveal characteristics of future effective lawmakers? To address these questions, we take advantage of new scholarship highlighting the enhanced lawmaking effectiveness of bipartisan legislators (Harbridge-Yong, et al. 2023). We examine the initial campaigns of more than 800 congressional Representatives and find that candidates who exhibited bipartisan traits during those campaigns became more effective lawmakers than those not identified as bipartisan. This enhanced lawmaking effectiveness is especially pronounced in Representatives' early terms in office and linked to the lawmaking stages requiring significant coalition building activities. These findings suggest that campaigns can offer voters meaningful insights, not only regarding the issues future Representatives attend to but also into their lawmaking effectiveness.</div>
+        <div class="abstract-box">Strong evidence exists that effective lawmakers in one legislative term are very likely to be effective lawmakers in subsequent terms. But can voters glean insights into the likely lawmaking effectiveness of candidates even before they hold office? We examine the initial campaigns of more than 800 congressional Representatives and find that candidates who exhibited bipartisan traits during those campaigns became more effective lawmakers than those not identified as bipartisan.</div>
       </div>
     </div>
 
-    <div class="pub-item">
-      <div class="pub-bar working"></div>
-      <div>
+    <!-- WORKING PAPERS -->
+    <div class="pub-group">
+      <div class="pub-group-head">Working papers</div>
+
+      <div class="pub-item">
         <p class="pub-title">Bipartisanship Scores by Member and Issue Area in the U.S. Congress, 1983–2024</p>
-        <p class="pub-authors">Mackenzie R. Dobson and Jacob M. Lollis</p>
+        <p class="pub-authors"><strong>Mackenzie R. Dobson</strong> and Jacob M. Lollis</p>
         <div class="pub-tags">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
-          <a class="pub-tag pdf" href="https://www.dropbox.com/scl/fi/lro80gvjymnxtgceypzvh/Bipartisanship-Measures.pdf?rlkey=v4j8n6m2tdhbj31ot0lhg9lcc&st=gcm5whmg&dl=0" target="_blank">pdf</a>
-          <span class="pub-tag working-tag">working paper</span>
+          <a class="pub-tag link" href="https://www.dropbox.com/scl/fi/lro80gvjymnxtgceypzvh/Bipartisanship-Measures.pdf?rlkey=v4j8n6m2tdhbj31ot0lhg9lcc&st=gcm5whmg&dl=0" target="_blank">pdf</a>
         </div>
-        <div class="abstract-box">Although bipartisanship is central to legislative behavior and often necessary for policymaking success, no centralized, publicly accessible dataset tracks legislators' propensity to offer and attract cross-party support across time and policy issue areas. As a result, scholars are limited in answering key questions about whether bipartisanship is declining over time, who engages in it, which policy areas facilitate cross-party collaboration, and how such behavior shapes governing, representation, and democratic accountability. We introduce a dataset of congressional bipartisanship scores for all members of the U.S. House and Senate from 1983 to 2024. Built from more than 2.4 million cosponsorship decisions on 147,669 bills, the dataset provides two complementary member-term measures: attracting original out-party cosponsors to one's own bills and offering original cosponsorship to out-party-sponsored bills. The dataset includes aggregate and issue-specific scores across 34 policy issue areas for 2,056 unique legislators and 11,549 legislator-term observations. To facilitate broad reuse among academics, researchers, journalists, legislators, and the public, we make the dataset available through Harvard Dataverse and a corresponding R package, 'biparty.'</div>
+        <div class="abstract-box">Although bipartisanship is central to legislative behavior and often necessary for policymaking success, no centralized, publicly accessible dataset tracks legislators' propensity to offer and attract cross-party support across time and policy issue areas. We introduce a dataset of congressional bipartisanship scores for all members of the U.S. House and Senate from 1983 to 2024. Built from more than 2.4 million cosponsorship decisions on 147,669 bills, the dataset provides two complementary member-term measures. To facilitate broad reuse among academics, researchers, journalists, legislators, and the public, we make the dataset available through Harvard Dataverse and a corresponding R package, 'biparty.'</div>
       </div>
-    </div>
 
-    <div class="pub-item">
-      <div class="pub-bar working"></div>
-      <div>
+      <div class="pub-item">
         <p class="pub-title">Policy Agendas and Effective Lawmaking in the American States</p>
-        <p class="pub-authors">Andrew Ballard, Mackenzie R. Dobson, Martín Gandur, Craig Volden, and Alan E. Wiseman</p>
+        <p class="pub-authors">Andrew Ballard, <strong>Mackenzie R. Dobson</strong>, Martín Gandur, Craig Volden, and Alan E. Wiseman</p>
         <div class="pub-tags">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
-          <span class="pub-tag working-tag">working paper</span>
         </div>
-        <div class="abstract-box">The politics of public policymaking varies not only across institutions and over time but also across different issue areas. We leverage transformer-based text classification to accurately assign more than 1.6 million state bills to 18 different policy areas. We then introduce Issue-Specific State Legislative Effectiveness Scores (ISLES), enabling systematic, cross-state comparisons of lawmaking effectiveness by members of state legislatures at the issue level for 2009-2018, across 48 states. We show which issues gain the most attention in legislatures, and which are the most gridlocked, as well as systematic patterns in the issues over which experts or ideological centrists are most successful. We also show that female lawmakers disproportionately sponsor bills engaging with civil rights, education, health, and welfare: policy areas that are conventionally categorized as being "women's issues." We find that bills in these women's issue areas are more gridlocked than other policy areas, on average. However, in chambers approaching gender parity, women's issue bills – especially those proposed by women – are more likely to advance into law.</div>
+        <div class="abstract-box">The politics of public policymaking varies not only across institutions and over time but also across different issue areas. We leverage transformer-based text classification to accurately assign more than 1.6 million state bills to 18 different policy areas. We then introduce Issue-Specific State Legislative Effectiveness Scores (ISLES), enabling systematic, cross-state comparisons of lawmaking effectiveness by members of state legislatures at the issue level for 2009–2018, across 48 states.</div>
       </div>
-    </div>
 
-    <div class="pub-item">
-      <div class="pub-bar working"></div>
-      <div>
+      <div class="pub-item">
         <p class="pub-title">Building Effective Coalitions in the American States</p>
-        <p class="pub-authors">Mackenzie R. Dobson</p>
+        <p class="pub-authors"><strong>Mackenzie R. Dobson</strong></p>
         <div class="pub-tags">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
-          <span class="pub-tag working-tag">working paper</span>
-          <span class="pub-tag cel">🏛 Featured in CEL Working Paper Series</span>
+          <span class="pub-tag cel">CEL Working Paper Series</span>
         </div>
-        <div class="abstract-box">Bipartisan collaboration is widely considered a reliable route to legislative success, largely based on evidence from the contemporary U.S. Congress — an institution marked by narrow and unstable majorities. Yet most state legislatures are governed by majority parties that occupy a significant share of chamber seats, permitting them to advance legislation without minority-party support. Understanding legislative effectiveness in these settings, therefore, requires moving beyond whether legislators build coalitions to the composition of those coalitions. I argue that bipartisan collaboration enhances effectiveness only when cross-party support is necessary to assemble a winning coalition. When majority control is insecure, bipartisan coalition-building predicts legislative success. When majority control is secure, however, cross-party support is no longer pivotal; effectiveness instead depends on assembling ideologically broad coalitions within the governing party. Using State Legislative Effectiveness Scores and original measures of coalition-building, I show that bipartisanship enhances effectiveness in competitive chambers but not under secure majorities. In secure chambers, effective lawmakers are not cross-party bridge-builders but legislators who strategically manage intra-party ideological divisions — linking legislative success to partisan consolidation, sustaining polarization, and narrowing the representational breadth of governing coalitions.</div>
+        <div class="abstract-box">Bipartisan collaboration is widely considered a reliable route to legislative success, largely based on evidence from the contemporary U.S. Congress. Yet most state legislatures are governed by majority parties that occupy a significant share of chamber seats, permitting them to advance legislation without minority-party support. I argue that bipartisan collaboration enhances effectiveness only when cross-party support is necessary to assemble a winning coalition. Using State Legislative Effectiveness Scores and original measures of coalition-building, I show that bipartisanship enhances effectiveness in competitive chambers but not under secure majorities.</div>
       </div>
-    </div>
 
-    <div class="pub-item">
-      <div class="pub-bar working"></div>
-      <div>
+      <div class="pub-item">
         <p class="pub-title">Does Training Legislators Improve Policymaking?</p>
-        <p class="pub-authors">Mackenzie R. Dobson, Emma Schroeder, Daniel M. Butler, James M. Curry, Thad Kousser, and Jeffrey J. Harden</p>
+        <p class="pub-authors"><strong>Mackenzie R. Dobson</strong>, Emma Schroeder, Daniel M. Butler, James M. Curry, Thad Kousser, and Jeffrey J. Harden</p>
         <div class="pub-tags">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
-          <span class="pub-tag working-tag">working paper</span>
         </div>
-        <div class="abstract-box">Research on legislative behavior implies that manipulating institutional design and/or lawmaker characteristics to improve performance would pose practical difficulties and unpredictable consequences. We examine the efficacy of a more direct intervention on policymaking skill: legislator training. We theorize that educating politicians enhances lawmaking success via learning and network-based pathways. We test our expectations with two complementary research designs from American state legislatures. The first analyzes panel data spanning three decades of legislator participation in a national organization's regional training programs. Next, we leverage plausibly exogenous variation in participation in one regional program by comparing attending legislators to "no-shows" who were selected, but withdrew due to unforeseen exigencies. Our results indicate precisely-estimated negligible effects; returns to training do not appear in several measures of legislative success. We conclude that structural constraints overshadow individual talent in policymaking. The health of statehouse democracy depends more on institutional incentives than human capital development.</div>
+        <div class="abstract-box">We examine the efficacy of a more direct intervention on policymaking skill: legislator training. We theorize that educating politicians enhances lawmaking success via learning and network-based pathways. We test our expectations with two complementary research designs from American state legislatures. Our results indicate precisely-estimated negligible effects; returns to training do not appear in several measures of legislative success. We conclude that structural constraints overshadow individual talent in policymaking.</div>
       </div>
-    </div>
 
-    <div class="pub-item">
-      <div class="pub-bar working"></div>
-      <div>
+      <div class="pub-item">
         <p class="pub-title">Procedural Rights and Minority Party Influence in American Legislatures</p>
-        <p class="pub-authors">Géssica de Frietas, James M. Curry, and Mackenzie R. Dobson</p>
-        <div class="pub-tags">
-          <span class="pub-tag working-tag">working paper</span>
-        </div>
+        <p class="pub-authors">Géssica de Frietas, James M. Curry, and <strong>Mackenzie R. Dobson</strong></p>
       </div>
-    </div>
 
-    <div class="pub-item">
-      <div class="pub-bar working"></div>
-      <div>
+      <div class="pub-item">
         <p class="pub-title">Performative Bipartisanship: Symbolic Cross-Party Cooperation in an Era of Insecure Majorities</p>
-        <p class="pub-authors">Mackenzie R. Dobson and Jacob M. Lollis</p>
-        <div class="pub-tags">
-          <span class="pub-tag working-tag">working paper</span>
-        </div>
+        <p class="pub-authors"><strong>Mackenzie R. Dobson</strong> and Jacob M. Lollis</p>
       </div>
-    </div>
 
+    </div>
   </section>
 
+  <!-- DATA & PUBLIC PROJECTS -->
   <section class="section" id="data">
     <p class="section-label">data, software &amp; public projects</p>
     <p class="data-intro">I develop original datasets, open-source software, and interactive public tools for broad reuse by scholars, journalists, legislators, and the public. Replication materials for published papers are linked with each paper above.</p>
@@ -369,7 +342,7 @@
           </div>
           <a class="explore-btn" href="biparty.html">Explore data →</a>
         </div>
-        <p class="project-desc"><code style="font-size:12.5px;">biparty</code> is an R package providing Congressional Bipartisanship Scores (CBS) for every member of the U.S. House and Senate across the 98th through 118th Congresses (1983–2024). The package includes two datasets — <code style="font-size:12.5px;">aggregate.cbs</code> and <code style="font-size:12.5px;">issue.area.cbs</code> — and a suite of functions for member lookup, ranking, trend analysis, issue-area filtering, and visualization. Scores capture two complementary dimensions of cross-party behavior: <em>attract</em> (the share of out-party original cosponsors drawn to a member's own bills) and <em>offer</em> (the share of a member's cosponsorships directed toward out-party-sponsored bills). Both measures are available overall and within 34 Congressional Research Service policy areas, in weighted and unweighted variants. Built from 2.4 million cosponsorship decisions on 147,669 bills, the dataset covers 2,056 unique legislators and 11,549 member-term observations.</p>
+        <p class="project-desc"><code style="font-size:13px;">biparty</code> is an R package providing Congressional Bipartisanship Scores (CBS) for every member of the U.S. House and Senate across the 98th through 118th Congresses (1983–2024). The package includes two datasets — <code style="font-size:13px;">aggregate.cbs</code> and <code style="font-size:13px;">issue.area.cbs</code> — and a suite of functions for member lookup, ranking, trend analysis, issue-area filtering, and visualization. Scores capture two complementary dimensions of cross-party behavior: <em>attract</em> (the share of out-party original cosponsors drawn to a member's own bills) and <em>offer</em> (the share of a member's cosponsorships directed toward out-party-sponsored bills). Both measures are available overall and within 34 Congressional Research Service policy areas, in weighted and unweighted variants. Built from 2.4 million cosponsorship decisions on 147,669 bills, the dataset covers 2,056 unique legislators and 11,549 member-term observations.</p>
         <div class="project-stats">
           <div class="stat-cell"><div class="stat-val">2,056</div><div class="stat-lbl">unique legislators</div></div>
           <div class="stat-cell"><div class="stat-val">11,549</div><div class="stat-lbl">member-term obs.</div></div>
@@ -378,7 +351,7 @@
         </div>
         <div class="project-links">
           <a href="https://www.dropbox.com/scl/fi/lro80gvjymnxtgceypzvh/Bipartisanship-Measures.pdf?rlkey=v4j8n6m2tdhbj31ot0lhg9lcc&st=gcm5whmg&dl=0" target="_blank">working paper (pdf)</a>
-          <a href="biparty.html#reference" target="_blank">R documentation</a>
+          <a href="https://congressional-bipartisanship-scores.github.io" target="_blank">R documentation</a>
         </div>
       </div>
     </div>
@@ -388,7 +361,7 @@
 
   <section class="section" id="cv">
     <p class="section-label">cv</p>
-    <p style="font-size:14px;color:var(--slate);line-height:1.7;">A full curriculum vitae is available <a href="https://www.dropbox.com/scl/fi/nx5d4r88nzul1yxg7c5n9/Dobson-CV-May-2026.pdf?rlkey=tq0j099v1cp936qw2t90w268n&st=i94isizv&dl=0" target="_blank">here</a>.</p>
+    <p style="font-size:15px;color:var(--slate);line-height:1.7;">A full curriculum vitae is available <a href="https://www.dropbox.com/scl/fi/nx5d4r88nzul1yxg7c5n9/Dobson-CV-May-2026.pdf?rlkey=tq0j099v1cp936qw2t90w268n&st=i94isizv&dl=0" target="_blank">here</a>.</p>
   </section>
 
   <footer>
@@ -406,6 +379,7 @@ function toggleAbstract(btn){
   btn.classList.toggle('open');
   btn.textContent = isOpen ? 'abstract' : 'abstract ×';
 }
+
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
 const observer = new IntersectionObserver((entries) => {
