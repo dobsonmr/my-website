@@ -510,12 +510,21 @@ function showProfile(d) {
 
   document.getElementById('profile-inner').innerHTML = `
     <div class="profile-header">
-      <div>
-        <div class="profile-name">${d.name}</div>
-        <div class="profile-meta">
-          <span class="pill pill-${d.party}">${d.party}</span>
-          &nbsp;${d.chamber === 'HOUSE' ? 'House' : 'Senate'} · ${d.state}
-          &nbsp;· ${terms.length} term${terms.length!==1?'s':''}
+      <div style="display:flex;align-items:flex-start;gap:14px;">
+        <img
+          src="https://bioguide.congress.gov/bioguide/photo/${d.bioguide_id[0]}/${d.bioguide_id}.jpg"
+          alt="${d.name}"
+          width="64" height="78"
+          style="border-radius:5px;object-fit:cover;border:1px solid var(--rule);flex-shrink:0;"
+          onerror="this.style.display='none'"
+        />
+        <div>
+          <div class="profile-name">${d.name}</div>
+          <div class="profile-meta">
+            <span class="pill pill-${d.party}">${d.party}</span>
+            &nbsp;${d.chamber === 'HOUSE' ? 'House' : 'Senate'} · ${d.state}
+            &nbsp;· ${terms.length} term${terms.length!==1?'s':''}
+          </div>
         </div>
       </div>
       <button class="profile-close" onclick="closeProfile()">Close ×</button>
