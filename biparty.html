@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="biparty — Congressional Bipartisanship Scores. Interactive data explorer, member profiles, and open-source R package from Dobson & Lollis (2026)." />
+  <meta name="description" content="biparty — Congressional Bipartisanship Scores. Interactive data explorer and open-source R package from Dobson & Lollis (2026)." />
   <title>biparty · Congressional Bipartisanship Scores</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,39 +48,6 @@
     .legend-row{display:flex;gap:1.25rem;flex-wrap:wrap;margin-bottom:1rem;}
     .legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);}
     .legend-swatch{width:20px;height:3px;border-radius:2px;flex-shrink:0;}
-    .search-wrap{position:relative;max-width:480px;}
-    .search-wrap input{width:100%;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--ink);background:var(--bg);border:1px solid var(--rule);border-radius:8px;padding:10px 14px;outline:none;transition:border-color 0.15s;}
-    .search-wrap input:focus{border-color:var(--orange);}
-    .search-wrap input::placeholder{color:var(--muted);}
-    .autocomplete{position:absolute;top:calc(100% + 4px);left:0;right:0;background:var(--bg);border:1px solid var(--rule);border-radius:8px;overflow:hidden;z-index:50;display:none;}
-    .autocomplete.open{display:block;}
-    .ac-item{padding:9px 14px;font-size:13px;cursor:pointer;color:var(--ink);display:flex;align-items:center;gap:8px;}
-    .ac-item:hover,.ac-item.focused{background:var(--orange-bg);color:var(--orange);}
-    .ac-item .ac-meta{font-size:11px;color:var(--muted);margin-left:auto;}
-    .ac-pill{font-size:10px;font-weight:500;padding:1px 6px;border-radius:99px;}
-    .ac-pill-D{background:#deeaf5;color:#0c447c;}
-    .ac-pill-R{background:#f7dede;color:#791f1f;}
-    .profile-card{border:1px solid var(--rule);border-radius:8px;overflow:hidden;margin-top:1.5rem;}
-    .profile-card-body{padding:1.5rem;}
-    .profile-top{display:flex;align-items:flex-start;gap:16px;margin-bottom:1.25rem;}
-    .profile-photo{width:72px;height:88px;border-radius:5px;object-fit:cover;border:1px solid var(--rule);flex-shrink:0;}
-    .profile-photo-placeholder{width:72px;height:88px;border-radius:5px;background:var(--surface);border:1px solid var(--rule);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--muted);}
-    .profile-name{font-family:'EB Garamond',serif;font-size:22px;font-weight:400;color:var(--ink);line-height:1.2;margin-bottom:4px;}
-    .profile-meta{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
-    .pill{display:inline-block;font-size:10px;font-weight:500;padding:1px 7px;border-radius:99px;}
-    .pill-D{background:#deeaf5;color:#0c447c;}
-    .pill-R{background:#f7dede;color:#791f1f;}
-    .profile-career{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--rule);border-radius:6px;overflow:hidden;margin-bottom:1.25rem;}
-    .career-cell{padding:10px 14px;border-right:1px solid var(--rule);background:var(--surface);}
-    .career-cell:last-child{border-right:none;}
-    .career-val{font-family:'EB Garamond',serif;font-size:18px;font-weight:400;color:var(--ink);}
-    .career-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em;margin-top:1px;}
-    .issue-section-label{font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;}
-    .issue-legend{display:flex;gap:1rem;margin-bottom:10px;}
-    .issue-legend-item{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--muted);}
-    .issue-swatch{width:10px;height:10px;border-radius:2px;flex-shrink:0;}
-    .issue-chart-wrap{position:relative;width:100%;}
-    .profile-r-hint{font-size:11px;color:var(--muted);font-family:'DM Mono','Courier New',monospace;margin-top:12px;padding-top:12px;border-top:1px solid var(--rule);}
     .install-block{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:1.25rem 1.5rem;margin-bottom:1rem;}
     .install-label{font-size:11px;color:var(--muted);margin-bottom:6px;letter-spacing:0.04em;}
     .code-row{display:flex;align-items:center;gap:10px;}
@@ -98,9 +65,6 @@
       .stat-cell:nth-child(3){border-top:1px solid var(--rule);}
       .stat-cell:nth-child(4){border-top:1px solid var(--rule);border-right:none;}
       .page-header{flex-direction:column;gap:1rem;}
-      .profile-career{grid-template-columns:1fr 1fr;}
-      .career-cell:nth-child(2){border-right:none;}
-      .career-cell:nth-child(3){grid-column:span 2;border-top:1px solid var(--rule);border-right:none;}
     }
   </style>
 </head>
@@ -157,6 +121,12 @@
     <p style="font-size:11px;color:var(--muted);margin-top:8px;">Mean precision-weighted scores per Congress × chamber × party. Source: <code style="font-size:11px;">aggregate.cbs</code>.</p>
   </div>
 
+  <!--
+  =====================================================================
+  MEMBER PROFILE SEARCH — commented out, restore when ready
+  To re-enable: uncomment this block AND the member profile JS below
+  =====================================================================
+
   <div class="panel">
     <p class="panel-label">Member profile</p>
     <p style="font-size:13px;color:var(--slate);margin-bottom:1.25rem;">Search any member of Congress to see their full bipartisanship profile across all terms and issue areas.</p>
@@ -167,6 +137,11 @@
     </div>
     <div id="profile-area"></div>
   </div>
+
+  =====================================================================
+  END MEMBER PROFILE SEARCH
+  =====================================================================
+  -->
 
   <div class="panel">
     <p class="panel-label">Install &amp; use</p>
@@ -202,10 +177,9 @@
 </div>
 
 <script>
-let TREND = [], AGG = [], ISSUE = {}, ISSUE_LABELS = {};
+let TREND = [];
 let scoreType = 'attract', chamberFilter = 'both';
-let chartInst = null, issueChartInst = null;
-let acResults = [], acFocused = -1;
+let chartInst = null;
 
 const COL = {
   'HOUSE-D':  { stroke: '#185FA5', dash: [5,4] },
@@ -214,16 +188,8 @@ const COL = {
   'SENATE-R': { stroke: '#A32D2D', dash: [] },
 };
 
-Promise.all([
-  fetch('trend.json').then(r => r.json()),
-  fetch('aggregate.json').then(r => r.json()),
-  fetch('issue_area.json').then(r => r.json()),
-  fetch('issues.json').then(r => r.json()),
-]).then(([trend, agg, issue, issueList]) => {
+fetch('trend.json').then(r => r.json()).then(trend => {
   TREND = trend;
-  AGG = agg;
-  ISSUE = issue;
-  ISSUE_LABELS = Object.fromEntries(issueList.map(r => [r.topic_short, r.topic_label]));
   buildChart();
 });
 
@@ -270,142 +236,6 @@ function buildChart() {
   });
 }
 
-function onSearchInput() {
-  const q = document.getElementById('member-search').value.toLowerCase().trim();
-  const ac = document.getElementById('autocomplete');
-  acFocused = -1;
-  if (q.length < 2) { ac.classList.remove('open'); ac.innerHTML=''; return; }
-  const seen = new Map();
-  for (const row of AGG) {
-    if (!row.name.toLowerCase().includes(q)) continue;
-    const existing = seen.get(row.bioguide_id);
-    if (!existing || row.congress > existing.congress) seen.set(row.bioguide_id, row);
-  }
-  acResults = [...seen.values()].sort((a,b)=>a.name.localeCompare(b.name)).slice(0,8);
-  if (!acResults.length) { ac.classList.remove('open'); return; }
-  ac.innerHTML = acResults.map((r,i) =>
-    `<div class="ac-item" onmousedown="selectMember(${i})" id="ac-${i}">
-      <span class="ac-pill ac-pill-${r.party}">${r.party}</span>
-      ${r.name}
-      <span class="ac-meta">${r.chamber==='HOUSE'?'House':'Senate'} · ${r.state}</span>
-    </div>`
-  ).join('');
-  ac.classList.add('open');
-}
-
-function onSearchKey(e) {
-  const ac = document.getElementById('autocomplete');
-  if (!ac.classList.contains('open')) return;
-  if (e.key==='ArrowDown') { e.preventDefault(); moveFocus(1); }
-  else if (e.key==='ArrowUp') { e.preventDefault(); moveFocus(-1); }
-  else if (e.key==='Enter') { e.preventDefault(); if (acFocused>=0) selectMember(acFocused); else if (acResults.length) selectMember(0); }
-  else if (e.key==='Escape') { ac.classList.remove('open'); }
-}
-
-function moveFocus(dir) {
-  acFocused = Math.max(0, Math.min(acResults.length-1, acFocused+dir));
-  document.querySelectorAll('.ac-item').forEach((el,i) => el.classList.toggle('focused', i===acFocused));
-}
-
-function selectMember(i) {
-  const row = acResults[i];
-  document.getElementById('member-search').value = row.name;
-  document.getElementById('autocomplete').classList.remove('open');
-  renderProfile(row.bioguide_id, row);
-}
-
-function renderProfile(bid, row, selectedCongress) {
-  const issueData = ISSUE[bid];
-  const aggTerms = AGG.filter(r=>r.bioguide_id===bid).sort((a,b)=>a.congress-b.congress);
-  const firstCong = aggTerms[0]?.congress, lastCong = aggTerms[aggTerms.length-1]?.congress;
-  const congress = selectedCongress || lastCong;
-  const termRow = aggTerms.find(t=>t.congress===congress) || aggTerms[aggTerms.length-1];
-  const attracts = aggTerms.map(t=>t.attract_aggregate_weighted).filter(v=>v!=null);
-  const offers   = aggTerms.map(t=>t.offer_aggregate_weighted).filter(v=>v!=null);
-  const avgA = attracts.length ? attracts.reduce((a,b)=>a+b,0)/attracts.length : null;
-  const avgO = offers.length   ? offers.reduce((a,b)=>a+b,0)/offers.length     : null;
-  const barColor = row.party==='D' ? '#185FA5' : '#A32D2D';
-  const photoUrl = `https://bioguide.congress.gov/bioguide/photo/${bid[0]}/${bid}.jpg`;
-  const chamber = termRow?.chamber || row.chamber;
-  const issueTerms = Array.isArray(issueData) ? issueData : [];
-  const issueTerm = issueTerms.find(t=>t[0]===congress) || issueTerms[issueTerms.length-1];
-  const issueScores = issueTerm ? issueTerm[2] : {};
-  const issueEntries = Object.entries(issueScores)
-    .filter(([s]) => s !== 'na')
-    .map(([s,v]) => ({ short:s, label: ISSUE_LABELS[s]||s, attract: v.a??null, offer: v.o??null }))
-    .filter(e => e.attract!=null || e.offer!=null)
-    .sort((a,b) => ((b.attract??0)+(b.offer??0)) - ((a.attract??0)+(a.offer??0)));
-  const issueLabels  = issueEntries.map(e=>e.label);
-  const issueAttract = issueEntries.map(e=>e.attract??0);
-  const issueOffer   = issueEntries.map(e=>e.offer??0);
-  const chartHeight  = Math.max(300, issueLabels.length * 22 + 80);
-  const congOpts = aggTerms.map(t =>
-    `<option value="${t.congress}" ${t.congress===congress?'selected':''}>${t.congress}th Congress</option>`
-  ).join('');
-
-  document.getElementById('profile-area').innerHTML = `
-    <div class="profile-card">
-      <div class="profile-card-body">
-        <div class="profile-top">
-          <img class="profile-photo" src="${photoUrl}" alt="${row.name}"
-            onerror="this.outerHTML='<div class=\\'profile-photo-placeholder\\'>?</div>'" />
-          <div>
-            <div class="profile-name">${row.name}</div>
-            <div class="profile-meta">
-              <span class="pill pill-${row.party}">${row.party}</span>
-              ${chamber==='HOUSE'?'House':'Senate'} · ${row.state}
-              · ${firstCong}th–${lastCong}th Congress
-            </div>
-          </div>
-        </div>
-        <div class="profile-career">
-          <div class="career-cell"><div class="career-val">${avgA!=null?(avgA*100).toFixed(1)+'%':'—'}</div><div class="career-lbl">Career avg attract</div></div>
-          <div class="career-cell"><div class="career-val">${avgO!=null?(avgO*100).toFixed(1)+'%':'—'}</div><div class="career-lbl">Career avg offer</div></div>
-          <div class="career-cell"><div class="career-val">${aggTerms.length}</div><div class="career-lbl">Terms served</div></div>
-        </div>
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
-          <div class="issue-section-label" style="margin:0;">Bipartisanship by CRS policy area</div>
-          <select style="font-family:'DM Sans',sans-serif;font-size:12px;color:var(--slate);background:var(--bg);border:1px solid var(--rule);border-radius:6px;padding:4px 24px 4px 10px;cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url('data:image/svg+xml,%3Csvg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'10\\' height=\\'6\\'%3E%3Cpath d=\\'M0 0l5 6 5-6z\\' fill=\\'%239a9a92\\'/%3E%3C/svg%3E');background-repeat:no-repeat;background-position:right 8px center;"
-            onchange="renderProfile('${bid}', ${JSON.stringify(row).replace(/"/g,'&quot;')}, +this.value)">
-            ${congOpts}
-          </select>
-        </div>
-        <div class="issue-legend">
-          <div class="issue-legend-item"><div class="issue-swatch" style="background:${barColor}"></div>Attract</div>
-          <div class="issue-legend-item"><div class="issue-swatch" style="background:${barColor}55"></div>Offer</div>
-        </div>
-        ${issueEntries.length ? `
-        <div class="issue-chart-wrap" style="height:${chartHeight}px;position:relative;">
-          <canvas id="issue-chart" role="img" aria-label="Bipartisanship scores by policy area for ${row.name}, ${congress}th Congress"></canvas>
-        </div>` : '<p style="font-size:13px;color:var(--muted);margin-top:8px;">No issue-area data available for this congress.</p>'}
-        <div class="profile-r-hint">plot_member_profile("${bid}", congress = ${congress}, chamber = "${chamber.toLowerCase()}")</div>
-      </div>
-    </div>`;
-
-  if (issueEntries.length) {
-    if (issueChartInst) issueChartInst.destroy();
-    issueChartInst = new Chart(document.getElementById('issue-chart').getContext('2d'), {
-      type: 'bar',
-      data: {
-        labels: issueLabels,
-        datasets: [
-          { label:'Attract', data:issueAttract, backgroundColor:barColor,      borderRadius:3, barPercentage:0.55 },
-          { label:'Offer',   data:issueOffer,   backgroundColor:barColor+'66', borderRadius:3, barPercentage:0.55 },
-        ]
-      },
-      options: {
-        indexAxis: 'y', responsive: true, maintainAspectRatio: false,
-        plugins: { legend:{display:false}, tooltip:{callbacks:{label:c=>c.dataset.label+': '+(c.parsed.x*100).toFixed(1)+'%'}} },
-        scales: {
-          x: { min:0, max:1, grid:{color:'rgba(0,0,0,0.05)'}, ticks:{font:{size:10,family:'DM Sans'},color:'#9a9a92',callback:v=>(v*100).toFixed(0)+'%'} },
-          y: { grid:{display:false}, ticks:{font:{size:11,family:'DM Sans'},color:'#5a5a54'} }
-        }
-      }
-    });
-  }
-  document.getElementById('profile-area').scrollIntoView({behavior:'smooth', block:'nearest'});
-}
-
 function cp(text, btn) {
   navigator.clipboard.writeText(text).then(() => {
     btn.textContent = 'Copied!';
@@ -413,9 +243,32 @@ function cp(text, btn) {
   });
 }
 
+/*
+=====================================================================
+MEMBER PROFILE JS — commented out, restore when ready
+To re-enable: uncomment this block AND the HTML panel above
+Also restore the Promise.all fetch to include aggregate.json,
+issue_area.json, and issues.json alongside trend.json
+=====================================================================
+
+let AGG = [], ISSUE = {}, ISSUE_LABELS = {};
+let issueChartInst = null;
+let acResults = [], acFocused = -1;
+
+function onSearchInput() { ... }
+function onSearchKey(e) { ... }
+function moveFocus(dir) { ... }
+function selectMember(i) { ... }
+function renderProfile(bid, row, selectedCongress) { ... }
+
 document.addEventListener('click', e => {
   if (!e.target.closest('.search-wrap')) document.getElementById('autocomplete').classList.remove('open');
 });
+
+=====================================================================
+END MEMBER PROFILE JS
+=====================================================================
+*/
 </script>
 </body>
 </html>
