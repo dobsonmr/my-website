@@ -143,7 +143,7 @@
   <div class="page-header">
     <h1 class="page-title">State Legislative Bipartisanship Scores</h1>
     <p class="page-meta">Mackenzie R. Dobson · University of Tennessee, Knoxville · <em>State Politics &amp; Policy Quarterly</em>, 2026</p>
-    <p class="page-desc">Original measures of bipartisan cosponsorship behavior for 10,817 legislators serving in 43 U.S. state legislatures between 2009 and 2018. Two scores are computed at the legislator-term level: <em>offered</em> (the proportion of a legislator's cosponsorships directed to out-party bills) and <em>attracted</em> (the average proportion of out-party cosponsors on a legislator's own bills). Developed to test the theory of selective reciprocity in <a href="https://doi.org/10.1017/spq.2026.10021" target="_blank">Dobson (2026)</a>, <em>State Politics &amp; Policy Quarterly</em> 26(2): 139–164.</p>
+    <p class="page-desc">The State Legislative Bipartisanship Scores (SLBS) provide original measures of bipartisan collaboration for 10,817 legislators serving in 43 U.S. state legislatures between 2009 and 2018. Comprising 27,129 legislator-term observations, the dataset captures two complementary dimensions of bipartisan engagement: the extent to which legislators support bills introduced by members of the opposite party and the extent to which they attract support from across party lines on their own legislation. Drawing on millions of bill sponsorship and cosponsorship relationships, the measures provide a comparable framework for studying bipartisan behavior across states, chambers, parties, and legislative contexts.</p>
     <div class="action-row">
       <a class="btn primary" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/W7OXER&version=1.0" target="_blank">Download Data</a>
       <a class="btn orange" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F4E55ADC5CF8CB3ABB5121D3808A1B86/S1532440026100218a.pdf/selective-reciprocity-in-bipartisan-collaboration-how-majority-security-shapes-legislative-success.pdf" target="_blank">Read Paper (PDF)</a>
@@ -153,19 +153,19 @@
       <div class="stat-cell"><div class="stat-val">27,129</div><div class="stat-lbl">Legislator-term obs.</div></div>
       <div class="stat-cell"><div class="stat-val">43</div><div class="stat-lbl">State legislatures</div></div>
       <div class="stat-cell"><div class="stat-val">86</div><div class="stat-lbl">Chambers</div></div>
-      <div class="stat-cell"><div class="stat-val">2009–2018</div><div class="stat-lbl">Study period</div></div>
+      <div class="stat-cell"><div class="stat-val">2009–2018</div><div class="stat-lbl">Time series</div></div>
     </div>
   </div>
 
   <!-- MEASURES -->
   <div class="panel">
     <p class="panel-label">Measures</p>
-    <p class="panel-desc">Both scores are computed at the <strong>legislator-term</strong> level from bill-level cosponsorship records and scaled 0–1. They capture distinct dimensions of bipartisan engagement — extending support to the other side versus attracting it.</p>
+    <p class="panel-desc">The SLBS dataset includes two measures of bipartisan collaboration calculated for each legislator during each legislative term. Together, they capture both sides of bipartisan engagement: the willingness to support legislation introduced by members of the opposite party and the ability to attract support from members of the opposite party on one's own legislation.</p>
     <div class="measure-grid">
       <div class="measure-card">
         <div class="mc-title">Bipartisan cosponsorships offered</div>
         <div class="mc-formula">proportion_direct_bipartisan_bills</div>
-        <p class="mc-desc">Of all the bills a legislator cosponsors in a term, what share were introduced by out-party members?</p>
+        <p class="mc-desc">Measures the share of a legislator's cosponsorship activity directed toward bills introduced by members of the opposite party. Higher values indicate a greater willingness to extend support across party lines.</p>
         <svg class="diagram" viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg">
           <circle cx="16" cy="12" r="5" fill="#58595B"/>
           <text x="25" y="16" font-size="10" fill="#5a5a54" font-family="DM Sans">= Bill sponsor</text>
@@ -207,7 +207,7 @@
       <div class="measure-card">
         <div class="mc-title">Bipartisan cosponsors attracted</div>
         <div class="mc-formula">average_prop_bill_bipartisan</div>
-        <p class="mc-desc">Across all bills a legislator sponsors, what share of cosponsors on average came from the other party?</p>
+        <p class="mc-desc">Measures the average share of opposite-party cosponsors on the bills a legislator sponsors. Higher values indicate a greater ability to build cross-party support for one's legislative agenda.</p>
         <svg class="diagram" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
           <circle cx="16" cy="12" r="5" fill="#58595B"/>
           <text x="25" y="16" font-size="10" fill="#5a5a54" font-family="DM Sans">= Sponsor (legislator i)</text>
@@ -242,19 +242,10 @@
     </div>
   </div>
 
-  <!-- DISTRIBUTION -->
-  <div class="panel">
-    <p class="panel-label">Distribution of bipartisan cosponsorships offered</p>
-    <p class="panel-desc">Each curve shows how the proportion of cosponsorships given to out-party bills is distributed across individual legislator-term observations within each group, pooled across the full 2009–2018 study period. The rightward shift of minority party curves — and the growing divergence between minority and majority in secure chambers — illustrates the asymmetry central to the theory of selective reciprocity.</p>
-    <div class="legend-grid" id="distLegend"></div>
-    <div class="chart-wrap h300"><canvas id="distChart"></canvas></div>
-    <p class="note">Each curve pools all legislator-term observations in the respective group across 2009–2018. Distributions approximated across 20 equal-width bins spanning 0–1. N = 27,129 legislator-term observations.</p>
-  </div>
-
   <!-- COMPETITION MAP -->
   <div class="panel">
-    <p class="panel-label">Chamber competition map</p>
-    <p class="panel-desc">Each state is colored by the modal majority security classification — the most common security designation across all available legislative terms for that chamber within the 2009–2018 study period. <strong>Click any state</strong> to view the chamber's competition profile. Toggle between House and Senate chambers.</p>
+    <p class="panel-label">Bipartisanship and chamber competition</p>
+    <p class="panel-desc">This map explores how bipartisan collaboration varies across different legislative environments. States are classified according to the level of majority-party security within each chamber during the time series. Majority security is measured using partisan seat share difference, defined as the absolute difference between the proportion of seats held by the majority and minority parties. For example, a chamber where one party holds 60 percent of the seats and the other holds 40 percent would have a partisan seat share difference of 0.20.<br><br>Chambers are classified as secure when the partisan seat share difference is 0.33 or greater, meaning the majority party holds at least two-thirds of the seats in the chamber. Chambers below this threshold are classified as insecure and represent more competitive partisan environments.<br><br>Use the House and Senate toggle to explore how bipartisan collaboration differs across varying levels of majority-party security. Clicking a state reveals chamber-specific information on both bipartisan cosponsorship behavior and partisan competition.</p>
     <div class="controls">
       <div class="seg" id="seg-map-chamber">
         <button class="active" onclick="setMapChamber('house')">House</button>
@@ -267,13 +258,13 @@
       <div class="map-legend-item"><div class="map-dot" style="background:var(--smokey-light);"></div>Insecure majority (modal seat share diff. &lt; 0.33)</div>
       <div class="map-legend-item"><div class="map-dot" style="background:var(--rule);"></div>Not in dataset</div>
     </div>
-    <p class="note">Modal security classification is the most common security designation across all available legislative terms for each chamber within 2009–2018. A chamber is classified as "secure" when partisan_seatshare_diff was ≥ 0.33 in the majority of its observed terms.</p>
+    <p class="note">Modal security classification is the most common security designation across all available legislative terms for each chamber within the 2009–2018 time series. A chamber is classified as secure when partisan seat share difference is 0.33 or greater in the majority of its observed terms.</p>
   </div>
 
   <!-- TABLE -->
   <div class="panel">
     <p class="panel-label">Chamber-level summary table</p>
-    <p class="panel-desc">Each row reports averages pooled across all available legislative terms within 2009–2018 for that chamber. <strong>Majority offered</strong> and <strong>Minority offered</strong> are means of proportion_direct_bipartisan_bills across all legislator-term observations in the respective group. <strong>Avg. seat share diff.</strong> is the mean partisan seat share difference across all available terms. Click any row to open that chamber on the map.</p>
+    <p class="panel-desc">This table summarizes bipartisan collaboration and chamber competition across state legislative chambers included in the time series. Values represent averages across all available legislative terms for each chamber.<br><br>Majority offered and Minority offered report the average share of cosponsorships directed toward bills sponsored by members of the opposite party among legislators serving in the majority and minority parties, respectively. Average seat share difference measures the degree of partisan imbalance in the chamber and is calculated as the absolute difference between the seat shares of the two parties.<br><br>Click any row to view the corresponding chamber on the map and explore its bipartisan collaboration and competition profile.</p>
     <div class="controls">
       <div class="seg" id="seg-table-ch">
         <button class="active" onclick="setTableCh('both')">Both</button>
@@ -304,7 +295,7 @@
         <tbody id="tableBody"></tbody>
       </table>
     </div>
-    <p class="note">All values are pooled averages across all available legislative terms for each state-chamber within 2009–2018. Term coverage varies by state.</p>
+    <p class="note">All values are pooled averages across all available legislative terms for each state-chamber within the 2009–2018 time series. Term coverage varies by state.</p>
   </div>
 
   <!-- CITATION -->
@@ -331,7 +322,7 @@
     <div class="mm-meta" id="mmMeta"></div>
     <div id="mmBadge"></div>
     <div class="mm-grid" id="mmGrid"></div>
-    <p class="mm-note">All values are averages pooled across all available legislative terms for this chamber within 2009–2018. Modal security reflects the most common classification across observed terms.</p>
+    <p class="mm-note">All values are averages pooled across all available legislative terms for this chamber within the 2009–2018 time series. Modal security reflects the most common classification across observed terms.</p>
   </div>
 </div>
 
@@ -454,7 +445,6 @@ function buildTable(){
 }
 document.getElementById('tableSearch').addEventListener('input',buildTable);
 
-buildDistChart();
 buildMap();
 buildTable();
 </script>
