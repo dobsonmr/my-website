@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+n<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -30,8 +30,8 @@
     .nav-links a:hover,.nav-links a.active{color:var(--ink);border-bottom-color:var(--orange);}
 
     /* ── LAYOUT ── */
-    .container{max-width:1000px;margin:0 auto;padding:0 2.5rem;}
-    .hero{display:grid;grid-template-columns:1fr 240px;gap:3.5rem;padding:4rem 0 3rem;align-items:start;}
+    .container{max-width:1100px;margin:0 auto;padding:0 2.5rem;}
+    .hero{display:grid;grid-template-columns:1fr 250px;gap:3rem;padding:4rem 0 3rem;align-items:start;}
     h1{font-family:'EB Garamond',serif;font-size:38px;font-weight:400;letter-spacing:-0.01em;line-height:1.15;color:var(--ink);margin-bottom:0.35rem;}
     .hero-subtitle{font-size:12px;font-weight:400;letter-spacing:0.07em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem;}
     .bio{font-size:18px;line-height:1.85;color:var(--slate);}
@@ -99,6 +99,10 @@
     .project-links a:hover{text-decoration:underline;}
     .future-note{font-size:12px;color:var(--muted);margin-top:0.25rem;letter-spacing:0.02em;}
 
+    /* ── MEDIA ── */
+    .media-img{width:100%;max-width:480px;border:1px solid var(--rule);border-radius:6px;display:block;margin-bottom:0.9rem;}
+    .media-meta{font-size:11px;color:var(--muted);letter-spacing:0.03em;margin-bottom:0.4rem;}
+
     footer{padding:2rem 0;border-top:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;}
     .footer-text{font-size:12px;color:var(--muted);}
 
@@ -143,6 +147,7 @@
     <li><a href="#about">about</a></li>
     <li><a href="#research">research</a></li>
     <li><a href="#data" class="nav-data-label">Data, Software, &amp; Public Projects</a></li>
+    <li><a href="#media">media</a></li>
     <li><a href="#cv">cv</a></li>
   </ul>
 </nav>
@@ -189,28 +194,27 @@
         <p class="pub-authors"><strong>Mackenzie R. Dobson</strong></p>
         <div class="pub-tags-main">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
-          <a class="pub-tag link" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F4E55ADC5CF8CB3ABB5121D3808A1B86/S1532440026100218a.pdf/selective-reciprocity-in-bipartisan-collaboration-how-majority-security-shapes-legislative-success.pdf" target="_blank">pdf</a>
+          <a class="pub-tag link" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F4E55ADC5CF8CB3ABB5121D3808A1B86/S1532440026100218a.pdf/selective_reciprocity_in_bipartisan_collaboration_how_majority_security_shapes_legislative_success.pdf" target="_blank">pdf</a>
           <a class="pub-tag link" href="https://www.cambridge.org/core/journals/state-politics-and-policy-quarterly/article/selective-reciprocity-in-bipartisan-collaboration-how-majority-security-shapes-legislative-success/F4E55ADC5CF8CB3ABB5121D3808A1B86" target="_blank">html</a>
-          <a class="pub-tag link" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/W7OXER" target="_blank">dataverse</a>
         </div>
         <div class="pub-tags-awards">
-          <span class="pub-tag award">Best Paper on State Politics, 2025</span>
-          <span class="pub-tag award">Best Poster, State Politics and Policy Conference, 2024</span>
+          <span class="pub-tag award">Best Graduate Student Paper on State Politics, State Politics &amp; Policy Conference 2025</span>
+          <span class="pub-tag award">Best Poster Presentation on State Politics, State Politics &amp; Policy Conference 2024</span>
+          <span class="pub-tag cel">CEL Working Paper Series</span>
         </div>
-        <div class="abstract-box">How does majority party security shape reciprocal bipartisan collaboration and influence legislative success? US state legislatures vary widely in the stability of majority control, offering a valuable opportunity to examine how party security conditions the incentives for cross-party collaboration. Insecure majorities may foster reciprocity as both a behavioral norm and a strategic path to legislative advancement, while long-term one-party control can diminish the returns to bipartisan engagement. I develop a theory of selective reciprocity, arguing that majority security fundamentally restructures how legislators engage in and benefit from bipartisan collaboration. Drawing on data from 401,720 bills introduced across 43 state legislatures between 2009 and 2018, I construct novel measures of bipartisan collaboration to evaluate reciprocity. I find that minority party legislators build reputational capital by consistently cosponsoring majority party bills – but their efforts yield few legislative gains in secure majority chambers. Instead, majority legislators selectively reciprocate only on minority party initiatives unlikely to pass, preserving the appearance of cooperation while protecting their policy agenda. By contrast, in insecure chambers, bipartisan cooperation is more likely to produce substantive outcomes. Reciprocity endures but is constrained – selective in form, asymmetric in effect, and structured by the institutional advantages of majority control.</div>
+        <div class="abstract-box">Bipartisan collaboration is widely considered a reliable route to legislative success, largely based on evidence from the contemporary U.S. Congress. Yet most state legislatures are governed by majority parties that occupy a significant share of chamber seats, permitting them to advance legislation without minority-party support. I argue that bipartisan collaboration enhances effectiveness only when cross-party support is necessary to assemble a winning coalition. Using State Legislative Effectiveness Scores and original measures of coalition-building, I show that bipartisanship enhances effectiveness in competitive chambers but not under secure majorities.</div>
       </div>
 
       <div class="pub-item">
         <p class="pub-title">The Consequences of Elite Action Against Elections</p>
         <p class="pub-venue">British Journal of Political Science, 2025</p>
-        <p class="pub-authors">Rachel Porter, Jeffrey J. Harden, Emily Anderson, Géssica de Frietas, <strong>Mackenzie R. Dobson</strong>, Abigail Hemmen, and Emma Schroeder</p>
+        <p class="pub-authors">Emily E. Anderson, <strong>Mackenzie R. Dobson</strong>, and Jeffrey J. Harden</p>
         <div class="pub-tags-main">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
           <a class="pub-tag link" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/1E549A13F7FBD704E4A96CE509351DB7/S0007123425100926a.pdf/the-consequences-of-elite-action-against-elections.pdf" target="_blank">pdf</a>
           <a class="pub-tag link" href="https://www.cambridge.org/core/journals/british-journal-of-political-science/article/consequences-of-elite-action-against-elections/1E549A13F7FBD704E4A96CE509351DB7" target="_blank">html</a>
-          <a class="pub-tag link" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PVUCFJ" target="_blank">dataverse</a>
         </div>
-        <div class="abstract-box">Do elites who engage in undemocratic practices face democratic accountability? We investigate whether American state legislators who publicly acted against the 2020 presidential election outcome sustained meaningful sanctions in response. We theorize that accountability for undemocratic activities is selective—conspicuous, highly visible efforts to undermine democratic institutions face the strongest ramifications from voters, politicians, and parties. In contrast, other, less prominent actions elicit weaker responses. Our empirical analyses employ novel data on state legislators' anti-election actions and a weighting method for covariate balance to estimate the magnitude of accountability for undemocratic behavior. The results evidence heterogeneity, with the strongest consequences targeting legislators who appeared at the U.S. Capitol on January 6th, 2021, and weaker penalties for legislators who engaged in other antagonism toward democracy.</div>
+        <div class="abstract-box">Do governing elites who engage in undemocratic practices face accountability? We investigate whether American state legislators who publicly acted against the 2020 presidential election outcome sustained meaningful sanctions in response. We theorize that accountability for undemocratic activities is selective — conspicuous, highly visible efforts to undermine democratic institutions face the strongest ramifications from voters, politicians, and parties. In contrast, less prominent actions elicit weaker responses. Our results evidence heterogeneity, with the strongest consequences targeting legislators who appeared at the U.S. Capitol on January 6th, 2021, and weaker penalties for lawmakers who engaged in other antagonism toward democracy.</div>
       </div>
 
       <div class="pub-item">
@@ -221,9 +225,8 @@
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
           <a class="pub-tag link" href="https://www.pnas.org/doi/epdf/10.1073/pnas.2519787122" target="_blank">pdf</a>
           <a class="pub-tag link" href="https://www.pnas.org/doi/10.1073/pnas.2519787122" target="_blank">html</a>
-          <a class="pub-tag link" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/G3BMBR" target="_blank">dataverse</a>
         </div>
-        <div class="abstract-box">Public trust in democratic institutions is essential for effective governance, yet global confidence in them has fallen to unprecedented lows. In response, electorates in major democracies are increasingly turning away from career politicians and toward "amateurs"—politicians without prior elective office-holding experience—hoping that these outsiders can disrupt partisan gridlock and elite entrenchment. Using the United States Congress as a critical case, we evaluate this expectation by linking over four decades of election data with 2.2 million records of bill sponsorship and cosponsorship. Contrary to conventional wisdom, we find that electing political amateurs to public office significantly intensifies partisan divisions rather than alleviates them.</div>
+        <div class="abstract-box">Public trust in democratic institutions has dropped to historic lows, prompting electorates in major democracies to turn to "amateur" politicians with the expectation that these political outsiders will cut through stalemates to deliver policy results. Amateurs are often seen as pragmatic "doers," but also uncompromising, a combination at odds with governing systems where legislative progress depends on cross-party coalitions. Using the US Congress as a critical case, we evaluate these competing expectations by linking over four decades of election data with 2.2 million bill (co)sponsorship records. We find that electing amateurs intensifies partisan divisions: Districts that send amateurs to Congress yield representatives who attract fewer opposing-party collaborators to their bills and less often support other-party legislation.</div>
       </div>
 
       <div class="pub-item">
@@ -253,9 +256,9 @@
         <div class="pub-tags-main">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
           <a class="pub-tag link" href="https://www.dropbox.com/scl/fi/zbu5jsed8gkv6j3sigukw/Legislative-Professionalism-and-White-Collar-Govt.pdf?rlkey=bklwlnvsmbyfv032liac104be&st=5pgu1hys&dl=0" target="_blank">pdf</a>
-        </div>
+          </div>
         <div class="pub-tags-awards">
-          <span class="pub-tag award">Conditionally Accepted for Publication in the Journal of Political Institutions and Political Economy</span>
+          <span class="pub-tag award">Conditionally Accepted, Journal of Political Institutions and Political Economy</span>
         </div>
         <div class="abstract-box">The professionalization of American state legislatures is among the most consequential modern institutional reforms in legislative politics. Yet a core tension persists: citizens disapprove of professionalized legislatures even though these chambers possess capacity-enhancing resources—such as staff support, higher salaries, and longer sessions—that may improve representation and policymaking. We offer one explanation for this disapproval: citizens perceive professional legislatures as dominated by legislators from white-collar backgrounds. Consequently, we argue that opposition to professionalism stems, in part, from a belief that white-collar legislators may not represent society's interests broadly.</div>
       </div>
@@ -294,6 +297,9 @@
         <div class="pub-tags-main">
           <span class="pub-tag abstract-btn" onclick="toggleAbstract(this)">abstract</span>
           <a class="pub-tag link" href="https://www.dropbox.com/scl/fi/lro80gvjymnxtgceypzvh/Bipartisanship-Measures.pdf?rlkey=v4j8n6m2tdhbj31ot0lhg9lcc&st=gcm5whmg&dl=0" target="_blank">pdf</a>
+        </div>
+        <div class="pub-tags-awards">
+          <span class="pub-tag cel">CEL Working Paper Series</span>
         </div>
         <div class="abstract-box">Although bipartisanship is central to legislative behavior and often necessary for policymaking success, no centralized, publicly accessible dataset tracks legislators' propensity to offer and attract cross-party support across time and policy issue areas. We introduce a dataset of congressional bipartisanship scores for all members of the U.S. House and Senate from 1983 to 2024. Built from more than 2.4 million cosponsorship decisions on 147,669 bills, the dataset provides two complementary member-term measures. To facilitate broad reuse among academics, researchers, journalists, legislators, and the public, we make the dataset available through Harvard Dataverse and a corresponding R package, 'biparty.'</div>
       </div>
@@ -373,7 +379,203 @@
       </div>
     </div>
 
+    
+    <div class="project-card">
+      <div class="project-card-body">
+        <div class="project-top">
+          <div class="project-logo">
+            <svg width="100" height="100" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+              <rect width="120" height="120" rx="22" fill="#FF8200"/>
+              <text x="60" y="44" font-size="26" font-weight="400" fill="white" font-family="EB Garamond, serif" text-anchor="middle">SLBS</text>
+              <line x1="22" y1="54" x2="98" y2="54" stroke="white" stroke-width="1" opacity="0.4"/>
+              <text x="60" y="67" font-size="8.5" fill="white" font-family="DM Sans, sans-serif" text-anchor="middle" letter-spacing="0.11em" opacity="0.92">STATE LEGISLATIVE</text>
+              <text x="60" y="80" font-size="8.5" fill="white" font-family="DM Sans, sans-serif" text-anchor="middle" letter-spacing="0.11em" opacity="0.92">BIPARTISANSHIP</text>
+              <text x="60" y="93" font-size="8.5" fill="white" font-family="DM Sans, sans-serif" text-anchor="middle" letter-spacing="0.11em" opacity="0.92">SCORES</text>
+            </svg>
+          </div>
+          <div style="flex:1;min-width:0;">
+            <p class="project-name">State Legislative Bipartisanship Scores</p>
+            <p class="project-byline">Dobson (2026) · Harvard Dataverse · <em>State Politics &amp; Policy Quarterly</em></p>
+          </div>
+          <a class="explore-btn" href="state-bipartisanship.html">Explore data →</a>
+        </div>
+        <p class="project-desc">The State Legislative Bipartisanship Scores (SLBS) provide original measures of bipartisan collaboration for 10,817 legislators serving in 43 U.S. state legislatures between 2009 and 2018. Comprising 27,129 legislator-term observations, the dataset captures two complementary dimensions of bipartisan engagement: the extent to which legislators support bills introduced by members of the opposite party and the extent to which they attract support from across party lines on their own legislation.</p>
+        <div class="project-stats">
+          <div class="stat-cell"><div class="stat-val">27,129</div><div class="stat-lbl">Legislator-term obs.</div></div>
+          <div class="stat-cell"><div class="stat-val">43</div><div class="stat-lbl">State legislatures</div></div>
+          <div class="stat-cell"><div class="stat-val">86</div><div class="stat-lbl">Chambers</div></div>
+          <div class="stat-cell"><div class="stat-val">2009–2018</div><div class="stat-lbl">Study period</div></div>
+        </div>
+        <div class="project-links">
+          <a href="https://doi.org/10.7910/DVN/W7OXER" target="_blank">Harvard Dataverse</a>
+          <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F4E55ADC5CF8CB3ABB5121D3808A1B86/S1532440026100218a.pdf/selective-reciprocity-in-bipartisan-collaboration-how-majority-security-shapes-legislative-success.pdf" target="_blank">paper (pdf)</a>
+        </div>
+      </div>
+    </div>
+
     <p class="future-note">Additional projects will be listed here as they are released.</p>
+  </section>
+
+  <!-- IN THE MEDIA -->
+  <section class="section" id="media">
+    <p class="section-label">In the media</p>
+
+    <!-- CBS: CEL blog — Jun 15, 2026 -->
+    <div class="pub-item">
+      <p class="media-meta">Center for Effective Lawmaking · June 15, 2026</p>
+      <p class="pub-title">Congressional Bipartisanship Scores by Member and Issue Area, 1983–2024</p>
+      <p class="pub-authors">The Center for Effective Lawmaking featured the Congressional Bipartisanship Scores project, a dataset developed with Jacob M. Lollis that measures how members of Congress attract and offer cross-party support across time and policy areas.</p>
+      <div class="pub-tags-main">
+        <a class="pub-tag link" href="https://thelawmakers.org/legislative-research/congressional-bipartisanship-scores-by-member-and-issue-area-1983-2024" target="_blank">Read Feature</a>
+      </div>
+    </div>
+
+    <!-- CBS: CEL X — Jun 15, 2026 -->
+    <div class="pub-item">
+      <p class="media-meta">X Mention · June 15, 2026</p>
+      <p class="pub-title">Center for Effective Lawmaking shares Congressional Bipartisanship Scores on X</p>
+      <p class="pub-authors">The Center for Effective Lawmaking shared the Congressional Bipartisanship Scores project on X, introducing the dataset co-developed with Jacob M. Lollis of the University of Cincinnati, supported and funded by the Portman Center.</p>
+      <img class="media-img" src="CEL_X_Mention__CBS__June_2026_.png" alt="CEL X post about Congressional Bipartisanship Scores" />
+      <div class="pub-tags-main">
+        <a class="pub-tag link" href="https://x.com/MackenzieDobso2/status/2066605686536937802?s=20" target="_blank">View Post</a>
+      </div>
+    </div>
+
+    <!-- CBS: Lollis X — Jun 15, 2026 -->
+    <div class="pub-item">
+      <p class="media-meta">X Mention · June 15, 2026</p>
+      <p class="pub-title">Jacob M. Lollis shares Congressional Bipartisanship Scores on X</p>
+      <p class="pub-authors">Jacob M. Lollis shared the Congressional Bipartisanship Scores dataset and accompanying biparty R package on X, highlighting the project developed with Mackenzie R. Dobson.</p>
+      <img class="media-img" src="Lollis_X_Mention__CBS__June_2026_.png" alt="Jacob Lollis X post about Congressional Bipartisanship Scores" />
+      <div class="pub-tags-main">
+        <a class="pub-tag link" href="https://x.com/jacob__lollis/status/2066606645321322612?s=20" target="_blank">View Post</a>
+      </div>
+    </div>
+
+    <!-- Amateurs: Porter X — Oct 9, 2025 -->
+    <div class="pub-item">
+      <p class="media-meta">X Mention · October 9, 2025</p>
+      <p class="pub-title">Electing amateur politicians reduces cross-party collaboration</p>
+      <p class="pub-authors">Rachel Porter shared the publication of this paper in <em>PNAS</em> on X, co-authored with Jeffrey J. Harden and Mackenzie R. Dobson, finding that districts electing first-time members of the U.S. House experience substantial declines in bipartisan representation in the subsequent Congress.</p>
+      <img class="media-img" src="Porter_X_Mention__Amateurs__October_2025_.png" alt="Rachel Porter X post about PNAS amateurs paper" />
+      <div class="pub-tags-main">
+        <a class="pub-tag link" href="https://x.com/rachel__porter/status/1976312196637299094?s=20" target="_blank">View Post</a>
+        <a class="pub-tag link" href="https://www.pnas.org/doi/10.1073/pnas.2519787122" target="_blank">Read Paper</a>
+      </div>
+    </div>
+
+    <!-- Good Authority — Aug 22, 2025 -->
+    <div class="pub-item">
+      <p class="media-meta">Good Authority · August 22, 2025</p>
+      <p class="pub-title">Did politicians get punished for denying the 2020 election?</p>
+      <p class="pub-authors">John Sides featured this research in his Good Authority newsletter, discussing findings from work co-authored with Emily E. Anderson and Jeffrey J. Harden. The piece highlighted how Republican state legislators who participated in the January 6th "Stop the Steal" rally faced lower vote share, fewer cosponsorships, and less party funding — while online statements and offline actions showed no such penalty — concluding that "only the most extreme anti-election actions displayed any signs of consistent punishment."</p>
+      <img class="media-img" src="Screenshot_2026-06-15_at_5_43_04_PM.png" alt="Good Authority newsletter" />
+      <div class="pub-tags-main">
+        <a class="pub-tag link" href="https://www.goodauthority.org" target="_blank">Read Feature</a>
+      </div>
+    </div>
+
+    <!-- Bipartisan Path: CEL blog — Jul 21, 2025 -->
+    <div class="pub-item">
+      <p class="media-meta">Center for Effective Lawmaking · July 21, 2025</p>
+      <p class="pub-title">The Bipartisan Path Revisited: Collaboration and Legislative Effectiveness in the U.S. States</p>
+      <p class="pub-authors">The Center for Effective Lawmaking featured this working paper extending Harbridge-Yong, Volden, and Wiseman's (2023) framework to state legislatures, finding that bipartisanship is positively associated with lawmaking success across 43 state legislatures — though substantial variation in institutional rules, party competition, and majority security shapes the contours of cross-party collaboration.</p>
+      <div class="pub-tags-main">
+        <a class="pub-tag link" href="https://thelawmakers.org/blog/the-bipartisan-path-revisited-collaboration-and-legislative-effectiveness-in-the-u-s-states" target="_blank">Read Feature</a>
+      </div>
+    </div>
+
+    <!-- Bipartisan Path: CEL X — Jul 23, 2025 -->
+    <div class="pub-item">
+      <p class="media-meta">X Mention · July 23, 2025</p>
+      <p class="pub-title">The Bipartisan Path Revisited shared on X</p>
+      <p class="pub-authors">The Center for Effective Lawmaking shared the working paper on X, noting that Mackenzie R. Dobson extends Harbridge-Yong, Volden, and Wiseman's (2023) work and finds that bipartisanship is positively associated with lawmaking success in state legislatures.</p>
+      <img class="media-img" src="CEL_X_Mention__bipartisan_path__July_2025_.png" alt="CEL X post about The Bipartisan Path Revisited" />
+      <div class="pub-tags-main">
+        <a class="pub-tag link" href="https://x.com/MackenzieDobso2/status/1950567055180075380?s=20" target="_blank">View Post</a>
+      </div>
+    </div>
+
+    <!-- Election Deny: Rooney X — Nov 17, 2025 -->
+    <div class="pub-item">
+      <p class="media-meta">X Mention · November 17, 2025</p>
+      <p class="pub-title">Rooney Democracy Institute highlights election-denying accountability research</p>
+      <p class="pub-authors">The Rooney Democracy Institute congratulated the RPL Lab on the publication of this research in the <em>British Journal of Political Science</em>, co-authored with Emily E. Anderson and Jeffrey J. Harden, finding that only January 6th participation led to meaningful consequences for state legislators.</p>
+      <img class="media-img" src="Rooney_X_Mention__Election_Deny__November_2025_.png" alt="Rooney Democracy Institute X post" />
+      <div class="pub-tags-main">
+        <a class="pub-tag link" href="https://x.com/RooneyInstitute/status/1990464138364268688?s=20" target="_blank">View Post</a>
+      </div>
+    </div>
+
+    <!-- Election Deny: Porter X — Aug 30, 2024 -->
+    
+
+    <!-- Small Grant: CEL blog + X — Dec 4, 2024 -->
+    <div class="pub-item">
+      <p class="media-meta">Center for Effective Lawmaking · December 4, 2024</p>
+      <p class="pub-title">2024–2025 Small Grant Awards Announced</p>
+      <p class="pub-authors">The Center for Effective Lawmaking named Mackenzie R. Dobson and Andrew Ballard among its 7th annual small grant award recipients for the project "State Legislative Bill Topics."</p>
+      <img class="media-img" src="CEL_X_Mention__Small_Grant_Winner__December_2024_.png" alt="CEL X post announcing 2024-2025 small grant winners" />
+      <div class="pub-tags-main">
+        <a class="pub-tag link" href="https://thelawmakers.org/legislative-research/2024-2025-small-grant-awards-announced" target="_blank">Read Announcement</a>
+        <a class="pub-tag link" href="https://x.com/TheLawmakers/status/1864347334299054400?s=20" target="_blank">View Post</a>
+      </div>
+    </div>
+
+    <!-- Small Grant: UVA Batten X — Dec 12, 2024 -->
+    <div class="pub-item">
+      <p class="media-meta">X Mention · December 12, 2024</p>
+      <p class="pub-title">UVA Batten School highlights 2024–2025 CEL small grant recipients</p>
+      <p class="pub-authors">The UVA Batten School shared the Center for Effective Lawmaking's 2024–2025 small grant award recipients on X, congratulating the 10 scholars receiving grants for research into legislative effectiveness.</p>
+      <img class="media-img" src="Batten_X_Mention__Small_Grant_Winner__December_2024_.png" alt="UVA Batten X post about CEL small grant winners" />
+      <div class="pub-tags-main">
+        <a class="pub-tag link" href="https://x.com/UVABatten/status/1867262664004587555?s=20" target="_blank">View Post</a>
+      </div>
+    </div>
+
+    <!-- Campaigns: CEL blog — Oct 2024 -->
+    <div class="pub-item">
+      <p class="media-meta">Center for Effective Lawmaking · October 2024</p>
+      <p class="pub-title">Outcome-Consequential Campaigning</p>
+      <p class="pub-authors">The Center for Effective Lawmaking featured this working paper co-authored with Craig Volden and Alan Wiseman, examining whether congressional campaigns offer insights into likely policy outcomes — finding that bipartisan campaigners go on to become more effective lawmakers in Congress.</p>
+      <div class="pub-tags-main">
+        <a class="pub-tag link" href="https://thelawmakers.org/legislative-research/outcome-consequential-campaigning" target="_blank">Read Feature</a>
+      </div>
+    </div>
+
+    <!-- Campaigns: CEL X — Oct 21, 2024 -->
+    <div class="pub-item">
+      <p class="media-meta">X Mention · October 21, 2024</p>
+      <p class="pub-title">Outcome-Consequential Campaigning shared on X</p>
+      <p class="pub-authors">The Center for Effective Lawmaking shared the working paper on X, noting that co-directors Craig Volden and Alan Wiseman, alongside Mackenzie R. Dobson, illustrate that bipartisan campaigners can become effective lawmakers in Congress.</p>
+      <img class="media-img" src="CEL_X_Mention__campaigns__October_2024_.png" alt="CEL X post about Outcome-Consequential Campaigning" />
+      <div class="pub-tags-main">
+        <a class="pub-tag link" href="https://x.com/TheLawmakers/status/1848450550423056395?s=20" target="_blank">View Post</a>
+      </div>
+    </div>
+
+    <!-- JAWS — Mar 27, 2024 -->
+    <div class="pub-item">
+      <p class="media-meta">Junior Americanist Workshop Series (JAWS) · March 27, 2024</p>
+      <p class="pub-title">I'm Coming Out! How Voter Discrimination Produces Effective LGBTQ Lawmakers</p>
+      <p class="pub-authors">Presented via video conference at the Junior Americanist Workshop Series Legislative Effectiveness panel, alongside Jacob M. Lollis, with Patrick Egan as discussant.</p>
+      <img class="media-img" src="JAWS_X_Mention__LGBTQ_March_2024_.png" alt="JAWS X post announcing the Legislative Effectiveness panel" />
+      <div class="pub-tags-main">
+        <a class="pub-tag link" href="https://x.com/JawsPoliSci/status/1772300430153818265?s=20" target="_blank">View Post</a>
+        <a class="pub-tag link" href="https://jawspolisci.network/previous.html" target="_blank">View Program</a>
+      </div>
+    </div>
+
+    <!-- LGBTQ: CEL blog — 2023 -->
+    <div class="pub-item">
+      <p class="media-meta">Center for Effective Lawmaking · 2023</p>
+      <p class="pub-title">I'm Coming Out! How Voter Discrimination Produces Effective LGBTQ Lawmakers</p>
+      <p class="pub-authors">The Center for Effective Lawmaking featured work with Jacob M. Lollis on LGBTQ lawmakers, voter discrimination, and legislative effectiveness in the American states.</p>
+      <div class="pub-tags-main">
+        <a class="pub-tag link" href="https://thelawmakers.org/legislative-research/im-coming-out-how-voter-discrimination-produces-effective-lgbtq-lawmakers" target="_blank">Read Feature</a>
+      </div>
+    </div>
+
   </section>
 
   <section class="section" id="cv">
@@ -383,7 +585,7 @@
 
   <footer>
     <span class="footer-text">© 2026 Mackenzie R. Dobson · University of Tennessee, Knoxville</span>
-    <span class="footer-text">last updated May 2026</span>
+    <span class="footer-text">last updated June 2026</span>
   </footer>
 
 </div>
