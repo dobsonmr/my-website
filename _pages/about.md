@@ -12,17 +12,17 @@ redirect_from:
   - /cv/
 ---
 
-Welcome! I am an **Assistant Professor of Political Science** at the [University of Tennessee, Knoxville](https://polisci.utk.edu). My research centers on bipartisan collaboration, effective lawmaking, and political representation in American legislatures. I study how legislators build relationships across party lines, how those relationships shape policymaking and legislative success, and what these dynamics mean for democratic representation. To do so, I combine original data collection with large-scale observational data and employ quantitative and computational methods.
+Welcome! I am an **Assistant Professor of Political Science** at the [University of Tennessee, Knoxville](https://polisci.utk.edu/). I am also a Faculty Affiliate with the [Center for Effective Lawmaking](https://thelawmakers.org) and a Research Affiliate with the [Portman Center for Policy Solutions](https://www.artsci.uc.edu/social-sciences/public-and-international-affairs/portman-center.html).
 
-My published work appears in the [British Journal of Political Science](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/1E549A13F7FBD704E4A96CE509351DB7/S0007123425100926a.pdf/the-consequences-of-elite-action-against-elections.pdf), the [Proceedings of the National Academy of Sciences](https://www.pnas.org/doi/epdf/10.1073/pnas.2519787122), [State Politics & Policy Quarterly](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F4E55ADC5CF8CB3ABB5121D3808A1B86/S1532440026100218a.pdf/selective_reciprocity_in_bipartisan_collaboration_how_majority_security_shapes_legislative_success.pdf), and [PS: Political Science & Politics](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/99F9DDDB008114F6D77FB27534575BF3/S1049096525000101a.pdf/im-coming-out-how-voter-discrimination-produces-effective-lgbtq-lawmakers.pdf).
+My research centers on bipartisan collaboration, effective lawmaking, and political representation in American legislatures. I study how legislators build relationships across party lines, how those relationships shape policymaking and legislative success, and what these dynamics mean for democratic representation. To do so, I combine original data collection with large-scale observational data and employ quantitative and computational methods.
+
+My published work appears in the *British Journal of Political Science*, the *Proceedings of the National Academy of Sciences*, the *Journal of Political Institutions and Political Economy*, *State Politics & Policy Quarterly*, and *PS: Political Science & Politics*.
 
 Previously, I was a Visiting Scholar in the Representation and Politics in Legislatures Lab at the University of Notre Dame. I received my Ph.D. in Political Science from the University of Virginia.
 
-I am also a Research Affiliate with the Center for Effective Lawmaking and the Portman Center for Policy Solutions.
-
 ---
 
-# Research
+# Publications
 
 ## Published
 
@@ -78,13 +78,18 @@ Jacob M. Lollis and Mackenzie R. Dobson <br>
 <i>Are LGBTQ legislators effective lawmakers? We build on theories that link voter discrimination to legislative effectiveness by arguing that voters' biases against LGBTQ candidates narrow the candidate pool, leading to the election of only the most experienced and qualified LGBTQ candidates. As a result of this electoral selection effect, we expect that LGBTQ legislators will be more effective lawmakers than their non-LGBTQ counterparts. To test this, we combine data on state legislators' LGBTQ identification with their State Legislative Effectiveness Scores (SLES). Our findings reveal that LGBTQ legislators are meaningfully more effective than non-LGBTQ legislators.</i>
 </details>
 
-## Under review
+## Working Projects
 
 **Congressional Bipartisanship Scores by Member and Issue Area, 1983–2024** <br>
 Mackenzie R. Dobson and Jacob M. Lollis <br>
 <div style="margin:0.2rem 0 0.25rem 0;line-height:1.25;" markdown="1">
 [PDF](https://www.dropbox.com/scl/fi/lro80gvjymnxtgceypzvh/Bipartisanship-Measures.pdf?rlkey=v4j8n6m2tdhbj31ot0lhg9lcc&st=gcm5whmg&dl=0){: .btn--research}
 </div>
+<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
+<strong>Status:</strong> [add status, e.g. "Under review, Journal Name"]<br>
+<strong>Last Update:</strong> [add month/year]<br>
+<strong>Conference Presentations:</strong> [add if applicable]
+</blockquote>
 *CEL Working Paper Series*
 <details>
   <summary><b>Abstract</b></summary>
@@ -98,7 +103,11 @@ Mackenzie R. Dobson, Jacob M. Lollis, Jeffrey J. Harden, and Justin H. Kirkland 
 <div style="margin:0.2rem 0 0.25rem 0;line-height:1.25;" markdown="1">
 [PDF](https://www.dropbox.com/scl/fi/zbu5jsed8gkv6j3sigukw/Legislative-Professionalism-and-White-Collar-Govt.pdf?rlkey=bklwlnvsmbyfv032liac104be&st=5pgu1hys&dl=0){: .btn--research}
 </div>
-*Conditionally Accepted, Journal of Political Institutions and Political Economy*
+<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
+<strong>Status:</strong> Conditionally Accepted, <i>Journal of Political Institutions and Political Economy</i><br>
+<strong>Last Update:</strong> [add month/year]<br>
+<strong>Conference Presentations:</strong> [add if applicable]
+</blockquote>
 <details>
   <summary><b>Abstract</b></summary>
 <i>The professionalization of American state legislatures is among the most consequential modern institutional reforms in legislative politics. Yet a core tension persists: citizens disapprove of professionalized legislatures even though these chambers possess capacity-enhancing resources — such as staff support, higher salaries, and longer sessions — that may improve representation and policymaking. We offer one explanation for this disapproval: citizens perceive professional legislatures as dominated by legislators from white-collar backgrounds. Consequently, we argue that opposition to professionalism stems, in part, from a belief that white-collar legislators may not represent society's interests broadly.</i>
@@ -111,6 +120,11 @@ Jacob M. Lollis and Mackenzie R. Dobson <br>
 <div style="margin:0.2rem 0 0.25rem 0;line-height:1.25;" markdown="1">
 [PDF](https://www.dropbox.com/scl/fi/vyycbvmqblplqxdludkve/Congressional-Attention-After-Dobbs.pdf?rlkey=hvih3thltjpwoo5wakq6aqb6a&st=me8sifuf&dl=0){: .btn--research}
 </div>
+<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
+<strong>Status:</strong> [add status]<br>
+<strong>Last Update:</strong> [add month/year]<br>
+<strong>Conference Presentations:</strong> [add if applicable]
+</blockquote>
 <details>
   <summary><b>Abstract</b></summary>
 <i>Landmark Supreme Court rulings can reshape policy, rights, and public opinion, but their effects on congressional issue attention remain less clear. We argue that such rulings do not uniformly reshape congressional attention; instead, they do so selectively, depending on how legislators' representational and electoral incentives align. We test this argument in the case of Dobbs v. Jackson Women's Health Organization (2022). Using nearly 1.6M statements from U.S. House committee hearings, we leverage the leak of the draft opinion in a difference-in-differences design that estimates differential changes in abortion attention across party and gender.</i>
@@ -123,16 +137,26 @@ Mackenzie R. Dobson, Craig Volden, and Alan E. Wiseman <br>
 <div style="margin:0.2rem 0 0.25rem 0;line-height:1.25;" markdown="1">
 [PDF](https://www.dropbox.com/scl/fi/srck10tdkfq3ive8x0lvs/Bipartisan-Campaigners-Become-Effective-Lawmakers.pdf?rlkey=5252yk3dnlnezh9kkt7pt457o&st=a9ejy8kr&dl=0){: .btn--research}
 </div>
+<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
+<strong>Status:</strong> [add status]<br>
+<strong>Last Update:</strong> [add month/year]<br>
+<strong>Conference Presentations:</strong> [add if applicable]
+</blockquote>
 *CEL Working Paper Series*
 <details>
   <summary><b>Abstract</b></summary>
 <i>Strong evidence exists that effective lawmakers in one legislative term are very likely to be effective lawmakers in subsequent terms. But can voters glean insights into the likely lawmaking effectiveness of candidates even before they hold office? We examine the initial campaigns of more than 800 congressional Representatives and find that candidates who exhibited bipartisan traits during those campaigns became more effective lawmakers than those not identified as bipartisan.</i>
 </details>
 
-## Working papers
+---
 
 **Policy Agendas and Effective Lawmaking in the American States** <br>
 Andrew Ballard, Mackenzie R. Dobson, Martín Gandur, Craig Volden, and Alan E. Wiseman <br>
+<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
+<strong>Status:</strong> [add status]<br>
+<strong>Last Update:</strong> [add month/year]<br>
+<strong>Conference Presentations:</strong> [add if applicable]
+</blockquote>
 <details>
   <summary><b>Abstract</b></summary>
 <i>The politics of public policymaking varies not only across institutions and over time but also across different issue areas. We leverage transformer-based text classification to accurately assign more than 1.6 million state bills to 18 different policy areas. We then introduce Issue-Specific State Legislative Effectiveness Scores (ISLES), enabling systematic, cross-state comparisons of lawmaking effectiveness by members of state legislatures at the issue level for 2009–2018, across 48 states.</i>
@@ -142,6 +166,11 @@ Andrew Ballard, Mackenzie R. Dobson, Martín Gandur, Craig Volden, and Alan E. W
 
 **Building Effective Coalitions in the American States** <br>
 Mackenzie R. Dobson <br>
+<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
+<strong>Status:</strong> [add status]<br>
+<strong>Last Update:</strong> [add month/year]<br>
+<strong>Conference Presentations:</strong> [add if applicable]
+</blockquote>
 *CEL Working Paper Series*
 <details>
   <summary><b>Abstract</b></summary>
@@ -152,6 +181,11 @@ Mackenzie R. Dobson <br>
 
 **Does Training Legislators Improve Policymaking?** <br>
 Mackenzie R. Dobson, Emma Schroeder, Daniel M. Butler, James M. Curry, Thad Kousser, and Jeffrey J. Harden <br>
+<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
+<strong>Status:</strong> [add status]<br>
+<strong>Last Update:</strong> [add month/year]<br>
+<strong>Conference Presentations:</strong> [add if applicable]
+</blockquote>
 <details>
   <summary><b>Abstract</b></summary>
 <i>Research on legislative behavior implies that manipulating institutional design and/or lawmaker characteristics to improve performance would pose practical difficulties and unpredictable consequences. We examine the efficacy of a more direct intervention on policymaking skill: legislator training. We theorize that educating politicians enhances lawmaking success via learning and network-based pathways. We test our expectations with two complementary research designs from American state legislatures. Our results indicate precisely-estimated negligible effects; returns to training do not appear in several measures of legislative success. We conclude that structural constraints overshadow individual talent in policymaking. The health of statehouse democracy depends more on institutional incentives than human capital development.</i>
@@ -161,13 +195,27 @@ Mackenzie R. Dobson, Emma Schroeder, Daniel M. Butler, James M. Curry, Thad Kous
 
 **Procedural Rights and Minority Party Influence in American Legislatures** <br>
 Géssica de Frietas, James M. Curry, and Mackenzie R. Dobson
+<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
+<strong>Status:</strong> [add status]
+</blockquote>
 
 ---
 
 **Performative Bipartisanship: Symbolic Cross-Party Cooperation in an Era of Insecure Majorities** <br>
 Mackenzie R. Dobson and Jacob M. Lollis
+<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
+<strong>Status:</strong> [add status]
+</blockquote>
 
 ---
+
+**Timing Bipartisanship: Cross-Party Cooperation in a Polarized Congress** <br>
+Mackenzie R. Dobson and Jacob M. Lollis <br>
+<i>Book project</i>
+<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
+<strong>Status:</strong> Manuscript in preparation<br>
+<strong>Last Update:</strong> [add month/year]
+</blockquote>
 
 # Data, Software, & Public Projects
 
@@ -177,7 +225,7 @@ I develop original datasets, open-source software, and interactive public tools 
   <img src="{{ base_path }}/images/biparty-hex.svg" alt="biparty hex sticker" width="90" />
   <div>
     <strong>biparty</strong><br>
-    <span style="color:#4B4B4B;font-size:0.9em;">Dobson &amp; Lollis (2026) &middot; R package v0.1.0 &middot; MIT license</span>
+    <span style="color:#000000;font-size:0.9em;">Dobson &amp; Lollis (2026) &middot; R package v0.1.0 &middot; MIT license</span>
   </div>
 </div>
 
@@ -191,7 +239,7 @@ I develop original datasets, open-source software, and interactive public tools 
   <img src="{{ base_path }}/images/slbs-logo.png" alt="State Legislative Bipartisanship Scores logo" width="90" style="border-radius:8px;" />
   <div>
     <strong>State Legislative Bipartisanship Scores</strong><br>
-    <span style="color:#4B4B4B;font-size:0.9em;">Dobson (2026) &middot; Harvard Dataverse &middot; <em>State Politics &amp; Policy Quarterly</em></span>
+    <span style="color:#000000;font-size:0.9em;">Dobson (2026) &middot; Harvard Dataverse &middot; <em>State Politics &amp; Policy Quarterly</em></span>
   </div>
 </div>
 

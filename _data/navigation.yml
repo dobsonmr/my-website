@@ -1,6 +1,6 @@
 main:
-  - title: "Research"
-    url: /#research
+  - title: "Publications"
+    url: /#publications
   - title: "Data, Software, & Public Projects"
     url: /#data-software--public-projects
   - title: "Media & Mentions"

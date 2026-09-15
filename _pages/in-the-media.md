@@ -37,7 +37,7 @@ layout: archive
 .media-description {
   font-size: 14px;
   line-height: 1.7;
-  color: #4B4B4B;
+  color: #000000;
   margin: 0 0 0.9rem 0;
 }
 .media-img {
@@ -73,7 +73,7 @@ layout: archive
       </div>
     </div>
     <div style="padding:1.25rem 1.5rem;background:#fff;">
-      <p style="font-size:14px;line-height:1.8;color:#4B4B4B;margin-bottom:1rem;">We fear that legislatures are gridlocked and performative, rather than focused on actually passing new laws. But some legislators are consistently more effective than others, at the state and national levels. Can we train legislators to be more effective at advancing their bills? Mackenzie Dobson finds that training programs for state legislators don't make them more effective than their untrained colleagues. Most of the factors that make legislators more effective are structural: the competition between the parties and the positions they hold.</p>
+      <p style="font-size:14px;line-height:1.8;color:#000000;margin-bottom:1rem;">We fear that legislatures are gridlocked and performative, rather than focused on actually passing new laws. But some legislators are consistently more effective than others, at the state and national levels. Can we train legislators to be more effective at advancing their bills? Mackenzie Dobson finds that training programs for state legislators don't make them more effective than their untrained colleagues. Most of the factors that make legislators more effective are structural: the competition between the parties and the positions they hold.</p>
       <a href="https://podcasts.apple.com/us/podcast/the-science-of-politics/id1295747297?i=1000774086174" target="_blank" rel="noopener" class="btn--research">Apple Podcasts</a>
       <a href="https://open.spotify.com/episode/2GSBgmzZoYsyHcfl0sTSwe?si=r9AxBOA0TfCN74td73EUFA" target="_blank" rel="noopener" class="btn--research">Spotify</a>
       <a href="https://soundcloud.com/user-735940457-95015381/can-we-make-legislators-more" target="_blank" rel="noopener" class="btn--research">SoundCloud</a>
