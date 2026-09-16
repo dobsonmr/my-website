@@ -44,9 +44,9 @@ Mackenzie R. Dobson <br>
 [PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F4E55ADC5CF8CB3ABB5121D3808A1B86/S1532440026100218a.pdf/selective_reciprocity_in_bipartisan_collaboration_how_majority_security_shapes_legislative_success.pdf){: .btn--research} [DOI](https://www.cambridge.org/core/journals/state-politics-and-policy-quarterly/article/selective-reciprocity-in-bipartisan-collaboration/F4E55ADC5CF8CB3ABB5121D3808A1B86){: .btn--research} [Replication](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/W7OXER&version=1.0){: .btn--research}
 </div>
 <div style="margin:0.3rem 0 0.5rem 0;display:flex;flex-wrap:wrap;gap:0.4rem;">
-<span style="display:inline-flex;align-items:center;gap:0.3rem;background:#fdf3e0;border:1px solid #e3c48f;color:#8a5a2b;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">Best Graduate Student Paper, State Politics &amp; Policy Conference 2025</span>
-<span style="display:inline-flex;align-items:center;gap:0.3rem;background:#fdf3e0;border:1px solid #e3c48f;color:#8a5a2b;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">Best Poster Presentation, State Politics &amp; Policy Conference 2024</span>
-<a href="PASTE_CEL_LINK_HERE" style="display:inline-flex;align-items:center;gap:0.3rem;background:#fdf3e0;border:1px solid #e3c48f;color:#8a5a2b;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;text-decoration:none;">Center for Effective Lawmaking Working Paper Series</a>
+<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid rgba(255,130,0,0.45);color:#a34e00;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">Best Graduate Student Paper, State Politics &amp; Policy Conference 2025</span>
+<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid rgba(255,130,0,0.45);color:#a34e00;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">Best Poster Presentation, State Politics &amp; Policy Conference 2024</span>
+<a href="PASTE_CEL_LINK_HERE" style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid rgba(255,130,0,0.45);color:#a34e00;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;text-decoration:none;">Center for Effective Lawmaking Working Paper Series</a>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
@@ -88,7 +88,7 @@ Jacob M. Lollis and Mackenzie R. Dobson <br>
 [PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/99F9DDDB008114F6D77FB27534575BF3/S1049096525000101a.pdf/im-coming-out-how-voter-discrimination-produces-effective-lgbtq-lawmakers.pdf){: .btn--research} [DOI](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/im-coming-out-how-voter-discrimination-produces-effective-lgbtq-lawmakers/99F9DDDB008114F6D77FB27534575BF3){: .btn--research} [Replication](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/X7O80B){: .btn--research}
 </div>
 <div style="margin:0.3rem 0 0.5rem 0;">
-<a href="PASTE_CEL_LINK_HERE" style="display:inline-flex;align-items:center;gap:0.3rem;background:#fdf3e0;border:1px solid #e3c48f;color:#8a5a2b;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;text-decoration:none;">Center for Effective Lawmaking Working Paper Series</a>
+<a href="PASTE_CEL_LINK_HERE" style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid rgba(255,130,0,0.45);color:#a34e00;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;text-decoration:none;">Center for Effective Lawmaking Working Paper Series</a>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
@@ -109,7 +109,7 @@ Mackenzie R. Dobson and Jacob M. Lollis <br>
 [Paper](https://www.dropbox.com/scl/fi/lro80gvjymnxtgceypzvh/Bipartisanship-Measures.pdf?rlkey=v4j8n6m2tdhbj31ot0lhg9lcc&st=gcm5whmg&dl=0){: .btn--research}
 </div>
 <div style="margin:0.3rem 0 0.5rem 0;">
-<a href="PASTE_CEL_LINK_HERE" style="display:inline-flex;align-items:center;gap:0.3rem;background:#fdf3e0;border:1px solid #e3c48f;color:#8a5a2b;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;text-decoration:none;">Center for Effective Lawmaking Working Paper Series</a>
+<a href="PASTE_CEL_LINK_HERE" style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid rgba(255,130,0,0.45);color:#a34e00;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;text-decoration:none;">Center for Effective Lawmaking Working Paper Series</a>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
@@ -146,7 +146,7 @@ Mackenzie R. Dobson, Craig Volden, and Alan E. Wiseman <br>
 [Paper](https://www.dropbox.com/scl/fi/srck10tdkfq3ive8x0lvs/Bipartisan-Campaigners-Become-Effective-Lawmakers.pdf?rlkey=5252yk3dnlnezh9kkt7pt457o&st=a9ejy8kr&dl=0){: .btn--research}
 </div>
 <div style="margin:0.3rem 0 0.5rem 0;">
-<a href="PASTE_CEL_LINK_HERE" style="display:inline-flex;align-items:center;gap:0.3rem;background:#fdf3e0;border:1px solid #e3c48f;color:#8a5a2b;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;text-decoration:none;">Center for Effective Lawmaking Working Paper Series</a>
+<a href="PASTE_CEL_LINK_HERE" style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid rgba(255,130,0,0.45);color:#a34e00;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;text-decoration:none;">Center for Effective Lawmaking Working Paper Series</a>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
@@ -176,6 +176,10 @@ Mackenzie R. Dobson and Jacob M. Lollis
 <strong>Last Update:</strong> September 2026<br>
 <strong>Conference Presentations:</strong> APSA 2026
 </blockquote>
+<details>
+  <summary><b>Abstract</b></summary>
+<i>Why has bipartisanship persisted in Congress despite rising partisan polarization? Existing approaches largely treat bipartisanship as a question of whether legislators cooperate across party lines, overlooking a consequential dimension of that cooperation: when it occurs. We argue that legislators strategically time cross party support to manage the competing costs and benefits of bipartisan participation. Original out-party cosponsors join legislation at introduction, often help develop the bill, and are among the first members of the opposing party to cross the aisle. In doing so, they bear the greatest political risks of bipartisan participation. Other legislators can reduce those risks by waiting until coalition growth provides political cover and legislative developments signal greater viability, while still claiming bipartisan credit for eventually joining. We call this behavior strategically delayed bipartisanship. Drawing on elite interviews with members of Congress and their staff and more than 2.4 million cosponsorship decisions across 147,669 House and Senate bills from 1983 to 2024, we develop a new measure that distinguishes strategically delayed from original bipartisan participation. Strategic delay is most common when the partisan costs of crossing the aisle are highest: among minority-party members, in the House, and on more partisan issues. It is also more common among electorally vulnerable and ideologically moderate legislators, for whom a bipartisan reputation should be electorally valuable. Among vulnerable legislators, strategic delay is associated with stronger subsequent electoral performance. However, legislators who engage in more strategically delayed bipartisanship subsequently attract fewer original out-party cosponsors for their own bills and exhibit lower legislative effectiveness. Therefore, we reconceptualize bipartisanship as a dynamic, strategic choice about when legislators cross party lines, showing how legislators can capture the electoral rewards of bipartisanship while avoiding many of the political risks of leading bipartisan cooperation.</i>
+</details>
 
 ---
 
@@ -200,7 +204,7 @@ Mackenzie R. Dobson <br>
 <strong>Last Update:</strong> June 2026
 </blockquote>
 <div style="margin:0.3rem 0 0.5rem 0;">
-<a href="PASTE_CEL_LINK_HERE" style="display:inline-flex;align-items:center;gap:0.3rem;background:#fdf3e0;border:1px solid #e3c48f;color:#8a5a2b;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;text-decoration:none;">Center for Effective Lawmaking Working Paper Series</a>
+<a href="PASTE_CEL_LINK_HERE" style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid rgba(255,130,0,0.45);color:#a34e00;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;text-decoration:none;">Center for Effective Lawmaking Working Paper Series</a>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
@@ -209,28 +213,13 @@ Mackenzie R. Dobson <br>
 
 ---
 
-**Procedural Rights and Minority Party Influence in American Legislatures** <br>
-Géssica de Frietas, James M. Curry, and Mackenzie R. Dobson
-<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#6b6b6b;font-style:normal;font-size:0.92em;">
-<strong>Status:</strong> [add status]
-</blockquote>
-
----
-
-**Performative Bipartisanship: Symbolic Cross-Party Cooperation in an Era of Insecure Majorities** <br>
-Mackenzie R. Dobson and Jacob M. Lollis
-<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#6b6b6b;font-style:normal;font-size:0.92em;">
-<strong>Status:</strong> [add status]
-</blockquote>
-
----
-
 **Timing Bipartisanship: Cross-Party Cooperation in a Polarized Congress** <br>
 Mackenzie R. Dobson and Jacob M. Lollis <br>
 <i>Book project</i>
 <blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#6b6b6b;font-style:normal;font-size:0.92em;">
 <strong>Status:</strong> Manuscript in preparation<br>
-<strong>Last Update:</strong> [add month/year]
+<strong>Last Update:</strong> September 2026<br>
+<strong>Conference Presentations:</strong> None
 </blockquote>
 
 ---
