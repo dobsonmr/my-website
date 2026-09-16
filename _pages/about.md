@@ -12,7 +12,7 @@ redirect_from:
   - /cv/
 ---
 
-Welcome! I am an **Assistant Professor of Political Science** at the [University of Tennessee, Knoxville](https://polisci.utk.edu/). I am also a Faculty Affiliate with the [Center for Effective Lawmaking](https://thelawmakers.org) and a Research Affiliate with the [Portman Center for Policy Solutions](https://www.artsci.uc.edu/social-sciences/public-and-international-affairs/portman-center.html).
+Welcome! I am an **Assistant Professor of Political Science** at the **University of Tennessee, Knoxville**. I am also a Faculty Affiliate with the [Center for Effective Lawmaking](https://thelawmakers.org) and a Research Affiliate with the [Portman Center for Policy Solutions](https://www.artsci.uc.edu/social-sciences/public-and-international-affairs/portman-center.html).
 
 My research centers on bipartisan collaboration, effective lawmaking, and political representation in American legislatures. I study how legislators build relationships across party lines, how those relationships shape policymaking and legislative success, and what these dynamics mean for democratic representation. To do so, I combine original data collection with large-scale observational data and employ quantitative and computational methods.
 
