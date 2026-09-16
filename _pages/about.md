@@ -20,6 +20,8 @@ My published work appears in the *British Journal of Political Science*, the *Pr
 
 Previously, I was a Visiting Scholar in the Representation and Politics in Legislatures Lab at the University of Notre Dame. I received my Ph.D. in Political Science from the University of Virginia.
 
+[Download CV (PDF)](https://www.dropbox.com/scl/fi/pv3ayktsrces9s95bsmyf/Dobson_CV.pdf?rlkey=fp5vnh6i7pb088kmyrb3xadfz&st=7g4mwpt5&dl=0){: .btn--research}
+
 ---
 
 # Publications
