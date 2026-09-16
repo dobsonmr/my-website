@@ -55,7 +55,7 @@ Mackenzie R. Dobson <br>
 ---
 
 **The Consequences of Elite Action Against Elections** <br>
-Emily E. Anderson, Mackenzie R. Dobson, and Jeffrey J. Harden <br>
+Rachel Porter, Jeffrey J. Harden, Emily Anderson, Géssica de Freitas, Mackenzie R. Dobson, Abigail Hemmen, and Emma Schroeder <br>
 *British Journal of Political Science*, 2025 <br>
 <div style="margin:0.2rem 0 0.25rem 0;line-height:1.25;" markdown="1">
 [PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/1E549A13F7FBD704E4A96CE509351DB7/S0007123425100926a.pdf/the-consequences-of-elite-action-against-elections.pdf){: .btn--research} [DOI](https://www.cambridge.org/core/journals/british-journal-of-political-science/article/consequences-of-elite-action-against-elections/1E549A13F7FBD704E4A96CE509351DB7){: .btn--research} [Replication](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PVUCFJ){: .btn--research}
@@ -195,25 +195,12 @@ Mackenzie R. Dobson, Emma Schroeder, Daniel M. Butler, James M. Curry, Thad Kous
 <strong>Last Update:</strong> June 2026<br>
 <strong>Conference Presentations:</strong> MPSA 2026; SPPC 2026
 </blockquote>
-<details>
-  <summary><b>Abstract</b></summary>
-<i>Research on legislative behavior implies that manipulating institutional design and/or lawmaker characteristics to improve performance would pose practical difficulties and unpredictable consequences. We examine the efficacy of a more direct intervention on policymaking skill: legislator training. We theorize that educating politicians enhances lawmaking success via learning and network-based pathways. We test our expectations with two complementary research designs from American state legislatures. Our results indicate precisely-estimated negligible effects; returns to training do not appear in several measures of legislative success. We conclude that structural constraints overshadow individual talent in policymaking. The health of statehouse democracy depends more on institutional incentives than human capital development.</i>
-</details>
-
----
-
-**Building Effective Coalitions in the American States** <br>
-Mackenzie R. Dobson <br>
-<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#6b6b6b;font-style:normal;font-size:0.92em;">
-<strong>Status:</strong> In preparation for submission<br>
-<strong>Last Update:</strong> June 2026
-</blockquote>
-<div style="margin:0.3rem 0 0.5rem 0;">
-<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid #FF8200;color:#FF8200;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">CEL Working Paper Series</span>
+<div style="margin:0.2rem 0 0.25rem 0;line-height:1.25;" markdown="1">
+[Paper](https://www.dropbox.com/scl/fi/kck6m1fxs0iziu34loxkd/Legislator-Training.pdf?rlkey=to51xlg0zuykxar50fh539zgc&st=1n75v969&dl=0){: .btn--research}
 </div>
 <details>
   <summary><b>Abstract</b></summary>
-<i>Bipartisan collaboration is widely considered a reliable route to legislative success, largely based on evidence from the contemporary U.S. Congress. Yet most state legislatures are governed by majority parties that occupy a significant share of chamber seats, permitting them to advance legislation without minority-party support. I argue that bipartisan collaboration enhances effectiveness only when cross-party support is necessary to assemble a winning coalition. Using State Legislative Effectiveness Scores and original measures of coalition-building, I show that bipartisanship enhances effectiveness in competitive chambers but not under secure majorities.</i>
+<i>Research on legislative behavior implies that manipulating institutional design and/or lawmaker characteristics to improve performance would pose practical difficulties and unpredictable consequences. We examine the efficacy of a more direct intervention on policymaking skill: legislator training. We theorize that educating politicians enhances lawmaking success via learning and network-based pathways. We test our expectations with two complementary research designs from American state legislatures. Our results indicate precisely-estimated negligible effects; returns to training do not appear in several measures of legislative success. We conclude that structural constraints overshadow individual talent in policymaking. The health of statehouse democracy depends more on institutional incentives than human capital development.</i>
 </details>
 
 ---
