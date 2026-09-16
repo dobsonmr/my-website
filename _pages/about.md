@@ -44,9 +44,8 @@ Mackenzie R. Dobson <br>
 [PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F4E55ADC5CF8CB3ABB5121D3808A1B86/S1532440026100218a.pdf/selective_reciprocity_in_bipartisan_collaboration_how_majority_security_shapes_legislative_success.pdf){: .btn--research} [DOI](https://www.cambridge.org/core/journals/state-politics-and-policy-quarterly/article/selective-reciprocity-in-bipartisan-collaboration/F4E55ADC5CF8CB3ABB5121D3808A1B86){: .btn--research} [Replication](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/W7OXER&version=1.0){: .btn--research}
 </div>
 <div style="margin:0.3rem 0 0.5rem 0;display:flex;flex-wrap:wrap;gap:0.4rem;">
-<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid rgba(255,130,0,0.45);color:#a34e00;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">Best Graduate Student Paper, State Politics &amp; Policy Conference 2025</span>
-<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid rgba(255,130,0,0.45);color:#a34e00;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">Best Poster Presentation, State Politics &amp; Policy Conference 2024</span>
-<a href="PASTE_CEL_LINK_HERE" style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid rgba(255,130,0,0.45);color:#a34e00;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;text-decoration:none;">Center for Effective Lawmaking Working Paper Series</a>
+<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid #FF8200;color:#FF8200;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">Best Graduate Student Paper, State Politics &amp; Policy Conference 2025</span>
+<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid #FF8200;color:#FF8200;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">Best Poster Presentation, State Politics &amp; Policy Conference 2024</span>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
@@ -88,7 +87,7 @@ Jacob M. Lollis and Mackenzie R. Dobson <br>
 [PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/99F9DDDB008114F6D77FB27534575BF3/S1049096525000101a.pdf/im-coming-out-how-voter-discrimination-produces-effective-lgbtq-lawmakers.pdf){: .btn--research} [DOI](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/im-coming-out-how-voter-discrimination-produces-effective-lgbtq-lawmakers/99F9DDDB008114F6D77FB27534575BF3){: .btn--research} [Replication](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/X7O80B){: .btn--research}
 </div>
 <div style="margin:0.3rem 0 0.5rem 0;">
-<a href="PASTE_CEL_LINK_HERE" style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid rgba(255,130,0,0.45);color:#a34e00;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;text-decoration:none;">Center for Effective Lawmaking Working Paper Series</a>
+<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid #FF8200;color:#FF8200;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">CEL Working Paper</span>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
@@ -109,7 +108,7 @@ Mackenzie R. Dobson and Jacob M. Lollis <br>
 [Paper](https://www.dropbox.com/scl/fi/lro80gvjymnxtgceypzvh/Bipartisanship-Measures.pdf?rlkey=v4j8n6m2tdhbj31ot0lhg9lcc&st=gcm5whmg&dl=0){: .btn--research}
 </div>
 <div style="margin:0.3rem 0 0.5rem 0;">
-<a href="PASTE_CEL_LINK_HERE" style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid rgba(255,130,0,0.45);color:#a34e00;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;text-decoration:none;">Center for Effective Lawmaking Working Paper Series</a>
+<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid #FF8200;color:#FF8200;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">CEL Working Paper</span>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
@@ -146,7 +145,7 @@ Mackenzie R. Dobson, Craig Volden, and Alan E. Wiseman <br>
 [Paper](https://www.dropbox.com/scl/fi/srck10tdkfq3ive8x0lvs/Bipartisan-Campaigners-Become-Effective-Lawmakers.pdf?rlkey=5252yk3dnlnezh9kkt7pt457o&st=a9ejy8kr&dl=0){: .btn--research}
 </div>
 <div style="margin:0.3rem 0 0.5rem 0;">
-<a href="PASTE_CEL_LINK_HERE" style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid rgba(255,130,0,0.45);color:#a34e00;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;text-decoration:none;">Center for Effective Lawmaking Working Paper Series</a>
+<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid #FF8200;color:#FF8200;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">CEL Working Paper</span>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
@@ -204,7 +203,7 @@ Mackenzie R. Dobson <br>
 <strong>Last Update:</strong> June 2026
 </blockquote>
 <div style="margin:0.3rem 0 0.5rem 0;">
-<a href="PASTE_CEL_LINK_HERE" style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid rgba(255,130,0,0.45);color:#a34e00;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;text-decoration:none;">Center for Effective Lawmaking Working Paper Series</a>
+<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid #FF8200;color:#FF8200;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">CEL Working Paper</span>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
