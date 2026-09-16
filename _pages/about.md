@@ -12,7 +12,7 @@ redirect_from:
   - /cv/
 ---
 
-Welcome! I am an **Assistant Professor of Political Science** at the [University of Tennessee, Knoxville](https://polisci.utk.edu/). I am also a Faculty Affiliate with the [Center for Effective Lawmaking](https://thelawmakers.org) and a Research Affiliate with the [Portman Center for Policy Solutions](https://www.artsci.uc.edu/social-sciences/public-and-international-affairs/portman-center.html).
+Welcome! I am an **Assistant Professor of Political Science** at the **University of Tennessee, Knoxville**. I am also a Faculty Affiliate with the [Center for Effective Lawmaking](https://thelawmakers.org) and a Research Affiliate with the [Portman Center for Policy Solutions](https://www.artsci.uc.edu/social-sciences/public-and-international-affairs/portman-center.html).
 
 My research centers on bipartisan collaboration, effective lawmaking, and political representation in American legislatures. I study how legislators build relationships across party lines, how those relationships shape policymaking and legislative success, and what these dynamics mean for democratic representation. To do so, I combine original data collection with large-scale observational data and employ quantitative and computational methods.
 
@@ -24,7 +24,20 @@ Previously, I was a Visiting Scholar in the Representation and Politics in Legis
 
 # Publications
 
-## Published
+---
+
+**Legislative Professionalism and Perceptions of White-Collar Government** <br>
+Mackenzie R. Dobson, Jacob M. Lollis, Jeffrey J. Harden, and Justin H. Kirkland <br>
+*Journal of Political Institutions and Political Economy*, 2026 <br>
+<div style="margin:0.2rem 0 0.25rem 0;line-height:1.25;" markdown="1">
+[PDF](https://www.dropbox.com/scl/fi/djhm4opmxp6lcios3ymen/JPIPE.pdf?rlkey=uv24z53t4r8tcahiyls3vs5ap&st=u20jnquq&e=1&dl=0){: .btn--research}
+</div>
+<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
+<details>
+  <summary><b>Abstract</b></summary>
+<i>The professionalization of American state legislatures is among the most consequential modern institutional reforms in legislative politics. Yet a core tension persists: citizens disapprove of professionalized legislatures even though these chambers possess capacity-enhancing resources — such as staff support, higher salaries, and longer sessions — that may improve representation and policymaking. We offer one explanation for this disapproval: citizens perceive professional legislatures as dominated by legislators from white-collar backgrounds. Consequently, we argue that opposition to professionalism stems, in part, from a belief that white-collar legislators may not represent society's interests broadly.</i>
+</details>
+
 
 **Selective Reciprocity in Bipartisan Collaboration: How Majority Security Shapes Legislative Success** <br>
 Mackenzie R. Dobson <br>
@@ -78,7 +91,8 @@ Jacob M. Lollis and Mackenzie R. Dobson <br>
 <i>Are LGBTQ legislators effective lawmakers? We build on theories that link voter discrimination to legislative effectiveness by arguing that voters' biases against LGBTQ candidates narrow the candidate pool, leading to the election of only the most experienced and qualified LGBTQ candidates. As a result of this electoral selection effect, we expect that LGBTQ legislators will be more effective lawmakers than their non-LGBTQ counterparts. To test this, we combine data on state legislators' LGBTQ identification with their State Legislative Effectiveness Scores (SLES). Our findings reveal that LGBTQ legislators are meaningfully more effective than non-LGBTQ legislators.</i>
 </details>
 
-## Working Projects
+
+# Working Papers
 
 **Congressional Bipartisanship Scores by Member and Issue Area, 1983–2024** <br>
 Mackenzie R. Dobson and Jacob M. Lollis <br>
@@ -86,9 +100,8 @@ Mackenzie R. Dobson and Jacob M. Lollis <br>
 [PDF](https://www.dropbox.com/scl/fi/lro80gvjymnxtgceypzvh/Bipartisanship-Measures.pdf?rlkey=v4j8n6m2tdhbj31ot0lhg9lcc&st=gcm5whmg&dl=0){: .btn--research}
 </div>
 <blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
-<strong>Status:</strong> [add status, e.g. "Under review, Journal Name"]<br>
-<strong>Last Update:</strong> [add month/year]<br>
-<strong>Conference Presentations:</strong> [add if applicable]
+<strong>Status:</strong> Revise and Resubmit, *Nature: Scientific Data<br>
+<strong>Last Update:</strong> June 2026<br>
 </blockquote>
 *CEL Working Paper Series*
 <details>
@@ -96,22 +109,6 @@ Mackenzie R. Dobson and Jacob M. Lollis <br>
 <i>Although bipartisanship is central to legislative behavior and often necessary for policymaking success, no centralized, publicly accessible dataset tracks legislators' propensity to offer and attract cross-party support across time and policy issue areas. We introduce a dataset of congressional bipartisanship scores for all members of the U.S. House and Senate from 1983 to 2024. Built from more than 2.4 million cosponsorship decisions on 147,669 bills, the dataset provides two complementary member-term measures. To facilitate broad reuse among academics, researchers, journalists, legislators, and the public, we make the dataset available through Harvard Dataverse and a corresponding R package, 'biparty.'</i>
 </details>
 
----
-
-**Legislative Professionalism and Perceptions of White-Collar Government** <br>
-Mackenzie R. Dobson, Jacob M. Lollis, Jeffrey J. Harden, and Justin H. Kirkland <br>
-<div style="margin:0.2rem 0 0.25rem 0;line-height:1.25;" markdown="1">
-[PDF](https://www.dropbox.com/scl/fi/zbu5jsed8gkv6j3sigukw/Legislative-Professionalism-and-White-Collar-Govt.pdf?rlkey=bklwlnvsmbyfv032liac104be&st=5pgu1hys&dl=0){: .btn--research}
-</div>
-<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
-<strong>Status:</strong> Conditionally Accepted, <i>Journal of Political Institutions and Political Economy</i><br>
-<strong>Last Update:</strong> [add month/year]<br>
-<strong>Conference Presentations:</strong> [add if applicable]
-</blockquote>
-<details>
-  <summary><b>Abstract</b></summary>
-<i>The professionalization of American state legislatures is among the most consequential modern institutional reforms in legislative politics. Yet a core tension persists: citizens disapprove of professionalized legislatures even though these chambers possess capacity-enhancing resources — such as staff support, higher salaries, and longer sessions — that may improve representation and policymaking. We offer one explanation for this disapproval: citizens perceive professional legislatures as dominated by legislators from white-collar backgrounds. Consequently, we argue that opposition to professionalism stems, in part, from a belief that white-collar legislators may not represent society's interests broadly.</i>
-</details>
 
 ---
 
@@ -121,9 +118,9 @@ Jacob M. Lollis and Mackenzie R. Dobson <br>
 [PDF](https://www.dropbox.com/scl/fi/vyycbvmqblplqxdludkve/Congressional-Attention-After-Dobbs.pdf?rlkey=hvih3thltjpwoo5wakq6aqb6a&st=me8sifuf&dl=0){: .btn--research}
 </div>
 <blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
-<strong>Status:</strong> [add status]<br>
-<strong>Last Update:</strong> [add month/year]<br>
-<strong>Conference Presentations:</strong> [add if applicable]
+<strong>Status:</strong> Under Review<br>
+<strong>Last Update:</strong> June 2026<br>
+<strong>Conference Presentations:</strong> SPSA 2026; MPSA 2026
 </blockquote>
 <details>
   <summary><b>Abstract</b></summary>
@@ -138,9 +135,9 @@ Mackenzie R. Dobson, Craig Volden, and Alan E. Wiseman <br>
 [PDF](https://www.dropbox.com/scl/fi/srck10tdkfq3ive8x0lvs/Bipartisan-Campaigners-Become-Effective-Lawmakers.pdf?rlkey=5252yk3dnlnezh9kkt7pt457o&st=a9ejy8kr&dl=0){: .btn--research}
 </div>
 <blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
-<strong>Status:</strong> [add status]<br>
-<strong>Last Update:</strong> [add month/year]<br>
-<strong>Conference Presentations:</strong> [add if applicable]
+<strong>Status:</strong> Under Review]<br>
+<strong>Last Update:</strong> August 2026<br>
+<strong>Conference Presentations:</strong> MPSA 2023
 </blockquote>
 *CEL Working Paper Series*
 <details>
@@ -150,26 +147,50 @@ Mackenzie R. Dobson, Craig Volden, and Alan E. Wiseman <br>
 
 ---
 
-**Policy Agendas and Effective Lawmaking in the American States** <br>
-Andrew Ballard, Mackenzie R. Dobson, Martín Gandur, Craig Volden, and Alan E. Wiseman <br>
+**Policy Agendas, Effective Lawmaking, and Women's Issues in State Legislatures** <br>
+Andrew M. O. Ballard, Mackenzie R. Dobson, Martín Gandur, Craig Volden, and Alan E. Wiseman <br>
 <blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
-<strong>Status:</strong> [add status]<br>
-<strong>Last Update:</strong> [add month/year]<br>
-<strong>Conference Presentations:</strong> [add if applicable]
+<strong>Status:</strong> Under Review]<br>
+<strong>Last Update:</strong> August 2026<br>
+<strong>Conference Presentations:</strong> APSA 2025; CEL 2026; SPPC 2026
 </blockquote>
 <details>
   <summary><b>Abstract</b></summary>
 <i>The politics of public policymaking varies not only across institutions and over time but also across different issue areas. We leverage transformer-based text classification to accurately assign more than 1.6 million state bills to 18 different policy areas. We then introduce Issue-Specific State Legislative Effectiveness Scores (ISLES), enabling systematic, cross-state comparisons of lawmaking effectiveness by members of state legislatures at the issue level for 2009–2018, across 48 states.</i>
 </details>
 
+
+---
+
+**Risky Business: The Strategic Timing of Bipartisanship in Congress** <br>
+Mackenzie R. Dobson and Jacob M. Lollis
+<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
+<strong>Status:</strong> In preparation for submission<br>
+<strong>Last Update:</strong> September 2026<br>
+<strong>Conference Presentations:</strong> APSA 2026<br>
+
+---
+
+**Does Training Legislators Improve Policymaking?** <br>
+Mackenzie R. Dobson, Emma Schroeder, Daniel M. Butler, James M. Curry, Thad Kousser, and Jeffrey J. Harden <br>
+<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
+<strong>Status:</strong> In preparation for submission<br>
+<strong>Last Update:</strong> June 2026<br>
+<strong>Conference Presentations:</strong> MPSA 2026; SPPC 2026<br>
+</blockquote>
+<details>
+  <summary><b>Abstract</b></summary>
+<i>Research on legislative behavior implies that manipulating institutional design and/or lawmaker characteristics to improve performance would pose practical difficulties and unpredictable consequences. We examine the efficacy of a more direct intervention on policymaking skill: legislator training. We theorize that educating politicians enhances lawmaking success via learning and network-based pathways. We test our expectations with two complementary research designs from American state legislatures. Our results indicate precisely-estimated negligible effects; returns to training do not appear in several measures of legislative success. We conclude that structural constraints overshadow individual talent in policymaking. The health of statehouse democracy depends more on institutional incentives than human capital development.</i>
+</details>
+
+
 ---
 
 **Building Effective Coalitions in the American States** <br>
 Mackenzie R. Dobson <br>
 <blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
-<strong>Status:</strong> [add status]<br>
-<strong>Last Update:</strong> [add month/year]<br>
-<strong>Conference Presentations:</strong> [add if applicable]
+<strong>Status:</strong> In preparation for submission<br>
+<strong>Last Update:</strong> June 2026<br>
 </blockquote>
 *CEL Working Paper Series*
 <details>
@@ -177,45 +198,12 @@ Mackenzie R. Dobson <br>
 <i>Bipartisan collaboration is widely considered a reliable route to legislative success, largely based on evidence from the contemporary U.S. Congress. Yet most state legislatures are governed by majority parties that occupy a significant share of chamber seats, permitting them to advance legislation without minority-party support. I argue that bipartisan collaboration enhances effectiveness only when cross-party support is necessary to assemble a winning coalition. Using State Legislative Effectiveness Scores and original measures of coalition-building, I show that bipartisanship enhances effectiveness in competitive chambers but not under secure majorities.</i>
 </details>
 
----
 
-**Does Training Legislators Improve Policymaking?** <br>
-Mackenzie R. Dobson, Emma Schroeder, Daniel M. Butler, James M. Curry, Thad Kousser, and Jeffrey J. Harden <br>
-<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
-<strong>Status:</strong> [add status]<br>
-<strong>Last Update:</strong> [add month/year]<br>
-<strong>Conference Presentations:</strong> [add if applicable]
-</blockquote>
-<details>
-  <summary><b>Abstract</b></summary>
-<i>Research on legislative behavior implies that manipulating institutional design and/or lawmaker characteristics to improve performance would pose practical difficulties and unpredictable consequences. We examine the efficacy of a more direct intervention on policymaking skill: legislator training. We theorize that educating politicians enhances lawmaking success via learning and network-based pathways. We test our expectations with two complementary research designs from American state legislatures. Our results indicate precisely-estimated negligible effects; returns to training do not appear in several measures of legislative success. We conclude that structural constraints overshadow individual talent in policymaking. The health of statehouse democracy depends more on institutional incentives than human capital development.</i>
-</details>
 
----
-
-**Procedural Rights and Minority Party Influence in American Legislatures** <br>
-Géssica de Frietas, James M. Curry, and Mackenzie R. Dobson
-<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
-<strong>Status:</strong> [add status]
 </blockquote>
 
 ---
 
-**Performative Bipartisanship: Symbolic Cross-Party Cooperation in an Era of Insecure Majorities** <br>
-Mackenzie R. Dobson and Jacob M. Lollis
-<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
-<strong>Status:</strong> [add status]
-</blockquote>
-
----
-
-**Timing Bipartisanship: Cross-Party Cooperation in a Polarized Congress** <br>
-Mackenzie R. Dobson and Jacob M. Lollis <br>
-<i>Book project</i>
-<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#000;font-size:0.92em;">
-<strong>Status:</strong> Manuscript in preparation<br>
-<strong>Last Update:</strong> [add month/year]
-</blockquote>
 
 # Data, Software, & Public Projects
 
@@ -234,17 +222,3 @@ I develop original datasets, open-source software, and interactive public tools 
 [Working paper (PDF)](https://www.dropbox.com/scl/fi/lro80gvjymnxtgceypzvh/Bipartisanship-Measures.pdf?rlkey=v4j8n6m2tdhbj31ot0lhg9lcc&st=gcm5whmg&dl=0){: .btn--research} [R documentation](https://congressional-bipartisanship-scores.github.io){: .btn--research}
 
 ---
-
-<div style="display:flex;gap:1rem;align-items:center;margin-bottom:0.5rem;">
-  <img src="{{ base_path }}/images/slbs-logo.png" alt="State Legislative Bipartisanship Scores logo" width="90" style="border-radius:8px;" />
-  <div>
-    <strong>State Legislative Bipartisanship Scores</strong><br>
-    <span style="color:#000000;font-size:0.9em;">Dobson (2026) &middot; Harvard Dataverse &middot; <em>State Politics &amp; Policy Quarterly</em></span>
-  </div>
-</div>
-
-The State Legislative Bipartisanship Scores (SLBS) provide original measures of bipartisan collaboration for 10,817 legislators serving in 43 U.S. state legislatures between 2009 and 2018. Comprising 27,129 legislator-term observations, the dataset captures two complementary dimensions of bipartisan engagement: the extent to which legislators support bills introduced by members of the opposite party and the extent to which they attract support from across party lines on their own legislation.
-
-[Harvard Dataverse](https://doi.org/10.7910/DVN/W7OXER){: .btn--research} [Paper (PDF)](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F4E55ADC5CF8CB3ABB5121D3808A1B86/S1532440026100218a.pdf/selective-reciprocity-in-bipartisan-collaboration-how-majority-security-shapes-legislative-success.pdf){: .btn--research}
-
-*Additional projects will be listed here as they are released.*
