@@ -87,7 +87,7 @@ Jacob M. Lollis and Mackenzie R. Dobson <br>
 [PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/99F9DDDB008114F6D77FB27534575BF3/S1049096525000101a.pdf/im-coming-out-how-voter-discrimination-produces-effective-lgbtq-lawmakers.pdf){: .btn--research} [DOI](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/im-coming-out-how-voter-discrimination-produces-effective-lgbtq-lawmakers/99F9DDDB008114F6D77FB27534575BF3){: .btn--research} [Replication](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/X7O80B){: .btn--research}
 </div>
 <div style="margin:0.3rem 0 0.5rem 0;">
-<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid #FF8200;color:#FF8200;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">CEL Working Paper</span>
+<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid #FF8200;color:#FF8200;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">CEL Working Paper Series</span>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
@@ -108,7 +108,7 @@ Mackenzie R. Dobson and Jacob M. Lollis <br>
 [Paper](https://www.dropbox.com/scl/fi/lro80gvjymnxtgceypzvh/Bipartisanship-Measures.pdf?rlkey=v4j8n6m2tdhbj31ot0lhg9lcc&st=gcm5whmg&dl=0){: .btn--research}
 </div>
 <div style="margin:0.3rem 0 0.5rem 0;">
-<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid #FF8200;color:#FF8200;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">CEL Working Paper</span>
+<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid #FF8200;color:#FF8200;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">CEL Working Paper Series</span>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
@@ -138,18 +138,18 @@ Jacob M. Lollis and Mackenzie R. Dobson <br>
 Mackenzie R. Dobson, Craig Volden, and Alan E. Wiseman <br>
 <blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#6b6b6b;font-style:normal;font-size:0.92em;">
 <strong>Status:</strong> Under Review<br>
-<strong>Last Update:</strong> January 2026<br>
+<strong>Last Update:</strong> August 2026<br>
 <strong>Conference Presentations:</strong> MPSA 2023
 </blockquote>
 <div style="margin:0.2rem 0 0.25rem 0;line-height:1.25;" markdown="1">
-[Paper](https://www.dropbox.com/scl/fi/srck10tdkfq3ive8x0lvs/Bipartisan-Campaigners-Become-Effective-Lawmakers.pdf?rlkey=5252yk3dnlnezh9kkt7pt457o&st=a9ejy8kr&dl=0){: .btn--research}
+[Paper](https://www.dropbox.com/scl/fi/1v3f2yf3mmayty58m4l5z/Bipartisan-Campaigners.pdf?rlkey=abetqibszlnmlbhk7zdlxy7jd&st=2px8h1c9&dl=0){: .btn--research}
 </div>
 <div style="margin:0.3rem 0 0.5rem 0;">
-<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid #FF8200;color:#FF8200;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">CEL Working Paper</span>
+<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid #FF8200;color:#FF8200;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">CEL Working Paper Series</span>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
-<i>But can voters glean insights into the likely lawmaking effectiveness of candidates even before they hold office? Might campaigns reveal characteristics of future effective lawmakers? To address these questions, we take advantage of new scholarship highlighting the enhanced lawmaking effectiveness of bipartisan legislators (Harbridge-Yong et al. 2023). We examine the initial campaigns of more than 800 congressional Representatives and find that candidates who exhibited bipartisan traits during those campaigns became more effective lawmakers than those not identified as bipartisan. This enhanced lawmaking effectiveness is especially pronounced in Representatives' early terms in office and linked to the lawmaking stages requiring significant coalition building activities. These findings suggest that campaigns can offer voters meaningful insights, not only regarding the issues future Representatives attend to, but also into their lawmaking effectiveness.</i>
+<i>Strong evidence exists that effective lawmakers in one legislative term tend to be effective lawmakers in subsequent terms. But can voters glean insights into the likely lawmaking effectiveness of candidates even before they hold office? Might campaigns reveal characteristics of future effective lawmakers? To address these questions, we take advantage of new scholarship highlighting the enhanced lawmaking effectiveness of bipartisan legislators (Harbridge-Yong et al. 2023). We examine the initial campaigns of more than 800 Representatives in the U.S. Congress, finding that candidates who exhibited bipartisan traits during those campaigns became more effective lawmakers than those legislators who were not identified as bipartisan in their first campaigns. This enhanced lawmaking effectiveness is especially pronounced in Representatives' early terms and is linked to lawmaking stages requiring significant coalition-building activities. These findings suggest that legislators engage with the lawmaking process in ways that correlate with their expressed commitment to bipartisanship when they first ran for office.</i>
 </details>
 
 ---
@@ -158,12 +158,15 @@ Mackenzie R. Dobson, Craig Volden, and Alan E. Wiseman <br>
 Andrew M. O. Ballard, Mackenzie R. Dobson, Martín Gandur, Craig Volden, and Alan E. Wiseman <br>
 <blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#6b6b6b;font-style:normal;font-size:0.92em;">
 <strong>Status:</strong> Under Review<br>
-<strong>Last Update:</strong> August 2026<br>
+<strong>Last Update:</strong> July 2026<br>
 <strong>Conference Presentations:</strong> APSA 2025; CEL 2026; SPPC 2026
 </blockquote>
+<div style="margin:0.2rem 0 0.25rem 0;line-height:1.25;" markdown="1">
+[Paper](https://www.dropbox.com/scl/fi/giliql7oiozi34hp1wjpv/ISLES.pdf?rlkey=i1b7d4of1vd6xnq4h6hp8vyjw&st=qag2jfat&dl=0){: .btn--research}
+</div>
 <details>
   <summary><b>Abstract</b></summary>
-<i>The politics of public policymaking varies not only across institutions and over time but also across different issue areas. We leverage transformer-based text classification to accurately assign more than 1.6 million state bills to 18 different policy areas. We then introduce Issue-Specific State Legislative Effectiveness Scores (ISLES), enabling systematic, cross-state comparisons of lawmaking effectiveness by members of state legislatures at the issue level for 2009–2018, across 48 states.</i>
+<i>We leverage transformer-based text classification to accurately assign more than 1.6 million bills that were introduced into state legislatures to 18 different policy areas. We then introduce Issue-Specific State Legislative Effectiveness Scores (ISLES), for legislatures that convened between 2009-2019 in 48 states. We show which issues gain the most attention in legislatures, and which are the most gridlocked, as well as systematic patterns in the issues over which experts or ideological centrists are most successful. We also demonstrate that female lawmakers disproportionately sponsor bills engaging with Civil Rights, Education, Health, and Welfare: policy areas that are conventionally categorized as being "women's issues." We find that bills in these issue areas are more gridlocked than other policy areas, on average. However, in chambers approaching gender parity, women's issue bills—especially those proposed by women—are more likely to advance into law.</i>
 </details>
 
 ---
@@ -206,7 +209,7 @@ Mackenzie R. Dobson <br>
 <strong>Last Update:</strong> June 2026
 </blockquote>
 <div style="margin:0.3rem 0 0.5rem 0;">
-<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid #FF8200;color:#FF8200;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">CEL Working Paper</span>
+<span style="display:inline-flex;align-items:center;gap:0.3rem;background:rgba(255,130,0,0.12);border:1px solid #FF8200;color:#FF8200;border-radius:999px;padding:0.15rem 0.65rem;font-size:0.85em;">CEL Working Paper Series</span>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
