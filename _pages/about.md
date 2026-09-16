@@ -32,7 +32,7 @@ Mackenzie R. Dobson, Jacob M. Lollis, Jeffrey J. Harden, and Justin H. Kirkland 
 </div>
 <details>
   <summary><b>Abstract</b></summary>
-<i>The professionalization of American state legislatures is among the most consequential modern institutional reforms in legislative politics. Yet a core tension persists: citizens disapprove of professionalized legislatures even though these chambers possess capacity-enhancing resources — such as staff support, higher salaries, and longer sessions — that may improve representation and policymaking. We offer one explanation for this disapproval: citizens perceive professional legislatures as dominated by legislators from white-collar backgrounds. Consequently, we argue that opposition to professionalism stems, in part, from a belief that white-collar legislators may not represent society's interests broadly.</i>
+<i>The professionalization of American state legislatures is among the most consequential modern institutional reforms in legislative politics. Yet a core tension persists: citizens disapprove of professionalized legislatures even though these chambers possess capacity-enhancing resources – such as staff support, higher salaries and longer sessions – that may improve representation and policymaking. We offer one explanation for this disapproval: citizens perceive professional legislatures as dominated by legislators from white-collar backgrounds. Consequently, the authors argue that opposition to professionalism stems, in part, from a belief that white-collar legislators may not represent society's interests broadly. Evidence from a preregistered conjoint experiment and observational analyses using the Cooperative Election Study supports this claim. Respondents associate professionalism with a legislature primarily composed of white-collar lawmakers, whom they do not believe govern to benefit the general public. These findings suggest that opposition to legislative professionalism likely reflects a rejection of white-collar government rather than repudiation of the institutional gains from professionalization.</i>
 </details>
 
 ---
@@ -75,7 +75,7 @@ Rachel Porter, Jeffrey J. Harden, and Mackenzie R. Dobson <br>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
-<i>Public trust in democratic institutions has dropped to historic lows, prompting electorates in major democracies to turn to "amateur" politicians with the expectation that these political outsiders will cut through stalemates to deliver policy results. Amateurs are often seen as pragmatic "doers," but also uncompromising, a combination at odds with governing systems where legislative progress depends on cross-party coalitions. Using the US Congress as a critical case, we evaluate these competing expectations by linking over four decades of election data with 2.2 million bill (co)sponsorship records. We find that electing amateurs intensifies partisan divisions: Districts that send amateurs to Congress yield representatives who attract fewer opposing-party collaborators to their bills and less often support other-party legislation.</i>
+<i>Public trust in democratic institutions has dropped to historic lows, prompting electorates in major democracies to turn to "amateur" politicians with the expectation that these political outsiders will cut through stalemates to deliver policy results. Amateurs are often seen as pragmatic "doers," but also uncompromising, a combination at odds with governing systems where legislative progress depends on cross-party coalitions. Using the US Congress as a critical case, we evaluate these competing expectations by linking over four decades of election data with 2.2 million bill (co)sponsorship records. We find that electing amateurs intensifies partisan divisions: Districts that send amateurs to Congress yield representatives who attract fewer opposing-party collaborators to their bills and less often support other-party legislation. Our results suggest that amateurs are unlikely to deliver on their promise for pragmatic governance, as they resist or undervalue the compromises essential to lawmaking.</i>
 </details>
 
 ---
@@ -91,7 +91,7 @@ Jacob M. Lollis and Mackenzie R. Dobson <br>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
-<i>Are LGBTQ legislators effective lawmakers? We build on theories that link voter discrimination to legislative effectiveness by arguing that voters' biases against LGBTQ candidates narrow the candidate pool, leading to the election of only the most experienced and qualified LGBTQ candidates. As a result of this electoral selection effect, we expect that LGBTQ legislators will be more effective lawmakers than their non-LGBTQ counterparts. To test this, we combine data on state legislators' LGBTQ identification with their State Legislative Effectiveness Scores (SLES). Our findings reveal that LGBTQ legislators are meaningfully more effective than non-LGBTQ legislators.</i>
+<i>Are LGBTQ legislators effective lawmakers? We build on theories that link voter discrimination to legislative effectiveness by arguing that voters' biases against LGBTQ candidates narrow the candidate pool, leading to the election of only the most experienced and qualified LGBTQ candidates. As a result of this electoral selection effect, we expect that LGBTQ legislators will be more effective lawmakers than their non-LGBTQ counterparts. To test this, we combine data on state legislators' LGBTQ identification with their State Legislative Effectiveness Scores (SLES). Our findings reveal that LGBTQ legislators are meaningfully more effective than non-LGBTQ legislators. To link our findings to voter discrimination, we leverage over-time variation in discrimination toward LGBTQ individuals. Across four tests, we consistently find that LGBTQ lawmakers elected in high-discrimination environments are more effective than those elected from less discriminatory environments.</i>
 </details>
 
 ---
@@ -112,12 +112,12 @@ Mackenzie R. Dobson and Jacob M. Lollis <br>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
-<i>Although bipartisanship is central to legislative behavior and often necessary for policymaking success, no centralized, publicly accessible dataset tracks legislators' propensity to offer and attract cross-party support across time and policy issue areas. We introduce a dataset of congressional bipartisanship scores for all members of the U.S. House and Senate from 1983 to 2024. Built from more than 2.4 million cosponsorship decisions on 147,669 bills, the dataset provides two complementary member-term measures. To facilitate broad reuse among academics, researchers, journalists, legislators, and the public, we make the dataset available through Harvard Dataverse and a corresponding R package, 'biparty.'</i>
+<i>Although bipartisanship is central to the study of legislative behavior and often necessary for policymaking success, scholars lack a centralized, publicly accessible, and consistently updated dataset measuring legislators' propensity to offer and attract cross-party support over time and across issue areas. As a result, researchers often construct different measures of bipartisanship, making it harder for scholars to build on existing work and engage in cumulative conversations about whether bipartisanship is declining, who engages in it, and which issues facilitate cross-party collaboration. We introduce a dataset of Congressional Bipartisanship Scores (CBS) for all members of the U.S. House and Senate from 1983 to 2024. Built from more than 2.4 million cosponsorship decisions on 147,669 bills, the dataset provides two member-term measures: attracting original out-party cosponsors to one's own bills and offering original cosponsorship to out-party-sponsored bills. The dataset includes aggregate and issue-specific scores across 34 policy areas for 2,056 legislators and 11,549 legislator-term observations. To facilitate broad reuse, we make the data publicly available through Harvard Dataverse and the R package biparty.</i>
 </details>
 
 ---
 
-**Congressional Attention to Abortion After *Dobbs*: How Representational and Electoral Incentives Selectively Shape Issue Attention** <br>
+**Congressional Attention to Abortion after *Dobbs*: A Theory of Representational and Party Incentive Alignment** <br>
 Jacob M. Lollis and Mackenzie R. Dobson <br>
 <blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#6b6b6b;font-style:normal;font-size:0.92em;">
 <strong>Status:</strong> Under Review<br>
@@ -129,7 +129,7 @@ Jacob M. Lollis and Mackenzie R. Dobson <br>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
-<i>Landmark Supreme Court rulings can reshape policy, rights, and public opinion, but their effects on congressional issue attention remain less clear. We argue that such rulings do not uniformly reshape congressional attention; instead, they do so selectively, depending on how legislators' representational and electoral incentives align. We test this argument in the case of Dobbs v. Jackson Women's Health Organization (2022). Using nearly 1.6M statements from U.S. House committee hearings, we leverage the leak of the draft opinion in a difference-in-differences design that estimates differential changes in abortion attention across party and gender.</i>
+<i>Landmark Supreme Court rulings can reshape policy, rights, and public opinion, but their effects on congressional issue attention remain less clear. We develop an incentive-alignment theory of congressional issue attention, arguing that judicial decisions linked to identity-salient issues reshape attention selectively when legislators' gender-linked and party incentives align. We test this argument using Dobbs v. Jackson Women's Health Organization (2022). After Dobbs, Democratic female legislators faced reinforcing incentives: abortion was both gender-salient and electorally advantageous for Democrats to foreground. Republican female legislators faced cross-cutting incentives: abortion remained gender-salient but became electorally risky for Republicans. Treating the leaked draft opinion as the shock date, we estimate differential within-legislator changes in abortion attention across party and gender using nearly 1.6 million legislator statements from U.S. House committee hearings. Pre-leak trends show no systematic differences across groups. After the leak, Democratic female legislators increased abortion-related references relative to Republican female legislators; pooled triple-interaction models further show that this party-based increase was significantly larger among female legislators than among male legislators.</i>
 </details>
 
 ---
@@ -138,7 +138,7 @@ Jacob M. Lollis and Mackenzie R. Dobson <br>
 Mackenzie R. Dobson, Craig Volden, and Alan E. Wiseman <br>
 <blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#6b6b6b;font-style:normal;font-size:0.92em;">
 <strong>Status:</strong> Under Review<br>
-<strong>Last Update:</strong> August 2026<br>
+<strong>Last Update:</strong> January 2026<br>
 <strong>Conference Presentations:</strong> MPSA 2023
 </blockquote>
 <div style="margin:0.2rem 0 0.25rem 0;line-height:1.25;" markdown="1">
@@ -149,7 +149,7 @@ Mackenzie R. Dobson, Craig Volden, and Alan E. Wiseman <br>
 </div>
 <details>
   <summary><b>Abstract</b></summary>
-<i>Strong evidence exists that effective lawmakers in one legislative term are very likely to be effective lawmakers in subsequent terms. But can voters glean insights into the likely lawmaking effectiveness of candidates even before they hold office? We examine the initial campaigns of more than 800 congressional Representatives and find that candidates who exhibited bipartisan traits during those campaigns became more effective lawmakers than those not identified as bipartisan.</i>
+<i>But can voters glean insights into the likely lawmaking effectiveness of candidates even before they hold office? Might campaigns reveal characteristics of future effective lawmakers? To address these questions, we take advantage of new scholarship highlighting the enhanced lawmaking effectiveness of bipartisan legislators (Harbridge-Yong et al. 2023). We examine the initial campaigns of more than 800 congressional Representatives and find that candidates who exhibited bipartisan traits during those campaigns became more effective lawmakers than those not identified as bipartisan. This enhanced lawmaking effectiveness is especially pronounced in Representatives' early terms in office and linked to the lawmaking stages requiring significant coalition building activities. These findings suggest that campaigns can offer voters meaningful insights, not only regarding the issues future Representatives attend to, but also into their lawmaking effectiveness.</i>
 </details>
 
 ---
@@ -175,6 +175,9 @@ Mackenzie R. Dobson and Jacob M. Lollis
 <strong>Last Update:</strong> September 2026<br>
 <strong>Conference Presentations:</strong> APSA 2026
 </blockquote>
+<div style="margin:0.2rem 0 0.25rem 0;line-height:1.25;" markdown="1">
+[Paper](https://www.dropbox.com/scl/fi/6a7gxkeuye4epvl141k0f/DobsonLollis_RB_26.pdf?rlkey=g8yb0z6kp6fm49kwshe3wmw4y&st=hnqjh85n&dl=0){: .btn--research}
+</div>
 <details>
   <summary><b>Abstract</b></summary>
 <i>Why has bipartisanship persisted in Congress despite rising partisan polarization? Existing approaches largely treat bipartisanship as a question of whether legislators cooperate across party lines, overlooking a consequential dimension of that cooperation: when it occurs. We argue that legislators strategically time cross party support to manage the competing costs and benefits of bipartisan participation. Original out-party cosponsors join legislation at introduction, often help develop the bill, and are among the first members of the opposing party to cross the aisle. In doing so, they bear the greatest political risks of bipartisan participation. Other legislators can reduce those risks by waiting until coalition growth provides political cover and legislative developments signal greater viability, while still claiming bipartisan credit for eventually joining. We call this behavior strategically delayed bipartisanship. Drawing on elite interviews with members of Congress and their staff and more than 2.4 million cosponsorship decisions across 147,669 House and Senate bills from 1983 to 2024, we develop a new measure that distinguishes strategically delayed from original bipartisan participation. Strategic delay is most common when the partisan costs of crossing the aisle are highest: among minority-party members, in the House, and on more partisan issues. It is also more common among electorally vulnerable and ideologically moderate legislators, for whom a bipartisan reputation should be electorally valuable. Among vulnerable legislators, strategic delay is associated with stronger subsequent electoral performance. However, legislators who engage in more strategically delayed bipartisanship subsequently attract fewer original out-party cosponsors for their own bills and exhibit lower legislative effectiveness. Therefore, we reconceptualize bipartisanship as a dynamic, strategic choice about when legislators cross party lines, showing how legislators can capture the electoral rewards of bipartisanship while avoiding many of the political risks of leading bipartisan cooperation.</i>
@@ -209,16 +212,6 @@ Mackenzie R. Dobson <br>
   <summary><b>Abstract</b></summary>
 <i>Bipartisan collaboration is widely considered a reliable route to legislative success, largely based on evidence from the contemporary U.S. Congress. Yet most state legislatures are governed by majority parties that occupy a significant share of chamber seats, permitting them to advance legislation without minority-party support. I argue that bipartisan collaboration enhances effectiveness only when cross-party support is necessary to assemble a winning coalition. Using State Legislative Effectiveness Scores and original measures of coalition-building, I show that bipartisanship enhances effectiveness in competitive chambers but not under secure majorities.</i>
 </details>
-
----
-
-**Timing Bipartisanship: Cross-Party Cooperation in a Polarized Congress** <br>
-Mackenzie R. Dobson and Jacob M. Lollis <br>
-<i>Book project</i>
-<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#6b6b6b;font-style:normal;font-size:0.92em;">
-<strong>Status:</strong> Manuscript in preparation<br>
-<strong>Last Update:</strong> September 2026
-</blockquote>
 
 ---
 
