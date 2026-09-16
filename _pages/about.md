@@ -218,8 +218,7 @@ Mackenzie R. Dobson and Jacob M. Lollis <br>
 <i>Book project</i>
 <blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#6b6b6b;font-style:normal;font-size:0.92em;">
 <strong>Status:</strong> Manuscript in preparation<br>
-<strong>Last Update:</strong> September 2026<br>
-<strong>Conference Presentations:</strong> None
+<strong>Last Update:</strong> September 2026
 </blockquote>
 
 ---
