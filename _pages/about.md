@@ -156,7 +156,7 @@ Mackenzie R. Dobson, Craig Volden, and Alan E. Wiseman <br>
 
 **Policy Agendas, Effective Lawmaking, and Women's Issues in State Legislatures** <br>
 Andrew M. O. Ballard, Mackenzie R. Dobson, Martín Gandur, Craig Volden, and Alan E. Wiseman <br>
-<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#6b6b6b;font-style:normal;font-size:0.92em;">
+<blockquote style="margin:0.3rem 0 0.5rem 0;padding-left:0.75rem;border-left:2px solid #dcdcdc;color:#6b6b6b;font-style:normal;font-size:0.92em;">CEL Working Paper Series</span>
 <strong>Status:</strong> Under Review<br>
 <strong>Last Update:</strong> July 2026<br>
 <strong>Conference Presentations:</strong> APSA 2025; CEL 2026; SPPC 2026
