@@ -205,7 +205,7 @@ Mackenzie R. Dobson, Emma Schroeder, Daniel M. Butler, James M. Curry, Thad Kous
 
 ---
 
-# Data, Software, & Public Projects
+# Data & Software
 
 I develop original datasets, open-source software, and interactive public tools for broad reuse by scholars, journalists, legislators, and the public. Replication materials for published papers are linked with each paper above.
 
